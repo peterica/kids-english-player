@@ -7,6 +7,67 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// ---------------------------------------------------------------------------
+// 계정 / 가정
+// 보안 경계는 Household 다. 모든 아이·진행·시청 기록 조회는 Household 로 제한한다.
+// ---------------------------------------------------------------------------
+
+model User {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  displayName  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  memberships HouseholdMember[]
+}
+
+model Household {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members  HouseholdMember[]
+  children Child[]
+}
+
+model HouseholdMember {
+  id          Int      @id @default(autoincrement())
+  householdId Int
+  userId      Int
+  role        String   @default("PARENT")
+  createdAt   DateTime @default(now())
+
+  household Household @relation(fields: [householdId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([householdId, userId])
+  @@index([userId])
+}
+
+model Child {
+  id          Int      @id @default(autoincrement())
+  householdId Int
+  name        String
+  avatarKey   String?
+  enabled     Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  household Household       @relation(fields: [householdId], references: [id], onDelete: Cascade)
+  progress  VideoProgress[]
+  sessions  WatchSession[]
+  playlists ChildPlaylist[]
+
+  @@index([householdId])
+}
+
+// ---------------------------------------------------------------------------
+// 커리큘럼 (모든 가정이 공유하는 공용 카탈로그)
+// ---------------------------------------------------------------------------
+
 model Video {
   id              Int      @id @default(autoincrement())
   youtubeVideoId  String   @unique
@@ -19,15 +80,67 @@ model Video {
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 
-  progress VideoProgress?
-  sessions WatchSession[]
+  progress       VideoProgress[]
+  sessions       WatchSession[]
+  playlistVideos PlaylistVideo[]
 
   @@index([sequence])
 }
 
+model Playlist {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  title       String
+  level       Int
+  description String?
+  enabled     Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  videos   PlaylistVideo[]
+  children ChildPlaylist[]
+
+  @@index([level])
+}
+
+model PlaylistVideo {
+  id         Int @id @default(autoincrement())
+  playlistId Int
+  videoId    Int
+  sequence   Int
+
+  playlist Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade)
+  video    Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@unique([playlistId, videoId])
+  @@index([playlistId, sequence])
+}
+
+model ChildPlaylist {
+  id          Int       @id @default(autoincrement())
+  childId     Int
+  playlistId  Int
+  status      String    @default("NOT_STARTED")
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  child    Child    @relation(fields: [childId], references: [id], onDelete: Cascade)
+  playlist Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade)
+
+  @@unique([childId, playlistId])
+  @@index([childId, status])
+}
+
+// ---------------------------------------------------------------------------
+// 학습 기록 (아이 단위로 분리)
+// ---------------------------------------------------------------------------
+
 model VideoProgress {
   id                  Int       @id @default(autoincrement())
-  videoId             Int       @unique
+  childId             Int
+  videoId             Int
   status              String    @default("NOT_STARTED")
   lastPositionSeconds Int       @default(0)
   durationSeconds     Int       @default(0)
@@ -39,24 +152,28 @@ model VideoProgress {
   createdAt           DateTime  @default(now())
   updatedAt           DateTime  @updatedAt
 
+  child Child @relation(fields: [childId], references: [id], onDelete: Cascade)
   video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
 
-  @@index([status])
+  @@unique([childId, videoId])
+  @@index([childId, status])
 }
 
 model WatchSession {
-  id                    Int       @id @default(autoincrement())
-  videoId               Int
-  startedAt             DateTime  @default(now())
-  endedAt               DateTime?
-  startPositionSeconds  Int       @default(0)
-  endPositionSeconds    Int       @default(0)
-  watchSeconds          Int       @default(0)
-  createdAt             DateTime  @default(now())
+  id                   Int       @id @default(autoincrement())
+  childId              Int
+  videoId              Int
+  startedAt            DateTime  @default(now())
+  endedAt              DateTime?
+  startPositionSeconds Int       @default(0)
+  endPositionSeconds   Int       @default(0)
+  watchSeconds         Int       @default(0)
+  createdAt            DateTime  @default(now())
 
+  child Child @relation(fields: [childId], references: [id], onDelete: Cascade)
   video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
 
-  @@index([startedAt])
+  @@index([childId, startedAt])
 }
 
 model Setting {

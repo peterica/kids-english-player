@@ -3,19 +3,15 @@
 import { useActionState, useState } from "react";
 import { addVideoAction, updateVideoAction } from "../actions";
 import { emptyActionState } from "@/lib/action-state";
-import type { ProgressStatus } from "@/lib/constants";
 import { formatClock } from "@/lib/format";
-import { StatusBadge } from "@/components/StatusBadge";
 
 export type ManagedVideo = {
   id: number;
   title: string;
   youtubeVideoId: string;
-  thumbnailUrl: string | null;
   durationSeconds: number | null;
   enabled: boolean;
-  status: ProgressStatus;
-  progressPercent: number;
+  playlistTitles: string[];
 };
 
 export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
@@ -42,8 +38,8 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
           </button>
         </form>
         <div className="hint">
-          watch, youtu.be, shorts, embed 주소를 지원합니다. 제목은 YouTube oEmbed로 자동
-          조회하며, 실패하면 직접 입력할 수 있습니다.
+          watch, youtu.be, shorts, embed 주소를 지원합니다. 여기서 추가한 영상은 카탈로그에만
+          등록되며, 아이에게 보여주려면 학습 과정에 포함된 영상이어야 합니다.
         </div>
         {addState.error ? <div className="alert error">{addState.error}</div> : null}
         {addState.message ? <div className="alert ok">{addState.message}</div> : null}
@@ -51,14 +47,14 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
 
       <section className="card" style={{ marginTop: 20 }}>
         <div className="section-title">
-          <h3>학습 영상 목록</h3>
-          <span className="label">위/아래 버튼으로 순서를 바꿉니다</span>
+          <h3>영상 목록</h3>
+          <span className="label">위/아래 버튼은 카탈로그 정렬 순서입니다</span>
         </div>
 
         {rowState.error ? <div className="alert error">{rowState.error}</div> : null}
 
         {videos.length === 0 ? (
-          <p className="hint">등록된 영상이 없습니다. 위에서 YouTube 주소를 추가해 주세요.</p>
+          <p className="hint">등록된 영상이 없습니다.</p>
         ) : (
           <div className="list">
             {videos.map((video, index) => (
@@ -70,14 +66,8 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
                       <input type="hidden" name="videoId" value={video.id} />
                       <input type="hidden" name="intent" value="rename" />
                       <input name="title" defaultValue={video.title} aria-label="제목" />
-                      <button type="submit" className="btn small">
-                        저장
-                      </button>
-                      <button
-                        type="button"
-                        className="btn ghost small"
-                        onClick={() => setEditingId(null)}
-                      >
+                      <button type="submit" className="btn small">저장</button>
+                      <button type="button" className="btn ghost small" onClick={() => setEditingId(null)}>
                         취소
                       </button>
                     </form>
@@ -86,14 +76,18 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
                       <strong>{video.title}</strong>
                       <div className="hint">
                         {video.durationSeconds ? `${formatClock(video.durationSeconds)} · ` : ""}
-                        {video.enabled ? "활성" : "비활성"} · {video.progressPercent}% ·{" "}
-                        {video.youtubeVideoId}
+                        {video.enabled ? "활성" : "비활성"} · {video.youtubeVideoId}
+                        {video.playlistTitles.length > 0
+                          ? ` · ${video.playlistTitles.join(", ")}`
+                          : " · 학습 과정 없음"}
                       </div>
                     </>
                   )}
                 </div>
 
-                <StatusBadge status={video.status} enabled={video.enabled} />
+                <span className={`status ${video.enabled ? "done" : "off"}`}>
+                  {video.enabled ? "활성" : "비활성"}
+                </span>
 
                 <div className="row-actions">
                   <RowButton action={rowAction} videoId={video.id} intent="up" label="↑" />
@@ -109,14 +103,7 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
                     action={rowAction}
                     videoId={video.id}
                     intent={video.enabled ? "disable" : "enable"}
-                    label={video.enabled ? "비활성" : "활성"}
-                  />
-                  <RowButton
-                    action={rowAction}
-                    videoId={video.id}
-                    intent="reset"
-                    label="진행 초기화"
-                    confirmMessage={`'${video.title}'의 학습 기록을 초기화할까요?`}
+                    label={video.enabled ? "비활성으로" : "활성으로"}
                   />
                   <RowButton
                     action={rowAction}
@@ -124,7 +111,7 @@ export function VideoManager({ videos }: { videos: ManagedVideo[] }) {
                     intent="delete"
                     label="삭제"
                     danger
-                    confirmMessage={`'${video.title}'을(를) 삭제할까요? 학습 기록도 함께 삭제됩니다.`}
+                    confirmMessage={`'${video.title}'을(를) 삭제할까요? 모든 아이의 학습 기록도 함께 삭제됩니다.`}
                   />
                 </div>
               </div>

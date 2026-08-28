@@ -1,101 +1,103 @@
 import Link from "next/link";
-import { getLearningOverview, getRecentHistory } from "@/lib/learning";
-import { PROGRESS_STATUS } from "@/lib/constants";
-import {
-  formatKoreanDate,
-  formatKoreanDuration,
-  formatTimeOfDay,
-} from "@/lib/format";
+import { requirePageSession } from "@/lib/guard";
+import { getHouseholdOverview } from "@/lib/learning";
+import { getCompletionThreshold } from "@/lib/settings";
+import { formatKoreanDate, formatKoreanDuration } from "@/lib/format";
 import { ProgressBar } from "@/components/ProgressBar";
-import { StatusBadge } from "@/components/StatusBadge";
 import { SettingsForm } from "./SettingsForm";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminDashboardPage() {
-  const overview = await getLearningOverview();
-  const history = await getRecentHistory(8);
+  const session = await requirePageSession();
+  const [children, completionThreshold] = await Promise.all([
+    getHouseholdOverview(session.householdId),
+    getCompletionThreshold(),
+  ]);
+
+  const activeChildren = children.filter((row) => row.child.enabled);
+  const todaySeconds = activeChildren.reduce(
+    (sum, row) => sum + row.today.watchSeconds,
+    0,
+  );
 
   return (
     <>
       <div className="topbar">
         <div>
-          <h1>부모 대시보드</h1>
-          <p>{formatKoreanDate(new Date())} · 학습 진행 상황</p>
+          <h1>{session.householdName}</h1>
+          <p>{formatKoreanDate(new Date())} · 우리 가족 학습 현황</p>
         </div>
-        <div className="pill">Parent Mode</div>
+        <div className="pill">아이 {activeChildren.length}명</div>
       </div>
 
       <div className="grid three">
         <div className="card">
-          <div className="label">전체 진행률</div>
-          <div className="metric">{overview.overallPercent}%</div>
-          <ProgressBar percent={overview.overallPercent} />
+          <div className="label">오늘 가족 전체 학습 시간</div>
+          <div className="metric">{formatKoreanDuration(todaySeconds)}</div>
           <div className="hint">
-            {overview.completedCount} / {overview.activeCount} 영상 완료
+            오늘 시청한 영상{" "}
+            {activeChildren.reduce((sum, row) => sum + row.today.watchedVideoCount, 0)}개
           </div>
         </div>
         <div className="card">
-          <div className="label">오늘 학습 시간</div>
-          <div className="metric">{formatKoreanDuration(overview.today.watchSeconds)}</div>
+          <div className="label">등록된 아이</div>
+          <div className="metric">{activeChildren.length}명</div>
           <div className="hint">
-            오늘 시청한 영상 {overview.today.watchedVideoCount}개 · 완료{" "}
-            {overview.today.completedCount}개
+            <Link href="/admin/children">아이 추가 / 학습 과정 변경</Link>
           </div>
         </div>
         <div className="card">
-          <div className="label">현재 학습 영상</div>
-          <div className="metric" style={{ fontSize: 22, lineHeight: 1.3 }}>
-            {overview.currentVideo ? overview.currentVideo.title : "모두 완료"}
-          </div>
-          {overview.currentVideo ? (
-            <>
-              <ProgressBar percent={overview.currentVideo.progressPercent} />
-              <div className="hint">
-                {overview.currentVideo.status === PROGRESS_STATUS.IN_PROGRESS
-                  ? `${overview.currentVideo.progressPercent}% 시청 중`
-                  : "아직 시작 전"}{" "}
-                · <Link href={`/watch/${overview.currentVideo.id}`}>영상 열기</Link>
-              </div>
-            </>
-          ) : (
-            <div className="hint">등록된 활성 영상을 모두 완료했습니다.</div>
-          )}
+          <div className="label">완료 기준</div>
+          <SettingsForm completionThreshold={completionThreshold} />
         </div>
       </div>
 
-      <div className="grid two" style={{ marginTop: 20 }}>
-        <div className="card">
-          <div className="section-title">
-            <h3>최근 학습 기록</h3>
-            <span className="label">최근 {history.length}건</span>
-          </div>
-          {history.length === 0 ? (
-            <p className="hint">아직 학습 기록이 없습니다.</p>
-          ) : (
-            <div className="history">
-              {history.map((entry) => (
-                <div className="history-row" key={`${entry.videoId}-${entry.at.getTime()}`}>
-                  <strong>{formatTimeOfDay(entry.at)}</strong>
-                  <div>{entry.title}</div>
-                  {entry.status === PROGRESS_STATUS.COMPLETED ? (
-                    <StatusBadge status={entry.status} />
-                  ) : (
-                    <span className="status doing">{entry.progressPercent}%</span>
-                  )}
+      <section className="card" style={{ marginTop: 20 }}>
+        <div className="section-title">
+          <h3>아이별 진행 상황</h3>
+          <Link href="/admin/children" className="label">
+            아이 관리
+          </Link>
+        </div>
+
+        {activeChildren.length === 0 ? (
+          <p className="hint">
+            아직 등록된 아이가 없습니다. <Link href="/admin/children">아이를 등록</Link>해 주세요.
+          </p>
+        ) : (
+          <div className="list">
+            {activeChildren.map((row) => (
+              <div className="list-row" key={row.child.id}>
+                <div className="num">{row.child.name.slice(0, 1)}</div>
+                <div style={{ minWidth: 0 }}>
+                  <strong>{row.child.name}</strong>
+                  <div className="hint">
+                    {row.playlist ? row.playlist.title : "학습 과정 미지정"} ·{" "}
+                    {row.completedCount} / {row.activeCount} 완료 · 오늘{" "}
+                    {formatKoreanDuration(row.today.watchSeconds)}
+                  </div>
+                  <div style={{ marginTop: 8, maxWidth: 320 }}>
+                    <ProgressBar percent={row.overallPercent} />
+                  </div>
+                  <div className="hint">
+                    현재 영상: {row.currentVideoTitle ?? "없음 (모두 완료)"}
+                  </div>
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className="card">
-          <div className="section-title">
-            <h3>학습 설정</h3>
+                <span className="status doing">{row.overallPercent}%</span>
+                <div className="row-actions">
+                  <Link href={`/admin/children/${row.child.id}`} className="btn ghost small">
+                    상세
+                  </Link>
+                  <Link href={`/kids/${row.child.id}`} className="btn ghost small">
+                    아이 화면
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
-          <SettingsForm completionThreshold={overview.completionThreshold} />
-        </div>
-      </div>
+        )}
+      </section>
     </>
   );
 }

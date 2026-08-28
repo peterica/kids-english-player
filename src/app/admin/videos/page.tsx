@@ -1,17 +1,25 @@
-import { listVideosWithProgress } from "@/lib/learning";
+import { prisma } from "@/lib/db";
+import { requirePageSession } from "@/lib/guard";
 import { VideoManager } from "./VideoManager";
 
 export const dynamic = "force-dynamic";
 
 export default async function VideoAdminPage() {
-  const videos = await listVideosWithProgress();
+  await requirePageSession();
+
+  const videos = await prisma.video.findMany({
+    orderBy: [{ sequence: "asc" }, { id: "asc" }],
+    include: {
+      playlistVideos: { include: { playlist: { select: { title: true } } } },
+    },
+  });
 
   return (
     <>
       <div className="topbar">
         <div>
           <h1>영상 관리</h1>
-          <p>YouTube 영상을 등록하고 학습 순서를 관리합니다.</p>
+          <p>YouTube 영상 카탈로그입니다. 학습 순서는 학습 과정(Level)에서 관리합니다.</p>
         </div>
         <div className="pill">{videos.length} videos</div>
       </div>
@@ -21,11 +29,9 @@ export default async function VideoAdminPage() {
           id: video.id,
           title: video.title,
           youtubeVideoId: video.youtubeVideoId,
-          thumbnailUrl: video.thumbnailUrl,
           durationSeconds: video.durationSeconds,
           enabled: video.enabled,
-          status: video.status,
-          progressPercent: video.progressPercent,
+          playlistTitles: video.playlistVideos.map((row) => row.playlist.title),
         }))}
       />
     </>

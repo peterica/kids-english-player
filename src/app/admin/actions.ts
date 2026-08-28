@@ -1,9 +1,8 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
-import { endParentSession, hasParentSession } from "@/lib/session";
-import { AppError, toUserMessage } from "@/lib/errors";
+import { authorizeChild, requireSessionUser } from "@/lib/auth";
+import { toUserMessage, AppError } from "@/lib/errors";
 import {
   addVideoFromUrl,
   deleteVideo,
@@ -11,28 +10,18 @@ import {
   renameVideo,
   setVideoEnabled,
 } from "@/lib/videos";
-import { resetProgress } from "@/lib/progress-service";
-import { setCompletionThreshold, setSetting } from "@/lib/settings";
-import { SETTING_KEYS } from "@/lib/constants";
-import { hashPin, isValidPinFormat } from "@/lib/pin";
-
+import {
+  createChild,
+  renameChild,
+  setChildEnabled,
+  setChildPlaylist,
+} from "@/lib/children";
+import { resetPlaylistProgress } from "@/lib/progress-service";
+import { setCompletionThreshold } from "@/lib/settings";
 import type { ActionState } from "@/lib/action-state";
 
-async function requireParent() {
-  if (!(await hasParentSession())) {
-    throw new AppError("부모 모드 인증이 필요합니다. 다시 로그인해 주세요.");
-  }
-}
-
-function refreshAdminPages() {
-  revalidatePath("/admin");
-  revalidatePath("/admin/videos");
-  revalidatePath("/");
-}
-
-export async function logout(): Promise<void> {
-  await endParentSession();
-  redirect("/");
+function refreshPages() {
+  revalidatePath("/", "layout");
 }
 
 export async function addVideoAction(
@@ -40,11 +29,12 @@ export async function addVideoAction(
   formData: FormData,
 ): Promise<ActionState> {
   try {
-    await requireParent();
-    const url = String(formData.get("url") ?? "");
-    const title = String(formData.get("title") ?? "");
-    const result = await addVideoFromUrl({ url, title });
-    refreshAdminPages();
+    await requireSessionUser();
+    const result = await addVideoFromUrl({
+      url: String(formData.get("url") ?? ""),
+      title: String(formData.get("title") ?? ""),
+    });
+    refreshPages();
     return {
       error: null,
       message: result.titleFetched
@@ -61,7 +51,7 @@ export async function updateVideoAction(
   formData: FormData,
 ): Promise<ActionState> {
   try {
-    await requireParent();
+    await requireSessionUser();
     const videoId = Number(formData.get("videoId"));
     const intent = String(formData.get("intent") ?? "");
 
@@ -79,9 +69,6 @@ export async function updateVideoAction(
       case "down":
         await moveVideo(videoId, intent);
         break;
-      case "reset":
-        await resetProgress(videoId);
-        break;
       case "delete":
         await deleteVideo(videoId);
         break;
@@ -89,7 +76,68 @@ export async function updateVideoAction(
         throw new AppError("알 수 없는 요청입니다.");
     }
 
-    refreshAdminPages();
+    refreshPages();
+    return { error: null, message: "변경했습니다." };
+  } catch (error) {
+    return { error: toUserMessage(error), message: null };
+  }
+}
+
+export async function addChildAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  try {
+    const session = await requireSessionUser();
+    const child = await createChild(
+      session.householdId,
+      String(formData.get("name") ?? ""),
+    );
+    refreshPages();
+    return { error: null, message: `${child.name} 등록 완료` };
+  } catch (error) {
+    return { error: toUserMessage(error), message: null };
+  }
+}
+
+export async function updateChildAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  try {
+    const session = await requireSessionUser();
+    const childId = Number(formData.get("childId"));
+    const intent = String(formData.get("intent") ?? "");
+
+    switch (intent) {
+      case "rename":
+        await renameChild(session.householdId, childId, String(formData.get("name") ?? ""));
+        break;
+      case "enable":
+        await setChildEnabled(session.householdId, childId, true);
+        break;
+      case "disable":
+        await setChildEnabled(session.householdId, childId, false);
+        break;
+      case "playlist": {
+        const playlistId = Number(formData.get("playlistId"));
+        const playlist = await setChildPlaylist(session.householdId, childId, playlistId);
+        refreshPages();
+        return { error: null, message: `학습 과정을 ${playlist.title}로 바꿨습니다.` };
+      }
+      case "reset-playlist": {
+        const playlistId = Number(formData.get("playlistId"));
+        // 다른 가정의 아이를 초기화하지 못하도록 소유 관계를 먼저 확인한다.
+        await authorizeChild(session.householdId, childId);
+        await resetPlaylistProgress(childId, playlistId);
+        refreshPages();
+        return { error: null, message: "학습 기록을 초기화했습니다." };
+      }
+      default:
+        throw new AppError("알 수 없는 요청입니다.");
+    }
+
+    refreshPages();
     return { error: null, message: "변경했습니다." };
   } catch (error) {
     return { error: toUserMessage(error), message: null };
@@ -101,26 +149,14 @@ export async function updateSettingsAction(
   formData: FormData,
 ): Promise<ActionState> {
   try {
-    await requireParent();
+    await requireSessionUser();
     const threshold = Number(formData.get("completionThreshold"));
     if (!Number.isFinite(threshold) || threshold < 10 || threshold > 100) {
       throw new AppError("완료 기준은 10~100 사이의 값이어야 합니다.");
     }
     await setCompletionThreshold(threshold);
-
-    const newPin = String(formData.get("pin") ?? "").trim();
-    if (newPin) {
-      if (!isValidPinFormat(newPin)) {
-        throw new AppError("PIN은 숫자 4~6자리여야 합니다.");
-      }
-      await setSetting(SETTING_KEYS.parentPinHash, hashPin(newPin));
-    }
-
-    refreshAdminPages();
-    return {
-      error: null,
-      message: newPin ? "설정과 PIN을 변경했습니다." : "설정을 변경했습니다.",
-    };
+    refreshPages();
+    return { error: null, message: "설정을 저장했습니다." };
   } catch (error) {
     return { error: toUserMessage(error), message: null };
   }

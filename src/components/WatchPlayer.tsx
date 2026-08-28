@@ -17,6 +17,7 @@ import {
 import { ProgressBar } from "@/components/ProgressBar";
 
 type Props = {
+  childId: number;
   videoId: number;
   youtubeVideoId: string;
   initialPositionSeconds: number;
@@ -27,6 +28,7 @@ type Props = {
 };
 
 export function WatchPlayer({
+  childId,
   videoId,
   youtubeVideoId,
   initialPositionSeconds,
@@ -76,6 +78,7 @@ export function WatchPlayer({
       if (watchDeltaSeconds <= 0 && options?.ended !== true) return;
 
       const payload = {
+        childId,
         videoId,
         sessionId: sessionIdRef.current,
         positionSeconds: Math.max(0, currentTime),
@@ -113,7 +116,7 @@ export function WatchPlayer({
         setError("시청 기록을 저장하지 못했습니다. 연결을 확인해 주세요.");
       }
     },
-    [videoId],
+    [childId, videoId],
   );
 
   const ensureSession = useCallback(async () => {
@@ -125,6 +128,7 @@ export function WatchPlayer({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          childId,
           videoId,
           positionSeconds: safeCall(() => player?.getCurrentTime() ?? 0, 0),
         }),
@@ -135,7 +139,7 @@ export function WatchPlayer({
     } catch {
       // 세션 기록 실패는 재생을 막지 않는다. 진행률은 계속 저장된다.
     }
-  }, [videoId]);
+  }, [childId, videoId]);
 
   useEffect(() => {
     let disposed = false;
@@ -248,8 +252,8 @@ export function WatchPlayer({
   const goNext = async () => {
     settlePlayingTime();
     await sendProgress();
-    if (nextVideo) router.push(`/watch/${nextVideo.id}`);
-    else router.push("/");
+    if (nextVideo) router.push(`/kids/${childId}/watch/${nextVideo.id}`);
+    else router.push(`/kids/${childId}`);
   };
 
   const completed = status === PROGRESS_STATUS.COMPLETED;
@@ -309,7 +313,7 @@ export function WatchPlayer({
           {nextVideo ? "다음 영상 보기" : "홈으로 가기"}
         </button>
         <Link
-          href="/"
+          href={`/kids/${childId}`}
           className="btn ghost"
           style={{ width: "100%", marginTop: 10 }}
           onClick={() => {

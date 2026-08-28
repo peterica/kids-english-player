@@ -9,6 +9,7 @@ import {
 import { getCompletionThreshold } from "./settings";
 
 export type ProgressTickInput = {
+  childId: number;
   videoId: number;
   sessionId?: number | null;
   positionSeconds: number;
@@ -26,13 +27,15 @@ export type ProgressTickResult = {
   sessionId: number | null;
 };
 
-/** 영상 재생을 시작할 때 시청 세션을 연다. */
+/** 영상 재생을 시작할 때 시청 세션을 연다. 세션은 항상 아이 단위로 남는다. */
 export async function startWatchSession(
+  childId: number,
   videoId: number,
   startPositionSeconds: number,
 ): Promise<number> {
   const session = await prisma.watchSession.create({
     data: {
+      childId,
       videoId,
       startPositionSeconds: Math.max(0, Math.round(startPositionSeconds)),
       endPositionSeconds: Math.max(0, Math.round(startPositionSeconds)),
@@ -52,7 +55,7 @@ export async function recordProgressTick(
   const completionThreshold = await getCompletionThreshold();
 
   const existing = await prisma.videoProgress.findUnique({
-    where: { videoId: input.videoId },
+    where: { childId_videoId: { childId: input.childId, videoId: input.videoId } },
   });
 
   // 실제 시청 없이 들어온 heartbeat 로는 새 진행 기록을 만들지 않는다.
@@ -108,8 +111,8 @@ export async function recordProgressTick(
   };
 
   await prisma.videoProgress.upsert({
-    where: { videoId: input.videoId },
-    create: { videoId: input.videoId, ...data },
+    where: { childId_videoId: { childId: input.childId, videoId: input.videoId } },
+    create: { childId: input.childId, videoId: input.videoId, ...data },
     update: data,
   });
 
@@ -142,7 +145,10 @@ async function updateSession(
   const session = await prisma.watchSession.findUnique({
     where: { id: input.sessionId },
   });
-  if (!session || session.videoId !== input.videoId) return null;
+  // 세션 id 도 요청 body 로 들어오므로 아이/영상 소유 관계를 다시 확인한다.
+  if (!session || session.videoId !== input.videoId || session.childId !== input.childId) {
+    return null;
+  }
 
   await prisma.watchSession.update({
     where: { id: session.id },
@@ -155,8 +161,28 @@ async function updateSession(
   return session.id;
 }
 
-/** 부모만 진행 상태를 초기화할 수 있다. */
-export async function resetProgress(videoId: number): Promise<void> {
-  await prisma.videoProgress.deleteMany({ where: { videoId } });
-  await prisma.watchSession.deleteMany({ where: { videoId } });
+/** 부모만 진행 상태를 초기화할 수 있다. 아이 한 명의 기록만 지운다. */
+export async function resetProgress(childId: number, videoId: number): Promise<void> {
+  await prisma.videoProgress.deleteMany({ where: { childId, videoId } });
+  await prisma.watchSession.deleteMany({ where: { childId, videoId } });
+}
+
+/** 아이 한 명의 특정 학습 과정 기록 전체를 초기화한다. */
+export async function resetPlaylistProgress(
+  childId: number,
+  playlistId: number,
+): Promise<void> {
+  const videoIds = (
+    await prisma.playlistVideo.findMany({
+      where: { playlistId },
+      select: { videoId: true },
+    })
+  ).map((row) => row.videoId);
+
+  await prisma.videoProgress.deleteMany({
+    where: { childId, videoId: { in: videoIds } },
+  });
+  await prisma.watchSession.deleteMany({
+    where: { childId, videoId: { in: videoIds } },
+  });
 }

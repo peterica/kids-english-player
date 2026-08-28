@@ -38,6 +38,8 @@ COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/prisma ./prisma
+# seed(커리큘럼) 실행에 필요한 공용 상수/유틸
+COPY --from=builder /app/src/lib ./src/lib
 COPY docker-entrypoint.sh ./docker-entrypoint.sh
 RUN chmod +x ./docker-entrypoint.sh && mkdir -p /app/data
 

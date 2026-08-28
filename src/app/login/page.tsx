@@ -6,7 +6,7 @@ import { AuthForm } from "@/components/AuthForm";
 export const dynamic = "force-dynamic";
 
 export default async function LoginPage() {
-  if (await getSessionUser()) redirect("/");
+  if (await getSessionUser()) redirect("/admin");
 
   return (
     <main className="page" style={{ maxWidth: 460 }}>
@@ -18,7 +18,7 @@ export default async function LoginPage() {
       </div>
       <div className="card">
         <AuthForm mode="login" />
-        <p className="hint" style={{ marginTop: 18 }}>
+        <p className="muted small" style={{ marginTop: 18 }}>
           아직 계정이 없나요? <Link href="/signup">회원가입</Link>
         </p>
       </div>

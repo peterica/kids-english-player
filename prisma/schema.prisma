@@ -8,8 +8,8 @@ datasource db {
 }
 
 // ---------------------------------------------------------------------------
-// 계정 / 가정
-// 보안 경계는 Household 다. 모든 아이·진행·시청 기록 조회는 Household 로 제한한다.
+// 계정 / 가정 / 아이
+// 보안 경계는 Household 다. 아이·Collection·시청기록 조회는 모두 이 단위로 제한한다.
 // ---------------------------------------------------------------------------
 
 model User {
@@ -29,8 +29,10 @@ model Household {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  members  HouseholdMember[]
-  children Child[]
+  members     HouseholdMember[]
+  children    Child[]
+  collections Collection[]
+  videos      Video[]
 }
 
 model HouseholdMember {
@@ -56,17 +58,58 @@ model Child {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  household Household       @relation(fields: [householdId], references: [id], onDelete: Cascade)
-  progress  VideoProgress[]
-  sessions  WatchSession[]
-  playlists ChildPlaylist[]
+  household        Household         @relation(fields: [householdId], references: [id], onDelete: Cascade)
+  preference       ChildPreference?
+  collections      Collection[]
+  progress         VideoProgress[]
+  sessions         WatchSession[]
+  autoPlaySessions AutoPlaySession[]
 
   @@index([householdId])
 }
 
+/// 아이별 허용 Level 범위와 선호 Channel. 추천 / Browse / Auto Play 기본값으로 쓴다.
+model ChildPreference {
+  id        Int      @id @default(autoincrement())
+  childId   Int      @unique
+  minLevel  Int      @default(1)
+  maxLevel  Int      @default(5)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  child             Child                     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  preferredChannels ChildPreferredChannel[]
+}
+
+model ChildPreferredChannel {
+  id           Int @id @default(autoincrement())
+  preferenceId Int
+  channelId    Int
+
+  preference ChildPreference @relation(fields: [preferenceId], references: [id], onDelete: Cascade)
+  channel    Channel         @relation(fields: [channelId], references: [id], onDelete: Cascade)
+
+  @@unique([preferenceId, channelId])
+}
+
 // ---------------------------------------------------------------------------
-// 커리큘럼 (모든 가정이 공유하는 공용 카탈로그)
+// Content Library (공용) + 가정이 직접 등록한 영상
 // ---------------------------------------------------------------------------
+
+model Channel {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  name        String
+  description String?
+  colorKey    String   @default("c1")
+  enabled     Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  videos            Video[]
+  preferredBy       ChildPreferredChannel[]
+  autoPlaySessions  AutoPlaySession[]
+}
 
 model Video {
   id              Int      @id @default(autoincrement())
@@ -74,67 +117,66 @@ model Video {
   youtubeUrl      String
   title           String
   thumbnailUrl    String?
+  channelId       Int
+  level           Int
+  category        String
   durationSeconds Int?
-  sequence        Int
+  sequence        Int      @default(0)
   enabled         Boolean  @default(true)
+  /// null 이면 서비스 공용 Library, 값이 있으면 그 가정만 볼 수 있는 직접 등록 영상
+  householdId     Int?
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 
-  progress       VideoProgress[]
-  sessions       WatchSession[]
-  playlistVideos PlaylistVideo[]
+  channel           Channel           @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  household         Household?        @relation(fields: [householdId], references: [id], onDelete: Cascade)
+  collectionVideos  CollectionVideo[]
+  progress          VideoProgress[]
+  sessions          WatchSession[]
+  autoPlaySessions  AutoPlaySession[]
 
-  @@index([sequence])
-}
-
-model Playlist {
-  id          Int      @id @default(autoincrement())
-  slug        String   @unique
-  title       String
-  level       Int
-  description String?
-  enabled     Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  videos   PlaylistVideo[]
-  children ChildPlaylist[]
-
-  @@index([level])
-}
-
-model PlaylistVideo {
-  id         Int @id @default(autoincrement())
-  playlistId Int
-  videoId    Int
-  sequence   Int
-
-  playlist Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade)
-  video    Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
-
-  @@unique([playlistId, videoId])
-  @@index([playlistId, sequence])
-}
-
-model ChildPlaylist {
-  id          Int       @id @default(autoincrement())
-  childId     Int
-  playlistId  Int
-  status      String    @default("NOT_STARTED")
-  startedAt   DateTime?
-  completedAt DateTime?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-
-  child    Child    @relation(fields: [childId], references: [id], onDelete: Cascade)
-  playlist Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade)
-
-  @@unique([childId, playlistId])
-  @@index([childId, status])
+  @@index([channelId, level])
+  @@index([householdId])
 }
 
 // ---------------------------------------------------------------------------
-// 학습 기록 (아이 단위로 분리)
+// My Collection (부모 개인화)
+// ---------------------------------------------------------------------------
+
+model Collection {
+  id          Int      @id @default(autoincrement())
+  householdId Int
+  childId     Int?
+  title       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  household Household         @relation(fields: [householdId], references: [id], onDelete: Cascade)
+  child     Child?            @relation(fields: [childId], references: [id], onDelete: Cascade)
+  videos    CollectionVideo[]
+
+  @@index([householdId])
+  @@index([childId])
+}
+
+model CollectionVideo {
+  id           Int      @id @default(autoincrement())
+  collectionId Int
+  videoId      Int
+  sequence     Int
+  /// false 면 "이 영상은 우리 아이에게 보여주지 않음" (Library 원본은 그대로 둔다)
+  enabled      Boolean  @default(true)
+  createdAt    DateTime @default(now())
+
+  collection Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  video      Video      @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@unique([collectionId, videoId])
+  @@index([collectionId, sequence])
+}
+
+// ---------------------------------------------------------------------------
+// 시청 기록
 // ---------------------------------------------------------------------------
 
 model VideoProgress {
@@ -172,6 +214,31 @@ model WatchSession {
 
   child Child @relation(fields: [childId], references: [id], onDelete: Cascade)
   video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@index([childId, startedAt])
+}
+
+// ---------------------------------------------------------------------------
+// Auto Play (계속 틀어놓기)
+// ---------------------------------------------------------------------------
+
+model AutoPlaySession {
+  id               Int       @id @default(autoincrement())
+  childId          Int
+  channelId        Int?
+  minLevel         Int
+  maxLevel         Int
+  playMode         String    @default("SEQUENTIAL")
+  replayCompleted  Boolean   @default(true)
+  maxMinutes       Int?
+  startedAt        DateTime  @default(now())
+  endedAt          DateTime?
+  currentVideoId   Int?
+  playedVideoCount Int       @default(0)
+
+  child   Child    @relation(fields: [childId], references: [id], onDelete: Cascade)
+  channel Channel? @relation(fields: [channelId], references: [id], onDelete: SetNull)
+  video   Video?   @relation(fields: [currentVideoId], references: [id], onDelete: SetNull)
 
   @@index([childId, startedAt])
 }

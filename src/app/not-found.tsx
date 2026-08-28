@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="page child">
+    <main className="page">
       <div className="card">
-        <h1>영상을 찾을 수 없어요</h1>
-        <p className="hint">주소가 바뀌었거나 삭제된 영상일 수 있어요.</p>
-        <Link href="/" className="btn" style={{ marginTop: 16 }}>
-          홈으로 가기
+        <h1>페이지를 찾을 수 없어요</h1>
+        <p className="muted">주소가 바뀌었거나 삭제된 화면일 수 있어요.</p>
+        <Link href="/" className="btn primary" style={{ marginTop: 16 }}>
+          처음으로
         </Link>
       </div>
     </main>

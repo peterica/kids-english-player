@@ -16,3 +16,11 @@ export function readOptionalNumber(value: unknown): number | null {
     ? parsed
     : null;
 }
+
+export function readId(value: unknown, field: string): number {
+  const parsed = readNumber(value, field);
+  if (!Number.isInteger(parsed) || parsed <= 0) {
+    throw new AppError(`잘못된 요청입니다. (${field})`);
+  }
+  return parsed;
+}

@@ -1,7 +1,8 @@
-# Architecture — Kids English Player
+# Architecture — Kids English Player V2
 
-로컬(가정 내 Mac mini) 환경에서 동작하는 단일 사용자용 영어 학습 플레이어의 구조 문서다.
-PRD 범위를 넘는 기능은 포함하지 않는다.
+> 부모가 검증된 영어 영상 Content Library에서 아이에게 맞는 Level과 Channel을 선택하고,
+> 아이는 추천·자유 탐색·Auto Play로 영어 콘텐츠를 접하며,
+> 부모는 아이별 학습 이력과 선호를 관리하는 영어 콘텐츠 플랫폼.
 
 ---
 
@@ -9,166 +10,196 @@ PRD 범위를 넘는 기능은 포함하지 않는다.
 
 | 영역 | 선택 | 이유 |
 |---|---|---|
-| Framework | Next.js 16 (App Router) | Frontend/Backend 를 한 프로젝트로 유지, Server Component + Server Action 으로 API 표면 최소화 |
-| Language | TypeScript (strict) | 진행률/상태 전환 로직의 실수를 컴파일 타임에 잡기 위함 |
-| DB | SQLite | 로컬 SSOT, 파일 복사만으로 백업 |
-| ORM | Prisma 6 | migration/seed 기본 제공, raw SQL 조립이 없어 injection 위험 없음 |
-| Player | YouTube IFrame Player API | 페이지 내부 재생 + 재생 상태 이벤트 수신 |
-| Test | Vitest | 순수 로직(파싱/선택/완료판정) 단위 테스트 |
-| 실행 | Docker Compose (Mac mini) | `docker compose up -d` 한 줄로 상시 기동 |
+| Framework | Next.js 16 (App Router) | Frontend/Backend 단일 프로젝트, Server Component + Server Action 으로 API 표면 최소화 |
+| Language | TypeScript strict | 카탈로그·진행률·Auto Play 규칙의 실수를 컴파일 타임에 차단 |
+| DB | SQLite | 가정 단위 소규모 운영, 파일 복사 백업 |
+| ORM | Prisma 6 | migration/seed 제공, raw SQL 조립이 없어 injection 위험 없음 |
+| Player | YouTube IFrame Player API | 페이지 내부 재생 + 재생 상태 이벤트 |
+| Test | Vitest | 순수 규칙 단위 테스트 + 임시 SQLite 통합 테스트 |
+| 실행 | Docker Compose | `docker compose up -d` 한 줄로 상시 기동 |
 
-외부 API Key 는 사용하지 않는다. 제목은 YouTube oEmbed(무인증), 썸네일은 정형 URL을 사용한다.
+외부 API Key 를 쓰지 않는다. 직접 등록한 영상의 제목은 YouTube oEmbed(무인증)로 조회하고,
+실패하면 부모가 입력한 값이나 기본값을 쓴다. 썸네일은 정형 URL(`i.ytimg.com`)을 사용한다.
 
 ---
 
-## 2. 디렉터리 구조
+## 2. 정보 구조
 
 ```text
-src/
-  app/
-    page.tsx                   Child Home (/)
-    watch/[videoId]/page.tsx   Player (/watch/:id)
-    parent/                    부모 PIN 로그인 (/parent)
-    admin/
-      layout.tsx               부모 세션 가드 + 관리 내비게이션
-      page.tsx                 Parent Dashboard (/admin)
-      videos/                  Video Management (/admin/videos)
-      actions.ts               부모 기능 Server Actions
-    api/
-      sessions/route.ts        POST 시청 세션 시작
-      progress/route.ts        POST 진행률 heartbeat
-  components/
-    WatchPlayer.tsx            YouTube Player + 진행률 저장(클라이언트)
-    ProgressBar.tsx, StatusBadge.tsx
-  lib/
-    constants.ts               상태값/저장주기/기본 완료기준 등 상수
-    youtube.ts                 URL 파싱, 썸네일, oEmbed 제목
-    youtube-iframe.ts          IFrame API 로더 + 최소 타입
-    progress-rules.ts          [순수] 진행률/완료/시청시간 규칙
-    video-selection.ts         [순수] 현재/다음 영상 선택 규칙
-    progress-service.ts        진행률/세션 DB 반영
-    videos.ts                  영상 등록/수정/순서/삭제
-    learning.ts                홈·대시보드 조회 (통계, 최근 기록)
-    settings.ts                Settings 테이블 접근 (완료 기준 등)
-    pin.ts / session.ts        PIN 해시, 부모 세션 쿠키
-    day.ts, format.ts          KST 기준 하루 범위, 표시 포맷
-    errors.ts, request.ts      사용자 메시지, API 입력 검증
-prisma/
-  schema.prisma, migrations/, seed.ts
-tests/                          Vitest 단위 테스트
+Content Library (공용)
+    ↓
+Channel  ──<  Video  >── Level / Category
+                 ↑
+Parent ─ My Collection (담기 / 숨기기 / 순서 / 직접 등록)
+                 ↑
+Child ─ ChildPreference (허용 Level 범위 · 선호 Channel)
+    ├─ Continue Watching
+    ├─ Recommendation
+    ├─ Browse (Level · Channel 필터)
+    └─ Auto Play
 ```
 
-핵심 판정 로직(`progress-rules.ts`, `video-selection.ts`)은 DB와 UI를 모르는 순수 함수로 분리해
-테스트 가능하게 두었다. 나머지 레이어는 이 함수를 호출해 저장만 담당한다.
+핵심은 **Level 이 경로가 아니라 필터**라는 점이다. `Level 3 + Caillou`, `Level 4 + Peppa Pig`
+같은 조합이 자유롭게 성립한다. 고정 Playlist 재생 개념은 쓰지 않는다.
 
 ---
 
 ## 3. 데이터 모델
 
 ```text
-Video 1───1 VideoProgress
-  │
-  └───* WatchSession
+User ──< HouseholdMember >── Household ──< Child ──1 ChildPreference ──< ChildPreferredChannel >── Channel
+                                   │                    │
+                                   │                    ├──< VideoProgress   >── Video
+                                   │                    ├──< WatchSession    >── Video
+                                   │                    └──< AutoPlaySession >── Channel / Video
+                                   │
+                                   └──< Collection ──< CollectionVideo >── Video
 
-Setting(key, value)
+Channel ──< Video >── (level, category, householdId?)
+Setting(key, value)   // completion_threshold
 ```
 
-- `Video` — youtubeVideoId(unique), url, title, thumbnailUrl, durationSeconds, sequence, enabled
-- `VideoProgress` — status, lastPositionSeconds, durationSeconds, progressPercent, watchSeconds,
-  startedAt, lastWatchedAt, completedAt (영상당 1행)
-- `WatchSession` — 재생 1회 단위 기록. startedAt/endedAt, 시작·종료 위치, 그 세션의 watchSeconds
-- `Setting` — `completion_threshold`, `parent_pin_hash`
-
-오늘 통계는 `WatchSession.startedAt` 범위 조회로 계산한다(집계 테이블 없음).
-
-상태 전환:
-
-```text
-NOT_STARTED → IN_PROGRESS → COMPLETED
-```
-
-`COMPLETED` 는 재생만으로 되돌아가지 않는다. 부모가 `/admin/videos` 에서 "진행 초기화"를 눌렀을 때만
-해당 영상의 progress/session 행이 삭제되어 `NOT_STARTED` 로 돌아간다.
-
----
-
-## 4. 데이터 흐름
-
-### 4.1 재생 → 저장
-
-```text
-WatchPlayer(client)
-  PLAYING 시작 → POST /api/sessions          → WatchSession 생성
-  1초 tick     → PLAYING 경과 시간 누적(로컬)
-  10초마다     → POST /api/progress          → recordProgressTick()
-  PAUSED/ENDED → POST /api/progress (ended)
-  탭 종료      → sendBeacon /api/progress
-```
-
-`recordProgressTick()` 은 다음을 수행한다.
-
-1. Settings 에서 완료 기준(%)을 읽는다.
-2. `applyProgressTick(현재 상태, tick)` 순수 함수로 다음 상태를 계산한다.
-3. `VideoProgress` upsert, `Video.durationSeconds` 갱신, `WatchSession` 종료 위치/시청시간 갱신.
-
-### 4.2 시청 시간 계산 (seek 부풀리기 방지)
-
-클라이언트는 **위치 차이가 아니라 PLAYER_STATE.PLAYING 상태로 흐른 실제 시간**만 `watchDeltaSeconds`
-로 보낸다. 서버는 `sanitizeWatchDelta()` 로 heartbeat 1건당 최대 30초(저장주기 10초 × 3)만 인정한다.
-따라서 1분 → 9분으로 seek 해도 watchSeconds 는 실제 재생 시간만큼만 증가한다.
-
-### 4.3 완료 판정
-
-```text
-progressPercent = floor(position / duration × 100)
-completed       = ended(YouTube ENDED) OR progressPercent >= completion_threshold
-```
-
-기준값은 상수가 아니라 `Setting.completion_threshold`(기본 90)에서 읽고, `/admin` 에서 변경한다.
-
-### 4.4 현재/다음 영상 선택
-
-`selectCurrentVideo()`: 활성 영상 중 `IN_PROGRESS` → `NOT_STARTED` 순, 같은 상태면 sequence 오름차순.
-모두 완료면 `null`(아이 화면은 완료 상태를 표시). `selectNextVideo()` 는 현재 영상을 제외하고 같은 규칙을 적용한다.
-
----
-
-## 5. 화면
-
-| 경로 | 역할 | 특징 |
+| 모델 | 역할 | 핵심 제약 |
 |---|---|---|
-| `/` | Child Home | 오늘 날짜/오늘 본 영상/학습 시간/전체 완료, 현재 영상 1개와 큰 버튼 하나 |
-| `/watch/[videoId]` | Player | IFrame 재생, 진행률, 처음부터 보기, 다음 영상 |
-| `/parent` | 부모 PIN 입력 | 실패 메시지만 노출 |
-| `/admin` | Parent Dashboard | 전체 진행률, 오늘 학습 시간, 현재 영상, 최근 기록, 완료 기준/PIN 설정 |
-| `/admin/videos` | Video Management | 등록, 제목 수정, 위/아래 순서, 활성/비활성, 진행 초기화, 삭제 |
+| `User` | 부모 계정 | `email` unique(소문자 정규화), `passwordHash`(scrypt) |
+| `Household` | 보안 경계 | 모든 아이·Collection·기록 조회의 기준 |
+| `HouseholdMember` | 가정 구성원 | role `OWNER`/`PARENT`, `@@unique([householdId, userId])` |
+| `Child` | 아이 | 삭제 대신 `enabled=false` |
+| `ChildPreference` | 허용 Level 범위 | `@@unique(childId)`, 선호 Channel 은 조인 테이블 |
+| `Channel` | 콘텐츠 그룹 | `slug` unique, 화면 색상 `colorKey` |
+| `Video` | 영상 | `youtubeVideoId` unique, `level`, `category`, **`householdId`(null=공용 Library, 값 있으면 그 가정 전용)** |
+| `Collection` / `CollectionVideo` | 부모 개인화 | `@@unique([collectionId, videoId])`, `enabled=false` 는 "아이에게 숨김" |
+| `VideoProgress` | 아이별 진행 | `@@unique([childId, videoId])` |
+| `WatchSession` | 재생 1회 기록 | 오늘 학습 시간·최근 시청 계산 |
+| `AutoPlaySession` | 계속 틀어놓기 | 설정(channel/level/mode/replay/maxMinutes) + `currentVideoId`, `playedVideoCount` |
 
-아이 화면(`/`, `/watch`)에는 관리 진입 링크를 두지 않는다. 부모는 `/admin` 을 직접 입력해 들어간다.
-
----
-
-## 6. 부모 모드 보호
-
-- PIN 은 `scrypt(salt)` 해시로 `Setting.parent_pin_hash` 에 저장한다. 평문 저장/비교 없음.
-- 로그인 성공 시 HMAC 서명 + 만료시각(12시간)을 담은 httpOnly 쿠키를 발급한다.
-- `/admin/*` 은 layout 에서 세션을 검증하고 실패 시 `/parent` 로 redirect 한다.
-- Setting 에 PIN 해시가 없으면 첫 로그인 시 `PARENT_PIN` 환경변수로 1회 생성한다(Docker 초기 기동 대응).
-- 서명 키는 `SESSION_SECRET` 환경변수. `.env` 는 커밋하지 않고 `.env.example` 만 제공한다.
+공용 Library 원본과 개인화 데이터는 완전히 분리된다. 부모는 Library 를 수정하지 않고,
+Collection 에 담거나(명시적 허용) 숨기거나(명시적 차단) 자기 가정 전용 영상을 추가한다.
 
 ---
 
-## 7. 실행 구조 (Mac mini)
+## 4. 아이가 볼 수 있는 영상 (핵심 규칙)
+
+`src/lib/catalog.ts` 의 순수 함수 `resolveChildCatalog()` 한 곳에서 결정한다.
+
+```text
+1. 비활성(enabled=false) 영상은 언제나 제외
+2. Collection 에서 숨긴 영상은 언제나 제외        (부모의 명시적 차단)
+3. Collection 에 담은 영상은 허용 범위를 벗어나도 포함  (부모의 명시적 허용)
+4. 그 밖에는 허용 Level 범위 + 선호 Channel(지정 시) 안에서만 포함
+```
+
+이 결과(`ChildCatalog`)에 아이별 `VideoProgress` 를 붙인 것이 Child Home / Browse / Player /
+Auto Play 가 공유하는 단일 소스다. 따라서 "아이 화면에 보이는 것"과 "재생 가능한 것"이 항상 일치한다.
+
+- 추천(`recommendation.ts`): IN_PROGRESS → 선호 Channel 의 새 영상 → 다른 새 영상 → 이미 본 영상
+- Browse: 같은 카탈로그에 Level/Channel 필터만 적용, 허용 범위 밖 Level·Channel 은 탭 자체가 없다
+- Player: 카탈로그에 없는 videoId 로 접근하면 안내 화면을 보여주고 재생하지 않는다
+
+---
+
+## 5. Authorization (IDOR 방지)
+
+```text
+session cookie → userId → HouseholdMember → householdId → child.householdId 일치 확인
+```
+
+- `authorizeChild(householdId, childId)` / `authorizeCollection` / `authorizeAutoPlaySession`
+  세 함수만 통과해야 데이터에 접근한다. URL·body 의 id 는 신뢰하지 않는다.
+- 페이지: `requirePageChild()` → 남의 아이면 `/kids` 로 redirect
+- API/Server Action: `requireSessionUser()` → `authorize*()` → 실패 시 사용자용 오류(400)
+- WatchSession 갱신 시 `session.childId`/`videoId` 일치까지 재확인해 남의 세션 id 도용을 막는다
+- 세션 쿠키: `"<userId>.<만료시각>.<HMAC-SHA256>"`, httpOnly, sameSite=lax, 30일,
+  `COOKIE_SECURE=true` + production 일 때만 secure
+
+---
+
+## 6. Player / Progress / Watch Time
+
+```text
+WatchPlayer / AutoPlayRunner
+   └─ useYouTubeProgress (공통 훅)
+        PLAYING 시작        → POST /api/sessions        (WatchSession 생성)
+        1초 tick            → PLAYING 경과 시간만 누적
+        10초마다            → POST /api/progress        (heartbeat)
+        PAUSED / ENDED      → POST /api/progress
+        탭 종료             → sendBeacon /api/progress
+```
+
+- 시청 시간은 **위치 차이가 아니라 PLAYING 상태로 흐른 실제 시간**만 누적하고,
+  heartbeat 1건당 최대 30초(저장주기 10초 × 3)만 인정한다 → seek 로 부풀지 않는다
+- 완료: `progressPercent >= completion_threshold(Setting, 기본 90)` 또는 YouTube `ENDED`
+- `COMPLETED` 는 다시 재생해도 회귀하지 않는다
+- 재생하지 않고 화면만 열었다 나가면 진행 기록을 만들지 않는다(`shouldRecordTick`)
+
+---
+
+## 7. Auto Play
+
+```text
+설정(Channel · Level 범위 · 순차/랜덤 · 이미 본 영상 포함 · 재생 시간)
+   → AutoPlaySession 생성 + 첫 영상 결정
+   → [▶ 재생 시작] 1회 클릭 (브라우저 autoplay 정책)
+   → 영상 ENDED → POST /api/autoplay/next → 같은 플레이어에서 다음 영상 load
+   → maxMinutes 초과 또는 후보 소진 → 세션 종료
+```
+
+- 후보: 아이 카탈로그 ∩ Channel ∩ Level 범위 ∩ enabled, `replayCompleted=false` 면 COMPLETED 제외
+- `SEQUENTIAL` 은 (level, sequence) 순서로 다음 영상, 끝에서 처음으로 순환
+- `RANDOM` 은 현재 영상을 후보에서 뺀 뒤 무작위 → 같은 영상이 연속되지 않는다(후보가 1편이면 예외)
+- Auto Play 재생도 일반 재생과 **동일한** `VideoProgress` / `WatchSession` 에 기록한다
+
+---
+
+## 8. 디렉터리 구조
+
+```text
+src/
+  app/
+    intro/ login/ signup/            공개 화면
+    (parent)/                        부모 화면 (사이드바 셸 + 세션 가드)
+      admin/ admin/children/[childId]
+      library/ collections/
+    kids/                            아이 화면
+      [childId]/ browse/ watch/[videoId]/ autoplay/
+    api/                             progress · sessions · autoplay(next/stop)
+    actions/                         auth · parent · autoplay Server Actions
+  components/                        ParentShell · VideoCard · WatchPlayer · AutoPlayRunner · useYouTubeProgress
+  lib/
+    catalog.ts recommendation.ts autoplay-rules.ts progress-rules.ts   [순수 규칙]
+    auth.ts guard.ts session.ts password.ts                            [인증/인가]
+    library.ts children.ts collections.ts child-content.ts             [도메인 서비스]
+    progress-service.ts autoplay-service.ts stats.ts household.ts
+prisma/  schema.prisma · migrations · seed.ts · seed-content.ts
+tests/   단위 6개 파일 + integration 2개 파일
+```
+
+순수 규칙(카탈로그/추천/Auto Play/진행률)은 DB와 UI를 모르는 함수로 분리해 단위 테스트하고,
+서비스 레이어가 이를 호출해 저장만 담당한다.
+
+---
+
+## 9. 실행 구조
 
 ```text
 Tablet / Phone / Mac (같은 Wi-Fi)
-        │  http://<mac-mini-ip>:3200
+        │  http://<server-ip>:3200
         ▼
 Docker container (node:24-alpine, Next standalone)
-        │  entrypoint: prisma migrate deploy → node server.js
+        │  entrypoint: prisma migrate deploy → seed → node server.js
         ▼
 /app/data/app.db  ←→  호스트 ./data/app.db (volume)
 ```
 
-- 컨테이너는 `0.0.0.0:3200` 에 바인딩하여 LAN 접근을 허용한다.
-- DB 는 호스트 `./data` 볼륨에 있으므로 컨테이너를 지워도 데이터가 남고, 폴더 복사로 백업된다.
-- TZ 는 `Asia/Seoul` 로 고정한다. 통계의 "오늘" 경계는 코드에서도 KST 기준으로 계산한다.
+---
+
+## 10. 향후 PostgreSQL 전환 지점
+
+지금은 SQLite 를 쓴다(가정 단위, 단일 인스턴스, 파일 백업). 다음 상황이 되면 전환을 검토한다.
+
+- 여러 가정이 동시에 쓰는 서비스로 확장해 동시 쓰기가 늘 때 (SQLite 는 단일 writer)
+- 인스턴스를 여러 개 띄워 같은 DB 를 공유해야 할 때
+- 기간별 학습 통계 등 무거운 집계가 늘 때
+
+변경 지점은 `prisma/schema.prisma` 의 datasource, `DATABASE_URL`, SQLite 전용 마이그레이션 재작성뿐이다.
+애플리케이션 코드는 Prisma Client 로만 DB 에 접근하므로 수정이 필요 없다.

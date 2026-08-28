@@ -19,13 +19,11 @@ export async function signupAction(
       displayName: String(formData.get("displayName") ?? ""),
     });
 
-    // 회원가입 화면에서 첫 아이 이름을 함께 받으면 바로 등록한다.
     const childName = String(formData.get("childName") ?? "").trim();
     if (childName) {
       await createChild(result.household.id, childName);
-      target = "/kids";
+      target = "/admin";
     }
-
     await startSession(result.user.id);
   } catch (error) {
     return { error: toUserMessage(error), message: null };
@@ -46,10 +44,10 @@ export async function loginAction(
   } catch (error) {
     return { error: toUserMessage(error), message: null };
   }
-  redirect("/");
+  redirect("/admin");
 }
 
 export async function logoutAction(): Promise<void> {
   await endSession();
-  redirect("/login");
+  redirect("/intro");
 }

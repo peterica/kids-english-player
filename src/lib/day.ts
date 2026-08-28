@@ -6,23 +6,20 @@ export function getDayRange(reference: Date = new Date()): {
   end: Date;
 } {
   const start = startOfLocalDay(reference);
-  const end = new Date(start.getTime() + 24 * 60 * 60 * 1000);
-  return { start, end };
+  return { start, end: new Date(start.getTime() + 24 * 60 * 60 * 1000) };
 }
 
 export function startOfLocalDay(reference: Date): Date {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: TIME_ZONE,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
     hour12: false,
   }).formatToParts(reference);
 
-  const get = (type: string) => Number(parts.find((p) => p.type === type)?.value ?? 0);
+  const get = (type: string) =>
+    Number(parts.find((part) => part.type === type)?.value ?? 0);
   const elapsedMs =
     ((get("hour") % 24) * 3600 + get("minute") * 60 + get("second")) * 1000 +
     reference.getMilliseconds();
@@ -30,7 +27,7 @@ export function startOfLocalDay(reference: Date): Date {
   return new Date(reference.getTime() - elapsedMs);
 }
 
-/** 최근 n일의 시작 시각(오늘 포함). */
+/** 최근 n일 범위의 시작 시각(오늘 포함). */
 export function startOfDaysAgo(days: number, reference: Date = new Date()): Date {
   const { start } = getDayRange(reference);
   return new Date(start.getTime() - days * 24 * 60 * 60 * 1000);

@@ -1,12 +1,8 @@
 import { prisma } from "./db";
-import {
-  DEFAULT_COMPLETION_THRESHOLD,
-  SETTING_KEYS,
-} from "./constants";
+import { DEFAULT_COMPLETION_THRESHOLD, SETTING_KEYS } from "./constants";
 
 export async function getSetting(key: string): Promise<string | null> {
-  const row = await prisma.setting.findUnique({ where: { key } });
-  return row?.value ?? null;
+  return (await prisma.setting.findUnique({ where: { key } }))?.value ?? null;
 }
 
 export async function setSetting(key: string, value: string): Promise<void> {
@@ -17,10 +13,9 @@ export async function setSetting(key: string, value: string): Promise<void> {
   });
 }
 
-/** 완료 기준(%)은 magic number 가 아니라 Settings 에서 읽는다. */
+/** 완료 기준(%)은 magic number 가 아니라 Setting 에서 읽는다. */
 export async function getCompletionThreshold(): Promise<number> {
-  const raw = await getSetting(SETTING_KEYS.completionThreshold);
-  const parsed = Number(raw);
+  const parsed = Number(await getSetting(SETTING_KEYS.completionThreshold));
   if (!Number.isFinite(parsed) || parsed <= 0 || parsed > 100) {
     return DEFAULT_COMPLETION_THRESHOLD;
   }

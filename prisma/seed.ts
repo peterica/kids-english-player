@@ -5,7 +5,7 @@ import {
   SETTING_KEYS,
 } from "../src/lib/constants";
 import { buildThumbnailUrl, buildYouTubeWatchUrl } from "../src/lib/youtube";
-import { PLAYLIST_SEEDS } from "./playlist-data";
+import { SEED_CHANNELS, SEED_VIDEOS } from "./seed-content";
 
 const prisma = new PrismaClient();
 
@@ -22,72 +22,76 @@ async function seedSettings() {
 }
 
 /**
- * Level 1~4 커리큘럼을 만든다.
- * - 이미 등록된 영상은 youtubeVideoId 기준으로 재사용하고 제목을 덮어쓰지 않는다.
- * - 외부 조회 없이 문서 제목을 사용하므로 네트워크가 없어도 seed 가 실패하지 않는다.
+ * 공용 Content Library.
+ * 외부 네트워크를 호출하지 않으므로 오프라인에서도 실패하지 않는다.
+ * 반복 실행해도 안전하며, 부모가 바꾼 개인화 데이터(Collection)는 건드리지 않는다.
  */
-async function seedPlaylists() {
-  const last = await prisma.video.findFirst({ orderBy: { sequence: "desc" } });
-  let nextSequence = (last?.sequence ?? 0) + SEQUENCE_STEP;
+async function seedLibrary() {
+  const channelIdBySlug = new Map<string, number>();
 
-  for (const seed of PLAYLIST_SEEDS) {
-    const playlist = await prisma.playlist.upsert({
-      where: { slug: seed.slug },
-      create: {
-        slug: seed.slug,
-        title: seed.title,
-        level: seed.level,
-        description: seed.description,
+  for (const channel of SEED_CHANNELS) {
+    const saved = await prisma.channel.upsert({
+      where: { slug: channel.slug },
+      create: channel,
+      update: {
+        name: channel.name,
+        description: channel.description,
+        colorKey: channel.colorKey,
       },
-      update: { title: seed.title, level: seed.level, description: seed.description },
+    });
+    channelIdBySlug.set(channel.slug, saved.id);
+  }
+  console.log(`- channels: ${SEED_CHANNELS.length}개`);
+
+  let created = 0;
+  let sequence = SEQUENCE_STEP;
+
+  for (const video of SEED_VIDEOS) {
+    const channelId = channelIdBySlug.get(video.channelSlug);
+    if (!channelId) continue;
+
+    const existing = await prisma.video.findUnique({
+      where: { youtubeVideoId: video.youtubeVideoId },
     });
 
-    let created = 0;
-    let linked = 0;
-
-    for (const item of seed.videos) {
-      let video = await prisma.video.findUnique({
-        where: { youtubeVideoId: item.youtubeVideoId },
-      });
-
-      if (!video) {
-        video = await prisma.video.create({
+    if (existing) {
+      // 공용 Library 항목만 갱신한다. 부모가 직접 등록한 영상은 그대로 둔다.
+      if (existing.householdId === null) {
+        await prisma.video.update({
+          where: { id: existing.id },
           data: {
-            youtubeVideoId: item.youtubeVideoId,
-            youtubeUrl: buildYouTubeWatchUrl(item.youtubeVideoId),
-            title: item.title,
-            thumbnailUrl: buildThumbnailUrl(item.youtubeVideoId),
-            sequence: nextSequence,
+            channelId,
+            level: video.level,
+            category: video.category,
+            sequence,
           },
         });
-        nextSequence += SEQUENCE_STEP;
-        created += 1;
       }
-
-      const link = await prisma.playlistVideo.upsert({
-        where: {
-          playlistId_videoId: { playlistId: playlist.id, videoId: video.id },
+    } else {
+      await prisma.video.create({
+        data: {
+          youtubeVideoId: video.youtubeVideoId,
+          youtubeUrl: buildYouTubeWatchUrl(video.youtubeVideoId),
+          title: video.title,
+          thumbnailUrl: buildThumbnailUrl(video.youtubeVideoId),
+          channelId,
+          level: video.level,
+          category: video.category,
+          sequence,
         },
-        create: {
-          playlistId: playlist.id,
-          videoId: video.id,
-          sequence: item.sequence,
-        },
-        update: { sequence: item.sequence },
       });
-      if (link) linked += 1;
+      created += 1;
     }
-
-    console.log(
-      `- ${playlist.title}: 영상 ${linked}건 연결 (신규 등록 ${created}건)`,
-    );
+    sequence += SEQUENCE_STEP;
   }
+
+  console.log(`- videos: 전체 ${SEED_VIDEOS.length}편 (신규 ${created}편)`);
 }
 
 async function main() {
   console.log("seed 시작");
   await seedSettings();
-  await seedPlaylists();
+  await seedLibrary();
   console.log("seed 완료");
 }
 

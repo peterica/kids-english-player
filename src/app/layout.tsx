@@ -2,14 +2,15 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kids English Player",
-  description: "부모가 고른 YouTube 영어 영상을 아이가 순서대로 보는 로컬 학습 플레이어",
+  title: "Kids English Player V2",
+  description:
+    "부모가 검증된 영어 Content Library에서 Level과 Channel을 고르고, 아이는 추천·탐색·Auto Play로 영어 영상을 보는 가정용 서비스",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f6f7fb",
+  themeColor: "#f5f7fb",
 };
 
 export default function RootLayout({

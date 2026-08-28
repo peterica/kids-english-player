@@ -1,11 +1,10 @@
 services:
   app:
     build: .
-    image: kids-english-player
-    container_name: kids-english-player
+    image: kids-english-player-v2
+    container_name: kids-english-player-v2
     restart: unless-stopped
     ports:
-      # 호스트 3200 → 컨테이너 3200 (공유기 포트포워딩과 동일한 포트)
       - "3200:3200"
     environment:
       DATABASE_URL: "file:/app/data/app.db"

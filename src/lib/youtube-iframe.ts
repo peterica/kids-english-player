@@ -1,8 +1,9 @@
-/** YouTube IFrame Player API 중 이 앱이 사용하는 최소 타입만 선언한다. */
+/** YouTube IFrame Player API 중 이 앱이 쓰는 최소 타입만 선언한다. */
 export type YTPlayer = {
   playVideo(): void;
   pauseVideo(): void;
   seekTo(seconds: number, allowSeekAhead: boolean): void;
+  loadVideoById(options: { videoId: string; startSeconds?: number }): void;
   getCurrentTime(): number;
   getDuration(): number;
   destroy(): void;
@@ -23,14 +24,6 @@ type YTNamespace = {
       };
     },
   ) => YTPlayer;
-  PlayerState: {
-    UNSTARTED: number;
-    ENDED: number;
-    PLAYING: number;
-    PAUSED: number;
-    BUFFERING: number;
-    CUED: number;
-  };
 };
 
 declare global {
@@ -84,4 +77,13 @@ export function loadYouTubeIframeApi(): Promise<YTNamespace> {
   });
 
   return loader;
+}
+
+export function safeCall<T>(fn: () => T, fallback: T): T {
+  try {
+    const value = fn();
+    return typeof value === "number" && !Number.isFinite(value) ? fallback : value;
+  } catch {
+    return fallback;
+  }
 }

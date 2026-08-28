@@ -8,7 +8,7 @@ const config = [
       ".next/**",
       "data/**",
       "prisma/migrations/**",
-      "kids-english-player-mockup.html",
+      "KIDS_ENGLISH_PLAYER_V2_MOCKUP.html",
     ],
   },
   ...coreWebVitals,

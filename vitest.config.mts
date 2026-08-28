@@ -6,8 +6,11 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["tests/**/*.test.ts"],
+    testTimeout: 20000,
   },
   resolve: {
-    alias: { "@": path.resolve(fileURLToPath(new URL(".", import.meta.url)), "src") },
+    alias: {
+      "@": path.resolve(fileURLToPath(new URL(".", import.meta.url)), "src"),
+    },
   },
 });

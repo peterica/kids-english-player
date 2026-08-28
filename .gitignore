@@ -1,0 +1,18 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# 실데이터 SQLite 파일은 커밋하지 않는다
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+coverage/

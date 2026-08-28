@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Video {
+  id              Int      @id @default(autoincrement())
+  youtubeVideoId  String   @unique
+  youtubeUrl      String
+  title           String
+  thumbnailUrl    String?
+  durationSeconds Int?
+  sequence        Int
+  enabled         Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  progress VideoProgress?
+  sessions WatchSession[]
+
+  @@index([sequence])
+}
+
+model VideoProgress {
+  id                  Int       @id @default(autoincrement())
+  videoId             Int       @unique
+  status              String    @default("NOT_STARTED")
+  lastPositionSeconds Int       @default(0)
+  durationSeconds     Int       @default(0)
+  progressPercent     Int       @default(0)
+  watchSeconds        Int       @default(0)
+  startedAt           DateTime?
+  lastWatchedAt       DateTime?
+  completedAt         DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+}
+
+model WatchSession {
+  id                    Int       @id @default(autoincrement())
+  videoId               Int
+  startedAt             DateTime  @default(now())
+  endedAt               DateTime?
+  startPositionSeconds  Int       @default(0)
+  endPositionSeconds    Int       @default(0)
+  watchSeconds          Int       @default(0)
+  createdAt             DateTime  @default(now())
+
+  video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@index([startedAt])
+}
+
+model Setting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}

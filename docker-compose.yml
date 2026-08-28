@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    image: kids-english-player
+    container_name: kids-english-player
+    restart: unless-stopped
+    ports:
+      # 호스트 3200 → 컨테이너 3200 (공유기 포트포워딩과 동일한 포트)
+      - "3200:3200"
+    environment:
+      DATABASE_URL: "file:/app/data/app.db"
+      TZ: "Asia/Seoul"
+      # .env 에서 주입한다. 값이 없으면 부모 모드 최초 로그인이 불가능하다.
+      PARENT_PIN: "${PARENT_PIN}"
+      SESSION_SECRET: "${SESSION_SECRET}"
+    volumes:
+      # SQLite 파일은 호스트 ./data 에 남는다. 백업은 이 폴더만 복사하면 된다.
+      - ./data:/app/data

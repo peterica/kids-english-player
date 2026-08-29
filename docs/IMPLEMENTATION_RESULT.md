@@ -7,8 +7,10 @@ SSOT: `KIDS_ENGLISH_PLAYER_V2_CONCEPT.md`, `KIDS_ENGLISH_PLAYER_V2_MOCKUP.html`,
 ## Status
 
 COMPLETE — 완료 조건 항목을 모두 구현하고 단위/통합 테스트, lint, typecheck, production build,
-Docker 기동, 실제 브라우저 E2E 까지 검증했다.
-실제 YouTube **영상 재생**만 이 환경의 네트워크 제약으로 확인하지 못했다(아래 Known Limitations).
+Docker 기동, 실제 브라우저 E2E, **실제 YouTube 재생**까지 검증했다.
+
+- 2026-08-28: 구현 + 테스트 + 로컬 브라우저 E2E (개발 머신 네트워크에서 youtube.com 차단으로 재생만 미검증)
+- 2026-08-29: Mac mini 배포 후, mini 의 Chrome(headless, CDP)으로 실제 재생·진행률 저장·Auto Play 전환 검증 완료
 
 ---
 
@@ -171,16 +173,14 @@ B 계정 → A 의 autoplay session   → 400 "Auto Play 세션을 찾을 수 �
 
 ## Known Limitations
 
-- **NOT VERIFIED — 실제 YouTube 영상 재생**: 검증 시점 이 개발 머신의 네트워크에서 `www.youtube.com`
-  이 차단되어(github/google 은 정상, youtube 는 타임아웃) IFrame Player 의 실제 재생·ENDED 이벤트·
-  Auto Play 자동 전환의 "영상이 실제로 끝나서 넘어가는" 부분을 눈으로 확인하지 못했다.
-  플레이어 로드 실패 시 앱은 "YouTube 플레이어를 불러오지 못했습니다" 안내를 정상 표시했고,
-  진행률 저장·완료 판정·Auto Play 다음 영상 전환은 같은 API 를 실제 호출해 검증했다.
-  YouTube 접속이 가능한 네트워크에서 1회 재확인이 필요하다.
+- **NOT VERIFIED — 영상이 끝까지 재생되어 자동 전환되는 순간**: Auto Play 의 다음 영상 전환은
+  수동 "다음 영상"과 `ENDED` 이벤트 경로 모두 같은 함수를 쓰지만, 실제 영상이 끝날 때까지(2분 이상)
+  기다리는 검증은 하지 않았다. 재생·전환·기록 저장은 모두 실제 재생 상태에서 확인했다.
 - **NOT VERIFIED — 실기기 확인**: 반응형은 데스크톱 Chrome 의 모바일/태블릿 뷰포트로만 확인했다.
-- seed 의 YouTube 영상 ID 는 2026-08-28 에 oEmbed 로 존재를 확인한 실제 공개 영상이지만, 위 네트워크
-  제약으로 이번 실행 시점에는 재확인하지 못했다. 영상이 내려가면 부모가 Collection 에서 숨기거나
-  seed 를 갱신해야 한다.
+  실제 아이패드·스마트폰 단말의 터치 조작과 전체화면 동작은 확인하지 못했다.
+- seed 의 YouTube 영상 ID 는 2026-08-28 oEmbed 로 존재를 확인했고, 2026-08-29 Mac mini 검증에서
+  첫 영상(`How Are You Feeling?`)이 실제 재생되는 것까지 확인했다. 나머지 30편을 하나씩 재생해 보지는
+  않았으므로, 내려간 영상이 있으면 부모가 Collection 에서 숨기거나 seed 를 갱신해야 한다.
 - 오늘 학습 시간/오늘 본 영상 수는 `WatchSession` 기준이다. 세션 생성이 실패하면 진행률은 저장되지만
   오늘 통계에는 반영되지 않는다.
 - 운영자용 Content Admin(Channel/Video CRUD, 승인 워크플로)은 이번 범위에서 제외했다.
@@ -190,10 +190,42 @@ B 계정 → A 의 autoplay session   → 400 "Auto Play 세션을 찾을 수 �
 
 ---
 
+## Deployment
+
+2026-08-29, Mac mini 배포 완료.
+
+- 노트북 → Mac mini `rsync`(`node_modules`/`.next`/`data`/`.env` 제외) 후 `docker compose up -d --build`
+- 컨테이너 `kids-english-player-v2`, `0.0.0.0:3200`, `restart: unless-stopped`
+- 기동 시 `prisma migrate deploy` + Content Library seed 자동 실행 (channels=6, videos=31)
+- V1(단일 아이 버전) 컨테이너는 중지·제거했고, V1 DB 는 `data-v1-backup-<날짜>/` 와
+  `data/app-v1-<날짜>.db.bak` 로 보존했다. V2 는 스키마가 달라 새 DB 로 시작한다.
+- 검증: mini 내부 `localhost:3200`, LAN, 공유기 포트포워딩 외부 주소 모두 200,
+  미인증 `/admin`·`/library` → `/login` redirect
+
+### 실제 재생 검증 (mini)
+
+개발 노트북 네트워크에서는 youtube.com 이 차단되어 있어, YouTube 접속이 가능한 mini 에서
+headless Chrome 을 CDP 로 띄우고 원격으로 조작해 검증했다.
+
+| 검증 | 결과 |
+|---|---|
+| Browse → Player 진입 | PASS (31편 중 첫 영상) |
+| 실제 YouTube 재생 | PASS (0:01 → 0:18 / 2:08, 진행바 1% → 14%) |
+| 10초 heartbeat 저장 | PASS (`IN_PROGRESS 7% pos=10 watch=10`, WatchSession 생성) |
+| 일시정지 중 시청시간 정지 | PASS (6초 대기 후 watch=19 동일) |
+| 새로고침 이어보기 | PASS (`iframe start=19`) |
+| Auto Play 실제 재생 | PASS (첫 영상 0:05 / 2:09 재생) |
+| Auto Play 다음 영상 전환 | PASS (`How Are You Feeling?` → `What's Your Favorite Color?`, playedVideoCount=2) |
+| Auto Play 종료 | PASS (`endedAt` 기록, 아이 Home 복귀) |
+
+검증에 사용한 계정·시청 기록은 정리했고, 배포된 DB 는 Library(6 channels / 31 videos)만 남은 상태다.
+
+---
+
 ## Next Recommended Step
 
-1. YouTube 접속이 가능한 네트워크에서 아이 화면으로 영상 1편을 실제 재생해
-   진행률 저장 → 완료 → Auto Play 자동 전환을 눈으로 확인한다.
-2. `.env` 의 `SESSION_SECRET` 을 실제 값으로 바꾸고 `docker compose up -d --build` 로 상시 기동한다.
-3. 아이가 쓸 기기에서 `/kids` 를 즐겨찾기하고, 실제 사용 로그를 보며 Level 범위와 Collection 을 조정한다.
-4. Content Library 확장(채널·영상 추가)은 `prisma/seed-content.ts` 에 항목을 넣고 `npm run db:seed` 로 반영한다.
+1. 아이가 쓸 기기에서 부모 계정으로 로그인하고 `/kids` 를 즐겨찾기한다.
+2. 아이별 허용 Level 범위와 선호 Channel 을 실제 수준에 맞게 조정하고, 필요한 영상을 Collection 에 담는다.
+3. 실제 사용 로그(오늘 학습 시간·완료 편수)를 보며 완료 기준(기본 90%)과 Auto Play 재생 시간을 조정한다.
+4. Content Library 확장은 `prisma/seed-content.ts` 에 항목을 넣고 `npm run db:seed` 로 반영한다.
+5. `data/app.db` 주간 백업을 cron 등으로 자동화한다.

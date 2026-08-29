@@ -72,9 +72,20 @@ npm start             # 0.0.0.0:3200 바인딩
 ### Docker (Mac mini 등 상시 실행)
 
 ```bash
-cp .env.example .env  # SESSION_SECRET 설정
+cp .env.example .env  # SESSION_SECRET 설정 (openssl rand -hex 48)
 docker compose up -d --build
 docker compose logs -f
+```
+
+원격 서버로 배포할 때는 노트북에서 동기화한 뒤 재기동한다.
+`.env` 와 `data/` 는 제외해 서버의 계정·학습 데이터를 보존한다.
+
+```bash
+rsync -az --delete \
+  --exclude 'node_modules/' --exclude '.next/' --exclude 'data/' --exclude '.env' \
+  ./ <user>@<server>:/path/to/kids-english-player/
+
+ssh <user>@<server> 'cd /path/to/kids-english-player && docker compose up -d --build'
 ```
 
 컨테이너는 기동 시 `prisma migrate deploy` 와 Content Library seed 를 실행한 뒤 서버를 띄운다.

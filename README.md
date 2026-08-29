@@ -156,6 +156,38 @@ http://<hostname>.local:3200
 
 API: `POST /api/sessions`, `POST /api/progress`, `POST /api/autoplay/next`, `POST /api/autoplay/stop`
 
+### Content Library 읽기 전용 API
+
+콘텐츠 현황을 외부(예: 콘텐츠 조사 도구)에서 확인하기 위한 읽기 전용 엔드포인트다.
+
+```text
+GET /api/content-library
+GET /api/content-library?level=3
+GET /api/content-library?channel=caillou      # slug · 이름 · id 모두 허용
+GET /api/content-library?channel=caillou&level=4
+```
+
+```json
+{
+  "count": 8,
+  "filters": { "level": null, "channel": "caillou" },
+  "videos": [
+    {
+      "channel": "Caillou",
+      "level": 3,
+      "category": "SCHOOL",
+      "title": "Caillou Goes to School",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gavAXKvzLQs",
+      "enabled": true
+    }
+  ]
+}
+```
+
+- 공용 Library 영상만 돌려준다. 부모가 직접 등록한 가정 전용 영상, 사용자·아이·진도·Collection 데이터는 포함하지 않는다.
+- 쓰기(추가/수정/삭제) API 는 제공하지 않는다.
+- `CONTENT_LIBRARY_TOKEN` 을 설정하면 `?token=...` 또는 `Authorization: Bearer ...` 가 있어야 조회된다. 비워 두면 공개다.
+
 ---
 
 ## DB 백업

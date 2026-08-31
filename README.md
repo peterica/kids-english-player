@@ -8,8 +8,9 @@
 - 아이: 이어보기 · 오늘 추천 · 원하는 영상 고르기(Level/Channel) · 계속 틀어놓기
 - 데이터: SQLite 파일 하나 (`data/app.db`)
 
-> 이 프로젝트는 **공개된 YouTube 영상을 임베드로 재생**할 뿐, 어떤 영상도 저장·재배포하지 않는다.
-> 목록에 나오는 채널·프로그램 이름은 각 권리자의 상표다 — [콘텐츠 정책](docs/CONTENT_POLICY.md)
+> **비공개 저장소 / 독점 소프트웨어.** 무단 복제·배포·재사용을 금지한다 (`LICENSE`).
+> 재생은 **공개된 YouTube 영상의 공식 임베드**로만 이뤄지며 영상을 저장·재배포하지 않는다.
+> 채널·프로그램 이름은 각 권리자의 상표다 — [콘텐츠 정책](docs/CONTENT_POLICY.md)
 
 ---
 
@@ -18,7 +19,7 @@
 Node 를 설치하지 않아도 된다. Docker 만 있으면 된다.
 
 ```bash
-git clone https://github.com/peterica/kids-english-player.git
+git clone <저장소 URL>   # 비공개 저장소 (접근 권한 필요)
 cd kids-english-player
 
 cp .env.example .env

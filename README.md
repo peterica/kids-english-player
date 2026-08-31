@@ -36,8 +36,9 @@ docker compose up -d --build
 첫 사용 순서:
 
 ```text
-1. http://localhost:3200 → 회원가입(부모 계정 생성)
-2. 아이 추가 → 허용 Level · 선호 Channel 선택
+1. http://localhost:3200 → 회원가입
+   (부모 이름 · 이메일 · 비밀번호, "첫 아이 이름"까지 한 번에 입력 — 아이는 나중에 추가해도 된다)
+2. 부모 화면에서 아이의 허용 Level · 선호 Channel 지정
 3. (선택) 운영자 화면(/admin)을 쓰려면 ADMIN 권한 부여:
    docker compose exec -w /app app \
      node ./node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts <email>

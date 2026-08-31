@@ -1,0 +1,5474 @@
+{
+  "exportedAt": "2026-08-31 14:31:44",
+  "channelCount": 23,
+  "videoCount": 526,
+  "channels": [
+    {
+      "slug": "caillou",
+      "name": "Caillou",
+      "description": "일상 대화 · 가족 · 학교",
+      "colorKey": "c1",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "gavAXKvzLQs",
+          "title": "Caillou Goes to School",
+          "publisher": "Caillou",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W4DIp0UBnuQ",
+          "title": "Caillou's Big Friend",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wxdgsXrCsJY",
+          "title": "Caillou's Class Pet",
+          "publisher": "Caillou",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 210,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "XfUMYJysjMM",
+          "title": "Caillou the Chef",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bZLtsys2M48",
+          "title": "Caillou at the Doctor",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_84sb4j-cO4",
+          "title": "Caillou Goes Camping",
+          "publisher": "Caillou",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "PgIXWhPVVsg",
+          "title": "Caillou Goes Shopping",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "y9HDffueOBE",
+          "title": "Caillou Meets Santa",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CkcKz09QmqM",
+          "title": "Caillou and Lunar New Year",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LxaNWTSThSo",
+          "title": "Caillou and the Tooth Fairy",
+          "publisher": "Caillou",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NgIXjFGTmgE",
+          "title": "Caillou's Family Dinner",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0ay91KNezEY",
+          "title": "Caillou's Friends",
+          "publisher": "Caillou",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0Zf9Hg_MhkU",
+          "title": "The School Talent Show",
+          "publisher": "Caillou",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "kvnDaBeDJf8",
+          "title": "Caillou - WildBrain",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3430,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Q99qqAkrlGc",
+          "title": "Caillou Goes to the Beach",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3440,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ZW7S_547ZZY",
+          "title": "Caillou's New Shoes",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3450,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yewvBQlnew4",
+          "title": "Caillou's Sleepover",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FGeBfFKHVZs",
+          "title": "My First Big Adventure Alone",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dXXMvSsPYcg",
+          "title": "Caillou Learns How to Bike",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": 2722,
+          "sequence": 250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_CBZg-pePlU",
+          "title": "Caillou Takes a Swim",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": 3382,
+          "sequence": 260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "a4Nc9BLNS6c",
+          "title": "Caillou - WildBrain",
+          "publisher": "Caillou",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Fpf2qdeZG5Q",
+          "title": "Caillou Goes Back to School",
+          "publisher": "Caillou",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "kbPRPEblg5g",
+          "title": "Caillou Goes Fishing",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "i0q43AqwKvE",
+          "title": "Caillou Goes Ice Skating",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3510,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xyw9UTroN7Q",
+          "title": "Caillou Goes to a Theme Park",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3520,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WTr9SjjGny8",
+          "title": "Caillou Learns About Healthy Food",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3530,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Wb48GgezRNI",
+          "title": "Caillou Learns a Valuable Lesson",
+          "publisher": "Caillou",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3540,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3tNaXf-FRYQ",
+          "title": "Caillou on World Book Day",
+          "publisher": "Caillou",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3550,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vtnv-1Cgmvg",
+          "title": "Caillou's Alien Experience",
+          "publisher": "Caillou",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3560,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "4NwvBLNAkpM",
+          "title": "Caillou's Secret Valentine Mission",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3570,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "alphablocks",
+      "name": "Alphablocks",
+      "description": "Phonics · Letter Sound",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "qMI4bRlezZQ",
+          "title": "Simple Letter Sounds",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0FnPvbIXAtk",
+          "title": "ABC's Letter Sounds",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "BScgKbbxObk",
+          "title": "Alphabet A-Z",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "67-VuKlDen0",
+          "title": "Bop",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "rCxxy1bAAbY",
+          "title": "C Versus K",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-FcJYS-TAZE",
+          "title": "Cat",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-Nl2U1fPh5g",
+          "title": "Cub",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mIGdTAYxCTE",
+          "title": "Din",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1270,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "SOSo3mmUf_o",
+          "title": "Dog",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "AxtezuHwN1I",
+          "title": "Dot",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xIYTWul5YnQ",
+          "title": "Fred",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1300,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "IYWiJLAPWeA",
+          "title": "Hen",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "G6YVR8PLq1I",
+          "title": "Hill",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0MjuWvjxiLw",
+          "title": "In",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "GdSbVpVC04M",
+          "title": "Kick",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "On8s5PZTV-8",
+          "title": "Lips",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jbqrO5oLrY8",
+          "title": "Man",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LqvqX_MDjAA",
+          "title": "No Fun Without U",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-Jqq9ZFRUfc",
+          "title": "Party Party",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1380,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WhwK6kkU8kE",
+          "title": "Pen",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FHnKF8zUJTQ",
+          "title": "Pip",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1400,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8r6qyqOLUGM",
+          "title": "Red",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oIXIs0-6jyM",
+          "title": "Taps",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1420,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8j2sPgWVSkY",
+          "title": "Top",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1430,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zC58riBLaN8",
+          "title": "Up",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1440,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "55tmQ0R94Ao",
+          "title": "It's All About the Vowels",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hQ1Pvnds23E",
+          "title": "Word Magic",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wkilk-cpxDs",
+          "title": "CVC Words with A and T",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Y7ClQc_4Txg",
+          "title": "CVC Words",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "XTcdaRqRYzQ",
+          "title": "An Alphablocks Adventure",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1450,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "UOpuT_StbXY",
+          "title": "An Apple a Day",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WRy9ai1406c",
+          "title": "Castles",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cliRS8rBNTY",
+          "title": "Ned",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "co4z5KN3q1k",
+          "title": "Party",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mPynNEn37yM",
+          "title": "R's Really Rare Rose",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "boUV1mzCHN4",
+          "title": "Treasure",
+          "publisher": "Alphablocks",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1510,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "pocoyo",
+      "name": "Pocoyo",
+      "description": "짧은 Story · 행동 중심",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "K9VkcGVsVdc",
+          "title": "Pocoyo - Color My World",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 50,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ctYnDNBzKtc",
+          "title": "Pocoyo - Musical Blocks",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 60,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "tmZyhvtIBn0",
+          "title": "Pocoyo - Keep Going Pocoyo!",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 70,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5v4DtHtCews",
+          "title": "Pocoyo - Up and Down",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 80,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "an9M0boMWqk",
+          "title": "Pocoyo - Hide and Seek",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 90,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9DExrviIgtA",
+          "title": "Pocoyo - Where's Pocoyo?",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DLmCH3PYmrU",
+          "title": "All for One",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nGlTVi_YtZM",
+          "title": "Band of Friends",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "HjP4Cx13k2A",
+          "title": "Don't Touch!",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uPCB9Gszj_Y",
+          "title": "Guess What?",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1850,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jVDIbxTOaeE",
+          "title": "Having a Ball",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "b-JkdGzW2UM",
+          "title": "Mad Mix Machine",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Yp4x9fWfY7A",
+          "title": "Pocoyo Goes to School",
+          "publisher": "Pocoyo",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "pYCZ6XJ_7RA",
+          "title": "The Key to it All",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xF9FglNsq70",
+          "title": "Vamoosh on the Loosh",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TViVbKa4I28",
+          "title": "A Dog's Life",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "O29O-11JkxI",
+          "title": "A Little Something Between Friends",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "K_LuNTw0R5c",
+          "title": "A Surprise for Pocoyo",
+          "publisher": "Pocoyo",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3300,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lTAj_x3EXCQ",
+          "title": "Baby Bird Bother",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jGOXogA8UHI",
+          "title": "Bat and Ball",
+          "publisher": "Pocoyo",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5ZKN1lpj3Co",
+          "title": "Big Scary Slide",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "4Vv_296XvyY",
+          "title": "Double Bubble",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "T5zdM8z7dbU",
+          "title": "Double Trouble",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "iJDzh7uFLxA",
+          "title": "Fussy Duck",
+          "publisher": "Pocoyo",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "syXlWVlr0fU",
+          "title": "Pocoyo Gets it Right",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qflhcApE7lc",
+          "title": "Pocoyo's Balloon",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3380,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "7CqlIET6KI0",
+          "title": "Pocoyo's Little Friend",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "PE0uX4ZJ3TQ",
+          "title": "Pocoyo's Present",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3400,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V-GLhZ3SWRM",
+          "title": "Puppy Love",
+          "publisher": "Pocoyo",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "SSv0FjXqeUU",
+          "title": "Up, Up and Away",
+          "publisher": "Pocoyo",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3420,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "peppa-pig",
+      "name": "Peppa Pig",
+      "description": "가족 · 친구 · 빠른 대화",
+      "colorKey": "c4",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "jEJqg4f92wQ",
+          "title": "Peppa Pig Loves Muddy Puddles",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": 3603,
+          "sequence": 270,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Z3BJHrAL6Fo",
+          "title": "Peppa Pig at the Dentist",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": 825,
+          "sequence": 280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cA1MrDGoxw8",
+          "title": "Daddy Pig's Birthday",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "c32STr46nWA",
+          "title": "Peppa Learns to Ride Her Bike",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 300,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "kYpVG4U0-Rg",
+          "title": "Adventure in the Fog",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "XjDZfeFwjxs",
+          "title": "George and the YUMMY Ice Cream!",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2420,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "IuZBZpn6YNg",
+          "title": "Making Muddy Puddles with Daddy Pig and Peppa Pig",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2430,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nqEyk3SiRSA",
+          "title": "Muddy Puddles Week with Peppa Pig",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2440,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "S2n5_MrT5HI",
+          "title": "Peppa Goes to an American DINER!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2450,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3MMW14jMNEY",
+          "title": "Peppa Picks Out NEW Bedroom",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": 14465,
+          "sequence": 2460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "celFbOlP-_U",
+          "title": "Peppa Pig & George's BIG Family Adventures",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "d0cnjy0RJz0",
+          "title": "Peppa Pig Finds a GIANT Puddle!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hWqT80gVa5M",
+          "title": "Peppa Pig Goes On A Camping Holiday!",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "AXhjvSK0N9A",
+          "title": "Peppa Pig Has Fun at School With Her Friends!",
+          "publisher": "Peppa Pig",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QFdLgfy63cc",
+          "title": "Peppa Pig Season 1 Episode 1 - Muddy Puddles",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2510,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0UH9U8tzYgI",
+          "title": "Peppa Pig and Friends",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2520,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "alfYTGZCZog",
+          "title": "Peppa Pig and Friends",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2530,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TIF1sBjTO_k",
+          "title": "Peppa Pig and Friends",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2540,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "52hOoEqIiPc",
+          "title": "Peppa Pig and Friends",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2550,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KTE-10dWclU",
+          "title": "Peppa Pig at The Zoo",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2560,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "U27dCsZT5HI",
+          "title": "Peppa Plays With Friends",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2570,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DYSTZz_dNLs",
+          "title": "Peppa's Family Camping Adventure",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2580,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DEPzEhmXpG8",
+          "title": "Peppa's MASSIVE Mystery Present Christmas Special",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "HMDga2C1Uck",
+          "title": "Peppa's Sore Knee!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Yy_W3qUB6t8",
+          "title": "Peppa's Ultimate Pillow Fort!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2610,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qURTlRUvcnA",
+          "title": "Picnic in the Thunderstorm",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2620,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qbwzZuTTlDQ",
+          "title": "School Camp",
+          "publisher": "Peppa Pig",
+          "category": "SCHOOL",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VU9mRmveEMA",
+          "title": "Flying with Peppa Pig!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2630,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "h1oL3cToFlA",
+          "title": "Peppa Pig & Friends Learn About Safety!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "JAE2pWqrPd4",
+          "title": "Peppa Pig Tales Full Episodes - The Airport Travelator!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xV91t6dXp38",
+          "title": "Peppa Pig Travels to America",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bm-3Aj2NvHU",
+          "title": "Peppa's New Teacher",
+          "publisher": "Peppa Pig",
+          "category": "SCHOOL",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2670,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "HnWLNG-ABSc",
+          "title": "SECRET Shop Passageway Living Above the Shops!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2680,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "daniel-tiger",
+      "name": "Daniel Tiger",
+      "description": "감정 표현 · 사회성",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "kV2RUN0KERA",
+          "title": "There Are Lots and Lots of Feelings",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jOtVYMc8rYA",
+          "title": "Some Things You Don't Have to Share",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MTE0frVXOI4",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KTVx2fP5z9U",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-jtSFT53Jlg",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3020,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nHNBq5ug53s",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3030,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uQSOfDxqEx8",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3040,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bRR67YvCEAU",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3050,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uasHMsXv7g8",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3060,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FCthgeJFnEQ",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3070,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "31rULhX2l3E",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8p8ADCLz3Hk",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3090,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6aIo635hYAE",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eMUsRciiHzg",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xS_iGezVTp8",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "U_0QjQ1YzFQ",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3smgIUB1dhk",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TcycpcPYjY0",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qf9Bj6uHf1k",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lY0jVccFGGc",
+          "title": "Margaret Wants My Stickers",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zlsK15PTrVA",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "sRtd-UD0qIg",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "fPUT4M8AV_0",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "B608Xc9f9Lk",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3210,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9MW8YxYhE9I",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VImsAy__9Lo",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "r9zOHKzvfP8",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W4lwWuBMKDc",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "87BXko_cUbU",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cmyxBCfK4oo",
+          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3270,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "caities-classroom",
+      "name": "Caitie's Classroom",
+      "description": "노래 · 따라 하기 · 첫 영어",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "HEcpLY4pCqM",
+          "title": "How Are You Feeling?",
+          "publisher": "Caitie's Classroom",
+          "category": "FEELINGS",
+          "level": 1,
+          "durationSeconds": 128,
+          "sequence": 10,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "z9W_hiiwQwg",
+          "title": "What's Your Favorite Color?",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 20,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hklCGfeQ0bw",
+          "title": "How's The Weather?",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 30,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "09zShlhS1cQ",
+          "title": "Let's Count To 100",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 40,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FN6e5yOZdgg",
+          "title": "All About Art",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 920,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QtX2_HYiIqI",
+          "title": "Amazing Bugs!",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 930,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NZWM6f0cA90",
+          "title": "Back to School with Caitie's Classroom",
+          "publisher": "Caitie's Classroom",
+          "category": "SCHOOL",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 940,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "64X-3efjaFQ",
+          "title": "Beautiful Butterflies",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 950,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_ADdlaYvHmU",
+          "title": "Bedtime Routine",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 960,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FWf62RnS-AY",
+          "title": "Buzzing Bees",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 970,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_l8YuGXzQfo",
+          "title": "Caitie's Classroom Christmas Sing-Along Special",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 980,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VpZrYTgdGvM",
+          "title": "Colors, Colors, Colors!",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 990,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NJydOittdSA",
+          "title": "Construction Trucks!",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lWluLJWj_6M",
+          "title": "Count With Me",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Nfx9zVlVi0w",
+          "title": "Dance Party",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1020,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Y5jadGiz1QM",
+          "title": "Ducks, Ducks, Ducks!",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1030,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "b3VhdxVWxAI",
+          "title": "Fantastic Fruit",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1040,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6aYMOPerAz8",
+          "title": "First Day Of School",
+          "publisher": "Caitie's Classroom",
+          "category": "SCHOOL",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1050,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wKC7h0uBFV4",
+          "title": "Froggy Fun",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1060,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lIRwtiV49G0",
+          "title": "Halloween Fun",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1070,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WKYEJlrg-C0",
+          "title": "Healthy Smiles",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1l7Ue_HCC5o",
+          "title": "Let's Go Camping!",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1090,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eNCZ9a1QyQw",
+          "title": "Marvelous Music",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "n8prfs_MWUE",
+          "title": "New Year's Eve Countdown with Caitie and Tobee",
+          "publisher": "Caitie's Classroom",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2KYaXd6Ff_U",
+          "title": "Spectacular Snow",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QqS008ULbIs",
+          "title": "Staying Clean & Healthy",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KA0_c1pwXhE",
+          "title": "Welcome To Caitie's Classroom!",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VV1T43w1y-k",
+          "title": "Yummy Yummy Pizza",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "BzzFRQsmb74",
+          "title": "Community Helpers",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "N9NRFMZl0nY",
+          "title": "Magical Magnets",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_WgnYP7RSfg",
+          "title": "ROAR! Dinosaurs!",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yHbAxToeYME",
+          "title": "The Magnificent Night Sky",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cEOmEp3w0P0",
+          "title": "Underwater Animal Adventure",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vr4uFFalEXI",
+          "title": "Wonderful Wind",
+          "publisher": "Caitie's Classroom",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1210,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "bluey",
+      "name": "Bluey",
+      "description": "가족 놀이 · 자연스러운 대화",
+      "colorKey": "c1",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "FCeGAAo6WbM",
+          "title": "Movies",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W3GpdLhgHVA",
+          "title": "Hotel",
+          "publisher": "Bluey",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "h7sBLY6vXLU",
+          "title": "Pass The Parcel",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "YpI0jgqNJGc",
+          "title": "The Pool",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "e8ULi9CC6os",
+          "title": "Dad Baby",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Q-K4TCO7Lp8",
+          "title": "Magic Asparagus",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": 420,
+          "sequence": 370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wCc1XyprU8c",
+          "title": "Bingo",
+          "publisher": "Bluey",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 380,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vAdXLDVkjVA",
+          "title": "Yoga Ball",
+          "publisher": "Bluey",
+          "category": "FEELINGS",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ewekkT49lsM",
+          "title": "Seesaw",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 400,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V3r4UWtoN_o",
+          "title": "The Sleepover",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MmuDI7lbJpk",
+          "title": "The Beach",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 420,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Z7s0tcZZ_mM",
+          "title": "Family Love Full Episodes",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 430,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0-3BZdSCGbs",
+          "title": "Time for the Best Bluey Games",
+          "publisher": "Bluey",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": 2379,
+          "sequence": 440,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "B6Bdw3crO84",
+          "title": "Hiding under the Blanket / Hotel + More",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 450,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "aP-qKaig84M",
+          "title": "Bluey FULL Episodes Seasons 1-3",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Zr4c34VAKbk",
+          "title": "ULTIMATE 18 Full Episode Collection",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "SZ9PD-s2k4w",
+          "title": "BEST FULL EPISODES from Season 2",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nU4HUT-2Jy0",
+          "title": "Bluey Shows Dad her Please Face",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MnzN6224I60",
+          "title": "Bluey Full Episode Collection - Best of Season 1",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "I5oBzaxPtrI",
+          "title": "It's Family Time!",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 510,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "diJqcYYCb0Y",
+          "title": "Bluey's Beach Holiday",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 520,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "a0CRbuO0uU8",
+          "title": "BEACH! Full Episode Compilation",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 530,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "im_Uk_8T2d8",
+          "title": "Running on the Beach! 1 Hour",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 540,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QnTwBAVnn-0",
+          "title": "Bluey's Sleepover Games",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 550,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dsZOcPGTTyo",
+          "title": "Bluey Playing with Toys at Christmas",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 560,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3ibV7x_3jBc",
+          "title": "Weekend / Butterflies / Easter",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 570,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3-qzrzoCxnM",
+          "title": "Onesies / The Quiet Game / Omelette",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 580,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "IOtFxP2JJqI",
+          "title": "Grannies / Muffin Cone / The Show",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "EJkn-r-rJJY",
+          "title": "Keepy Uppy / Magic Xylophone / Shadowlands",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LPG5jNNhwcM",
+          "title": "Bingo Fun with Food",
+          "publisher": "Bluey",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 610,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "super-simple-songs",
+      "name": "Super Simple Songs",
+      "description": "영어 노래 · 따라 부르기",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "F9c8E5KfE8k",
+          "title": "10 Little Dinosaurs",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 620,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NcE4XUUXDhU",
+          "title": "20 Little Ducks",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 630,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "maHwu7ELsOU",
+          "title": "ABC Hop",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "B84AbYTRjT0",
+          "title": "BINGO",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "35t_6AGOXMc",
+          "title": "Cook Like A Chef",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-HOQGg7uuQQ",
+          "title": "Counting Up To 20",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 670,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "15qy5X16tdc",
+          "title": "Driving In My Tractor",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 680,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "iHP8FGwzjJg",
+          "title": "Everybody Celebrate",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WOIvLzsFqtk",
+          "title": "Forward And Back",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DDjOLRNby20",
+          "title": "Fruit Is Yummy",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 710,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qiSHiU_b7Ac",
+          "title": "Hey-O We Want To Play-O",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 720,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "k765VI7gWx0",
+          "title": "Hunting For Eggs",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 730,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "tjT_nFtKTas",
+          "title": "I Love Eating Vegetables",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 740,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Ya3HXUrvEjE",
+          "title": "I See Something Blue",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 750,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "j9PpVDuoVAo",
+          "title": "I'm A Baby Fish",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 760,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wtX9hMdLuew",
+          "title": "I'm Going On A Trip",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "UVjqZqgx5NU",
+          "title": "If You Love To Dance And Move",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "reH1TLG-FUY",
+          "title": "Mr. Golden Sun",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "28W4ywSsBPc",
+          "title": "Noodle Had A Little Lamb",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "BBixtNTbEcI",
+          "title": "One Little Finger",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 810,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cjVYFZ04Fr4",
+          "title": "Pat-A-Cake",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hDqWTltrGJ8",
+          "title": "Shapes I See At The Beach",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CXb9llX_LoU",
+          "title": "Sports!",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ecm9HEFcfdQ",
+          "title": "The Family Tree",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 850,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zC3SY9L9dus",
+          "title": "The First Day Of School",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eu5GyYCIKlw",
+          "title": "The Shaker Song",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "PmpJzVCIisc",
+          "title": "There's An Animal That I See",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "aktEim5X2EU",
+          "title": "Today It's Raining",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "GtR917QydM8",
+          "title": "Warming Up Our Voices",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DNJnYjv4cfs",
+          "title": "When The Band Comes Marching In",
+          "publisher": "Super Simple Songs",
+          "category": "SONG",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 910,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "numberblocks",
+      "name": "Numberblocks",
+      "description": "숫자 · 세기 · 기초 수학 영어",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "8IymF8M_nLk",
+          "title": "Aliens in Numberland?!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1520,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3EHA2IZ7QkM",
+          "title": "Back to School Patterns and Sequences",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1530,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MbgkPRXyCXI",
+          "title": "Back to School Sports Special!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1540,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2pVOCKRPDpg",
+          "title": "DIY Sticker Fun",
+          "publisher": "Numberblocks",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1550,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vO2bD4UHwnk",
+          "title": "Double Trouble!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1560,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "i7D6fuRTTow",
+          "title": "Exciting Counting Songs 4 Back to School!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1570,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CpigNf3ZJHE",
+          "title": "Hide and Seek",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1580,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nQEkJg4WUDg",
+          "title": "Holes",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ucLv2D0o3eQ",
+          "title": "I Can't Sleep! - Counting Sheep",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "w_7E7lEG3fU",
+          "title": "Just Add One!",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1610,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_pjA7_SY21E",
+          "title": "Land of the Giants! - Big Numbers for Big Kids",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1620,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Js9jVSMSD40",
+          "title": "Learn to Add with the Numberblocks",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1630,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "X_CFk9Fsiyc",
+          "title": "Learn to Subtract with the Numberblocks",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "05cqSSwJEgE",
+          "title": "Let's Make Rainbow Slime",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oH6M1SB0v_k",
+          "title": "Magical Maths with Numberblock 100!",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "D9zgxdC7tQA",
+          "title": "Meet Number Eight!",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1670,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MwjibIsXUr4",
+          "title": "Meet Number Four",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1680,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "YI0bd8Tw8rE",
+          "title": "Meet Number Seven",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-050BEXa2LU",
+          "title": "Meet Number Six",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "JpXjTQJXmVY",
+          "title": "Meet Number Ten",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1710,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eGsS0X3kvGc",
+          "title": "Meet Numbers 6-10",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1720,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "d1sP28GSQX4",
+          "title": "Multiplication - Back to School Homeschooling",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1730,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "n-7PT-CU24Y",
+          "title": "New to Counting? Start Here!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1740,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "HAz8MwTK4ag",
+          "title": "Numberblocks Got Talent!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1750,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yhNdfCHmuMI",
+          "title": "On my way to the Numberblock Fair",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1760,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QdSUN96eQKY",
+          "title": "Second Grade Math - Learn To Count!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Vz9kT3Ntbw0",
+          "title": "Thank You for 15 Million Subscribers!!!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "L-rhmrj7rYk",
+          "title": "The Whole of Me, How to Count & More Adventures!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cZVkOHz2880",
+          "title": "Twenty's Song!",
+          "publisher": "Numberblocks",
+          "category": "SONG",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Rb5Vknz5M6k",
+          "title": "United as One!",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1810,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "blippi",
+      "name": "Blippi",
+      "description": "탐험 · 사물 이름 · 일상 어휘",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "Nb0yhRLcBG0",
+          "title": "Blippi Car Wash",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1910,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DhJ5Ld-LpUE",
+          "title": "Blippi Explores a Bus!",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1920,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Enbvtr78mqo",
+          "title": "Blippi Learns About Bubbles",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1930,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LfuEad93Ap0",
+          "title": "Blippi Learns Trucks at the Fire Station and More",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1940,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "OayHglz-Wd8",
+          "title": "Blippi Learns at the Indoor Play Place",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1950,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "gTf7VFLXPys",
+          "title": "Blippi Learns at the Indoor Playground",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1960,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CxKN-Aab3U0",
+          "title": "Blippi Makes Fruit Popsicles",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1970,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1jDjonQpLz0",
+          "title": "Blippi The Pirate",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1980,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2fOWFfpLYW0",
+          "title": "Blippi Visits The Aquarium",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1990,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CjbC9wAErts",
+          "title": "Blippi Visits a Fire Station!",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yTTVE-gKadM",
+          "title": "Blippi Visits the Bakery",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1zxznpbpx-g",
+          "title": "Blippi and the Snowmobile",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2020,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qUCIXNpd--I",
+          "title": "Learning with Blippi at an Indoor Playground!",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2030,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MILhzvM0cRA",
+          "title": "Police Cars for Children with Blippi",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2040,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "j3-6Ov5Q_gI",
+          "title": "Blippi - Educational Videos for Kids",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 3580,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "a7g3iyWQtBM",
+          "title": "Blippi - Educational Videos for Kids",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 3590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DHfeMg71apI",
+          "title": "Learning Numbers and Making Lemonade",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 3600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "q5OOQsHi0zY",
+          "title": "Blippi Bulldozer",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2050,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "L83OcYpiwx0",
+          "title": "Blippi Dinosaur Song and More",
+          "publisher": "Blippi",
+          "category": "SONG",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2060,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9FTqYpzqLrc",
+          "title": "Blippi Explores an Excavator and Construction Vehicles",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2070,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nM0Y6iH4Ya8",
+          "title": "Blippi Goes Kayaking and Makes Sandcastles at the Beach",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yCUTOuZKBKk",
+          "title": "Blippi Plays and Learns at Children's Museums",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2090,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cSjNd2kZW-k",
+          "title": "Blippi Sink or Float",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8ty_IYSDE9s",
+          "title": "Blippi Visits The Science Museum",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Wknp5BilEJ8",
+          "title": "Blippi Visits a Construction Site",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oCJTJPjmB8s",
+          "title": "Blippi at the Play Place - Professions",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2Ri-Pt5aYag",
+          "title": "Blippi on the Ranch with Horses",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Z8oWnCi_Vaw",
+          "title": "Dinosaurs for Kids with Blippi",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eTvrSLFWmLo",
+          "title": "Learn Machines with Blippi",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yxaCFBuBlGs",
+          "title": "Learning Farm Vehicles and Animals With Blippi",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "7XseVrmpkUU",
+          "title": "Learning The Solar System With Blippi",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "astwv4c_iP0",
+          "title": "Sink or Float with Blippi",
+          "publisher": "Blippi",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uotxqm5Nw0A",
+          "title": "Blippi Learns About Planes at the Museum of Flight",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3610,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vXfY4wlZEpM",
+          "title": "Blippi Visits Cayton Children's Museum",
+          "publisher": "Blippi",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3620,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "sesame-street",
+      "name": "Sesame Street",
+      "description": "알파벳 · 일상 · 사회성",
+      "colorKey": "c1",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "olF4gVlPTVU",
+          "title": "Cookie Monster Has a Recipe for You!",
+          "publisher": "Sesame Street",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lwU4tLAyZZA",
+          "title": "Grover's Jam Session",
+          "publisher": "Sesame Street",
+          "category": "SONG",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2210,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9l54NfLvAOQ",
+          "title": "New TWO HOUR Elmo's World Compilation!",
+          "publisher": "Sesame Street",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Xn5PnwGUYhc",
+          "title": "Sesame Street: Alphabet",
+          "publisher": "Sesame Street",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2230,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "blues-clues",
+      "name": "Blue's Clues & You!",
+      "description": "질문과 대답 · 놀이 중심",
+      "colorKey": "c1",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "HDlO4JIDFtM",
+          "title": "Happy Birthday Blue!",
+          "publisher": "Blue's Clues & You!",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2240,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "storybots",
+      "name": "StoryBots",
+      "description": "궁금증 해결 · 노래와 설명",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "xvwAeXEKAo4",
+          "title": "8 Solar System Planets Song For Kids",
+          "publisher": "StoryBots",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Hgr4XEcrrkw",
+          "title": "Learn About The Body and Emotions",
+          "publisher": "StoryBots",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cFzIM_h6_DY",
+          "title": "Mega Mashup: Animals, Dinosaurs & Space Songs",
+          "publisher": "StoryBots",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2270,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "RBMa-_3YXO4",
+          "title": "So Many Animals Song",
+          "publisher": "StoryBots",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "OiQZNmvw8Xo",
+          "title": "Songs to Learn About The Human Body",
+          "publisher": "StoryBots",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TME0rMROIrY",
+          "title": "What Are Lungs?",
+          "publisher": "StoryBots",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 2300,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "curious-george",
+      "name": "Curious George",
+      "description": "호기심 · 일상 모험",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "Z3LzjwyKYtw",
+          "title": "Curious George 1 Hour Compilation",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2380,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8i5_oSj2i4o",
+          "title": "George’s Sleepover / Curious George Goes to the Dentist",
+          "publisher": "Curious George",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9CTt5RZcoEs",
+          "title": "Underwater Animals!",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2400,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "scishow-kids",
+      "name": "SciShow Kids",
+      "description": "과학 · 자연 · 실험 어휘",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "G5RErqM1RZk",
+          "title": "3 Cool Facts About Cats!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zj5v3n6Nlm8",
+          "title": "Animal Science for Kids",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mzyIUsqd02s",
+          "title": "Antarctica: The Coldest Place on Earth!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2710,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "pnBoM4idf1k",
+          "title": "Flowers and Their Pollinators: A Perfect Match!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2720,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TxMdMTzf2YU",
+          "title": "Growing Plants Without Soil!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2730,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9_dTCWB0kNU",
+          "title": "How Animals Find Their Way Home!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2740,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "A4YIpGQiD3w",
+          "title": "How Do Bees Make Honey?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2750,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WqgVks9NViQ",
+          "title": "How Do Plant Seeds Travel?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2760,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wtrC7rvetH0",
+          "title": "Salmon Parents Are Amazing!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "fuN9N3Gv60E",
+          "title": "The Driest Places on Earth",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6k8M6FzMBz4",
+          "title": "The Rainiest Places on Earth",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5eAJc8LR6Ns",
+          "title": "The Windiest Places on Earth",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DigBbR3FeP8",
+          "title": "What Are Clouds Made Of?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2810,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5Ssty1ejoek",
+          "title": "Where Can We Find Water?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "i42otfB4xBk",
+          "title": "Where Did Earth Come From?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Xk4-6II8l5Q",
+          "title": "Why Do Leaves Change Colors in the Fall?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dh5wGSLw1p4",
+          "title": "Why Do Things Float in Space?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2850,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jYu966AONZI",
+          "title": "Why Do We Dream?",
+          "publisher": "SciShow Kids",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bcVr13Fw7w8",
+          "title": "Why Is the Sky Blue?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0jKoOUZ1GBM",
+          "title": "Every Kind of Volcano",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": 503,
+          "sequence": 2880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6WNHyAXIN8c",
+          "title": "How Ears Let Us Hear the World!",
+          "publisher": "SciShow Kids",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": 502,
+          "sequence": 2890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "r2xP7heE0wk",
+          "title": "How Eyes Let Us See The World",
+          "publisher": "SciShow Kids",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WX_E1CAZjaQ",
+          "title": "KABOOM! All About Volcanoes!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2910,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jyYrHQvvqy8",
+          "title": "Make Your Own Rock Candy!",
+          "publisher": "SciShow Kids",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2920,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V2yO8biphSo",
+          "title": "Science at the Beach!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2930,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8qdYCpSW2eY",
+          "title": "The Biggest Volcano Ever is in Space!",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2940,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V6cnFM55_Dw",
+          "title": "Tsunamis: The Biggest Waves",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2950,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oHUVxkx8QRo",
+          "title": "Where Does Wind Come From?",
+          "publisher": "SciShow Kids",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2960,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3Gy_gts86jM",
+          "title": "Why Do We Have Baby Teeth?",
+          "publisher": "SciShow Kids",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2970,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "clifford",
+      "name": "Clifford the Big Red Dog",
+      "description": "우정 · 배려 · 일상 이야기",
+      "colorKey": "c4",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "qTD1295ESPE",
+          "title": "A Big Help / The Trouble with Kittens",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3630,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DX-3756uscI",
+          "title": "A New Friend / Stormy Weather",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WiLDdSYLXfc",
+          "title": "Doing the Right Thing / The Dog Who Cried Woof",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1gVIE9wpHSo",
+          "title": "Little Clifford / Welcome to Birdwell Island",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Xnd0MIU_wUw",
+          "title": "My Best Friend / Cleo's Fair Share",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3670,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "7qsjvEMz0hA",
+          "title": "Special Delivery / A Ferry Tale",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3680,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Z-h-W4y6HyM",
+          "title": "Circus Stars / Limelight Fright",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zXMZOUBje3E",
+          "title": "Clifford and the Beanstalk / An Itchy Patch",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Kloxdzas5iQ",
+          "title": "Clifford's Carnival / Clifford's Doggy Reunion",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3710,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "26Tk7308Im0",
+          "title": "Come Back Mac / Boo",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3720,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xM4m47ur8s8",
+          "title": "Teacher's Pet / Islander of the Year",
+          "publisher": "Clifford the Big Red Dog",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3730,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "thomas-and-friends",
+      "name": "Thomas & Friends",
+      "description": "기차 친구들 · 협동과 문제 해결",
+      "colorKey": "c1",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "OBmlNhY3bzc",
+          "title": "Henry and the Wishing Tree",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3740,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oqMAP01QsOs",
+          "title": "Hooray for Thomas",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3750,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "u4HPQtIATZU",
+          "title": "Percy's New Whistle",
+          "publisher": "Thomas & Friends",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3760,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "4XZbvwqkIso",
+          "title": "Terence the Tractor",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "J4B4BKYEXIA",
+          "title": "The Sad Story of Henry",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "39uRkGwnCjs",
+          "title": "Thomas & Friends",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KCax7yae56E",
+          "title": "Thomas & Friends",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TPp5zg-ZB14",
+          "title": "Thomas & Friends",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3810,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "kahGjXcj880",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "rJEpxU1R9Bg",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "OhGhwcI9ydI",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "o5rI-w_7m3Q",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3850,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ByXsTr0DBjs",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9y1x3OOBIQ0",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6Y_lpsQ5ZzA",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "YMSnpBjIpOo",
+          "title": "Thomas & Friends UK",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "tmZNQLQoB0E",
+          "title": "Thomas Gets Tricked",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qv8OM1njbhg",
+          "title": "Thomas Saves the Day",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3910,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NKlLftswbAE",
+          "title": "Whistles and Sneezes",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3920,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Ouzso_U5LPs",
+          "title": "Gordon Takes Charge",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3930,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W32CLjJAe9w",
+          "title": "Thomas & Friends",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3940,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Z4OllBjsmAA",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3950,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5hMf7J5aZ4o",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3960,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "CwcJMi4RzxQ",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3970,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V0ID5R_NdOs",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3980,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_4oA-AW9Egw",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3990,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "k0gftOQolYg",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": 269,
+          "sequence": 4000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lowQz7QtZIY",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ZMpu7FBsN1E",
+          "title": "Thomas & Friends Classics 🚂 Train Tales",
+          "publisher": "Thomas & Friends",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4020,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Vub9wAgbjoc",
+          "title": "Thomas & Friends UK",
+          "publisher": "Thomas & Friends",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4030,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "octonauts",
+      "name": "Octonauts",
+      "description": "바다 생물 · 구조 대작전",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "TvNXo9gMn6Q",
+          "title": "The Blobfish Brothers",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4040,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "g6KrXOY9e7A",
+          "title": "The Coconut Crabs",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4050,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jlK3ku-WlBw",
+          "title": "The Crab and Urchin",
+          "publisher": "Octonauts",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4060,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ALis_ItW-2k",
+          "title": "The Decorator Crab",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4070,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wMWxsb1Rte8",
+          "title": "The Enormous Elephant Seal",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mXEo4fCoAh4",
+          "title": "The Fiddler Crabs Mission",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4090,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1_2F327oAHk",
+          "title": "The Flying Fish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eXuY-aFR_Uo",
+          "title": "The Giant Kelp Forest",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-oM-q31t3pw",
+          "title": "The Giant Whirlpool",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hDG1QW3pV9M",
+          "title": "The Hungry Pilot Fish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9E8RtQvHXk8",
+          "title": "The Mixed Up Whales",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "utUZQIWME-o",
+          "title": "The Narwhal",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "pRYxGMqKwx0",
+          "title": "The Orcas",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qmI17xrtp0E",
+          "title": "The Remipedes",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qh5gEJN3roE",
+          "title": "The Snapping Shrimp",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "O-V0IeyrTWo",
+          "title": "The Snot Sea Cucumber",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "APpsP_Jxj3U",
+          "title": "The Undersea Storm",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hjWR6i9LE1w",
+          "title": "Creature Report: Blobfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4210,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "cXQV3UoVO1k",
+          "title": "Creature Report: Crab and Urchin",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "U-nOUUxNp_c",
+          "title": "Creature Report: Flying Fish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bWFXMYZadh0",
+          "title": "Creature Report: Hermit Crab",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dRsphBjXGhM",
+          "title": "Creature Report: Narwhal",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_5fiEN_BUJ0",
+          "title": "Creature Report: Sailfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FTN7yh_MeX0",
+          "title": "Creature Report: Sea Star",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4270,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ptGEyCeBZB8",
+          "title": "The Combtooth Blenny",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jnWaL2Rd0Vs",
+          "title": "The Lion's Mane Jellyfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bddoKm7V4iU",
+          "title": "The Midnight Zone",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4300,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "XVAvCOEPcIM",
+          "title": "The Oarfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5Bb4IcTIl74",
+          "title": "The Slime Eels",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DH2vqSwhV-I",
+          "title": "The Vampire Squid",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4330,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "super-why",
+      "name": "Super Why!",
+      "description": "읽기 · 철자 · 이야기 놀이",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "3KJNS8lhwGw",
+          "title": "A Day With Farmer Fred",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xVzawKv8Moo",
+          "title": "Jack and the Beanstalk",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3fS6ejeuwKU",
+          "title": "King Eddie Who Loved Spaghetti",
+          "publisher": "Super Why!",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "JW-RkDEFXAY",
+          "title": "Naila and the Magic Map",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qPYS9M6LEiI",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4380,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dLVLFdYNv5g",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "014_8pAEFG0",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4400,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "OYh_ifl0PlM",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vma78vvnGQk",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4420,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "y9sOqpGFlEA",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4430,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oyyPJrm5xZ0",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4440,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zaHsXgyBxss",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4450,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KdLtdObPci0",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "4HLmkEeWo6Q",
+          "title": "The Adventures of Math-a-Million",
+          "publisher": "Super Why!",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "EuCbOLd7_WU",
+          "title": "The Ant and the Grasshopper",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8CQqG1F4YWc",
+          "title": "The Ghost Who Was Afraid of Halloween",
+          "publisher": "Super Why!",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ZqKL3S5SHiY",
+          "title": "The Muddled-Up Fairytales",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "n3W0PTOc8YM",
+          "title": "The Story of Mother Goose",
+          "publisher": "Super Why!",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4510,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zQYhEwfw3QM",
+          "title": "The Story of the Tooth Fairy",
+          "publisher": "Super Why!",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4520,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "gZ5nsvOfdCM",
+          "title": "Tilden the Caterpillar",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4530,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "bmeM1Lq0aFU",
+          "title": "Around the World Adventure",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4540,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Y56YfufYi3k",
+          "title": "Baby Dino's Big Discovery",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4550,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "FwhkAc9KD3w",
+          "title": "Comic Book: Attack of the Eraser",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4560,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TbyP9b8pyVQ",
+          "title": "Galileo's Space Adventure",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4570,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qb_M2f5-LFA",
+          "title": "Monty's Adventures in Music Town",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4580,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "d0fds5jzk48",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VeGuhJr1kEg",
+          "title": "Super Why - WildBrain",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "rYKeVdD2Bzw",
+          "title": "The Alphabet's Sad Day",
+          "publisher": "Super Why!",
+          "category": "PHONICS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4610,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dQexv0bZkEA",
+          "title": "The Beach Day Mystery",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4620,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lECJIta99hc",
+          "title": "The Story of the Super Readers",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4630,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "dinosaur-train",
+      "name": "Dinosaur Train",
+      "description": "공룡 · 자연 관찰 · 과학 어휘",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "bQU8J2BVjcM",
+          "title": "A Dinosaur Birthday Surprise for Mom",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "pdvHw-yHGS8",
+          "title": "All Aboard for Corythosaurus Canyon",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6F-r8k52hr8",
+          "title": "Buddy Learns How to Make Music",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ZoALT1kxpmA",
+          "title": "Buddy's Search for a Calm Space",
+          "publisher": "Dinosaur Train",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4670,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "REZ9O1b5Yqw",
+          "title": "Buddy, Don and Shiny Learn About Snowflakes",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4680,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "RT4vi0xK88o",
+          "title": "Finding the Best Mother's Day Gift",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3nmeTpnS_3A",
+          "title": "First Fishing Trip Adventure",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nvdzGoVrCS4",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4710,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3Um7w08c4G0",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4720,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "dF5Xz0jqjLI",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4730,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "0o5oF_MHhfQ",
+          "title": "Learn About Tracking with Buddy and Don",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4740,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Mkp70PBXMKE",
+          "title": "Meeting the T-Rex Family",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4750,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Dt-2plelWMw",
+          "title": "Riding the Dinosaur Train Alone",
+          "publisher": "Dinosaur Train",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4760,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "QIXofudehTw",
+          "title": "Tiny Learns About Flowers",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "o8In-XXpFSA",
+          "title": "Buddy and Tiny Ride the Spooky Night Train",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2FCz6MGaHCA",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jgW91GzFY_0",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Of11gxG5cT0",
+          "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4810,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wVb9oZmrrcc",
+          "title": "Mr. Conductor vs Thurston Troodon",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LuTGPXOXu1o",
+          "title": "The Dinosaur That Makes Music",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KzpeXuGFIYI",
+          "title": "The Legendary River Monster",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "voWVfAZFUkY",
+          "title": "Tiny Saves the Dinosaur Train",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4850,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "arthur",
+      "name": "Arthur",
+      "description": "학교 · 친구 관계 · 긴 대화",
+      "colorKey": "c4",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "NUbriNrTiOw",
+          "title": "Arthur and the True Francine",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5btfoepVbKk",
+          "title": "Arthur's Almost Boring Day",
+          "publisher": "Arthur",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xTkZKnOB-Dw",
+          "title": "Arthur's Birthday",
+          "publisher": "Arthur",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "gBQjtdYbHKc",
+          "title": "Arthur's Chicken Pox",
+          "publisher": "Arthur",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1URKXVgebkk",
+          "title": "Buster Makes the Grade",
+          "publisher": "Arthur",
+          "category": "SCHOOL",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Y_CUxCfM1qM",
+          "title": "Buster the Lounge Lizard",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4910,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "TvfMBQxZPxI",
+          "title": "Buster's Dino Dilemma",
+          "publisher": "Arthur",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4920,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2JMYazJC5ys",
+          "title": "Cents-less",
+          "publisher": "Arthur",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4930,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "7Y24Kzm3bsA",
+          "title": "D.W. All Wet",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4940,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "UtDwygqO2xQ",
+          "title": "D.W. Gets Lost",
+          "publisher": "Arthur",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4950,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "gLM3n7egW0w",
+          "title": "Fifteen, Part 1",
+          "publisher": "Arthur",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4960,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "4ETDmav5CmQ",
+          "title": "Muffy Misses Out",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4970,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "EbweTy7RVgQ",
+          "title": "So Long, Spanky",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4980,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-gHKO7-rrX8",
+          "title": "The Master Builders, Part 1",
+          "publisher": "Arthur",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4990,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "sBlx6ijlT4o",
+          "title": "Arthur's Cousin Catastrophe",
+          "publisher": "Arthur",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 5000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ZwO5_ZnqXxY",
+          "title": "Arthur's Numbers Nightmare",
+          "publisher": "Arthur",
+          "category": "SCHOOL",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 5010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W1TBRU9tVfs",
+          "title": "The Good Sport / Crushed",
+          "publisher": "Arthur",
+          "category": "FEELINGS",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 5020,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "macFrfUkKKU",
+          "title": "To Eat or Not to Eat",
+          "publisher": "Arthur",
+          "category": "DAILY_LIFE",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 5030,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "wordworld",
+      "name": "WordWorld",
+      "description": "단어 만들기 · 파닉스 놀이",
+      "colorKey": "c3",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "YPFc0MCywjw",
+          "title": "A Star Is Born",
+          "publisher": "WordWorld",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5040,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "35Kg2Wy6T1c",
+          "title": "Back on Track",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5050,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5lQid61i-Bc",
+          "title": "Catch That C",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5060,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "LtVPtUr6IOE",
+          "title": "Chef Sheep",
+          "publisher": "WordWorld",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5070,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W1TkagYSOL8",
+          "title": "Duck's Family Reunion",
+          "publisher": "WordWorld",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MPevY4APXnI",
+          "title": "Flying Ant",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5090,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "W5iJBehiOQ0",
+          "title": "Get Your Coat",
+          "publisher": "WordWorld",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5100,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "hWnDE_W-hcY",
+          "title": "Happy Birthday, Dog",
+          "publisher": "WordWorld",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5110,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "n0zhJEKcmrA",
+          "title": "M Is for Map",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5120,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NBV3QC734tg",
+          "title": "Pig's Present",
+          "publisher": "WordWorld",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5130,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "y-afKN6rMKA",
+          "title": "Pirate Ship",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Bq1xbsB0uGA",
+          "title": "Playing Spies",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "w1sAmFCtIQs",
+          "title": "Ride 'em CowBear",
+          "publisher": "WordWorld",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "AHMZvBt7gQU",
+          "title": "Rocket to the Moon",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mxXgSFPyaQo",
+          "title": "Runaway O",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5180,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "lWuq2y8b64w",
+          "title": "Snug as a Bug",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5190,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "XfG5mrB2jus",
+          "title": "Superhero Sheep",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5200,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VRAreqvDsfY",
+          "title": "The Lost Letter L",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5210,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "nA_M_ahZTLM",
+          "title": "The Race to Mystery Island",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5220,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9js5vaOxilY",
+          "title": "The Rainbow Birthday Cake",
+          "publisher": "WordWorld",
+          "category": "FAMILY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Wlz5kEdT5j4",
+          "title": "There's an Ant in Every Giant",
+          "publisher": "WordWorld",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "N568ayGkH6w",
+          "title": "Tick Tock Space Clock",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Ph86znMYb98",
+          "title": "Wee Little Whale",
+          "publisher": "WordWorld",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 5260,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "slug": "wild-kratts",
+      "name": "Wild Kratts",
+      "description": "동물 · 자연 · 과학 어휘",
+      "colorKey": "c2",
+      "enabled": true,
+      "videos": [
+        {
+          "youtubeVideoId": "wDJfFiM0wWg",
+          "title": "Creature Questions with the Kratt Brothers",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2980,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "1fsyZ9mpXrI",
+          "title": "The Kratt Bros vs. a King Cobra",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2990,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

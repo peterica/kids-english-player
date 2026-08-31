@@ -20,7 +20,8 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:reset": "prisma migrate reset --force",
     "admin:grant": "tsx prisma/grant-admin.ts",
-    "admin:passwd": "tsx prisma/reset-password.ts"
+    "admin:passwd": "tsx prisma/reset-password.ts",
+    "content:export": "tsx prisma/export-content.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

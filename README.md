@@ -308,6 +308,30 @@ GET /api/content-library?channel=caillou&level=4
 
 ---
 
+## Content Library 문서 백업
+
+DB 와 별개로, 콘텐츠 목록을 사람이 읽고 다시 가져올 수 있는 문서로 내보낸다.
+
+```bash
+npm run content:export              # content-backup/ 에 생성
+npm run content:export -- <디렉터리>
+```
+
+```text
+content-backup/
+  README.md              채널 요약표 · 복구 방법
+  content-library.json   기계 판독용 스냅샷
+  channels/<slug>.md     채널별 일괄등록 표 (그대로 붙여 넣으면 복구)
+```
+
+채널별 Markdown 은 운영자 화면의 일괄등록 형식과 동일해서 **그대로 복구에 쓸 수 있다.**
+계정·아이·시청기록은 내보내지 않으며, 가정이 직접 등록한 영상도 제외한다(개인 데이터).
+
+원본은 여전히 `prisma/seed-content.ts` 다. `content-backup/` 은 특정 시점의 스냅샷이므로,
+콘텐츠를 바꾼 뒤에는 다시 내보내야 최신 상태가 된다.
+
+---
+
 ## DB 백업
 
 SQLite 파일 하나만 복사하면 된다.

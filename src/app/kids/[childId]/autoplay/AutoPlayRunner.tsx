@@ -41,6 +41,7 @@ export function AutoPlayRunner({
   initialRemainingSeconds,
   playedVideoCount,
   queue,
+  autoStart = false,
 }: {
   childId: number;
   sessionId: number;
@@ -48,13 +49,15 @@ export function AutoPlayRunner({
   initialRemainingSeconds: number | null;
   playedVideoCount: number;
   queue: QueueItem[];
+  /** 같은 화면에서 방금 시작한 경우 true. 사용자 제스처가 살아 있어 바로 재생할 수 있다. */
+  autoStart?: boolean;
 }) {
   const router = useRouter();
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [current, setCurrent] = useState<CurrentVideo>(initialVideo);
   const [remaining, setRemaining] = useState<number | null>(initialRemainingSeconds);
   const [playedCount, setPlayedCount] = useState(playedVideoCount);
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(autoStart);
   const [finished, setFinished] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
 
@@ -135,6 +138,8 @@ export function AutoPlayRunner({
           events: {
             onReady: (event) => {
               playerRef.current = event.target;
+              // 설정 화면에서 이어진 클릭(사용자 제스처)이 살아 있으므로 바로 재생한다.
+              if (autoStart) safeCall(() => event.target.playVideo(), undefined);
             },
             onStateChange: (event) => handleStateChange(event.data, event.target),
             onError: () => {

@@ -1,9 +1,8 @@
 "use client";
 
-import { useActionState, useState } from "react";
-import { startAutoPlayAction } from "@/app/actions/autoplay";
-import { emptyActionState } from "@/lib/action-state";
+import { useState } from "react";
 import { LEVELS, PLAY_MODE } from "@/lib/constants";
+import type { StartedAutoPlay } from "./AutoPlayShell";
 
 const DURATIONS: { label: string; value: string }[] = [
   { label: "15분", value: "15" },
@@ -19,6 +18,7 @@ export function AutoPlaySetup({
   minLevel,
   maxLevel,
   catalogSize,
+  onStarted,
 }: {
   childId: number;
   childName: string;
@@ -26,21 +26,52 @@ export function AutoPlaySetup({
   minLevel: number;
   maxLevel: number;
   catalogSize: number;
+  onStarted: (started: StartedAutoPlay) => void;
 }) {
-  const [state, formAction, pending] = useActionState(
-    startAutoPlayAction,
-    emptyActionState,
-  );
   const [playMode, setPlayMode] = useState<string>(PLAY_MODE.SEQUENTIAL);
   const [replay, setReplay] = useState("true");
   const [minutes, setMinutes] = useState("30");
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  /**
+   * 페이지를 이동하지 않고 여기서 세션을 만든다.
+   * 이 클릭이 그대로 재생 제스처가 되어 첫 영상이 바로 시작된다.
+   */
+  const start = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    setPending(true);
+    setError(null);
+    try {
+      const response = await fetch("/api/autoplay/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          childId,
+          channelId: form.get("channelId") || null,
+          minLevel: Number(form.get("minLevel")),
+          maxLevel: Number(form.get("maxLevel")),
+          playMode,
+          replayCompleted: replay === "true",
+          maxMinutes: minutes ? Number(minutes) : null,
+        }),
+      });
+      const data = await response.json();
+      if (!response.ok || !data.video) {
+        setError(data?.error ?? "Auto Play 를 시작하지 못했습니다.");
+        return;
+      }
+      onStarted(data as StartedAutoPlay);
+    } catch {
+      setError("Auto Play 를 시작하지 못했습니다. 연결을 확인해 주세요.");
+    } finally {
+      setPending(false);
+    }
+  };
 
   return (
-    <form action={formAction}>
-      <input type="hidden" name="childId" value={childId} />
-      <input type="hidden" name="playMode" value={playMode} />
-      <input type="hidden" name="replayCompleted" value={replay} />
-      <input type="hidden" name="maxMinutes" value={minutes} />
+    <form onSubmit={start}>
 
       <div className="grid two">
         <div className="card">
@@ -160,7 +191,7 @@ export function AutoPlaySetup({
             {pending ? "준비 중..." : "▶ Auto Play 시작"}
           </button>
 
-          {state.error ? <div className="alert error">{state.error}</div> : null}
+          {error ? <div className="alert error">{error}</div> : null}
         </div>
 
         <div className="card">

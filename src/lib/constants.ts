@@ -11,10 +11,35 @@ export type ProgressStatus =
 export const HOUSEHOLD_ROLE = {
   OWNER: "OWNER",
   PARENT: "PARENT",
+  /** 운영자. Parent 기능을 그대로 쓰면서 Content Library 원본을 관리한다. */
+  ADMIN: "ADMIN",
 } as const;
 
 export type HouseholdRole =
   (typeof HOUSEHOLD_ROLE)[keyof typeof HOUSEHOLD_ROLE];
+
+/** 부모가 신고할 수 있는 오류 종류 */
+export const CORRECTION_ERROR_TYPES = [
+  "PLAYBACK_UNAVAILABLE",
+  "WRONG_LEVEL",
+  "WRONG_CATEGORY",
+  "TITLE_ERROR",
+  "OTHER",
+] as const;
+
+export type CorrectionErrorType = (typeof CORRECTION_ERROR_TYPES)[number];
+
+/** 수정 요청 상태. 생성 시 OPEN, Admin 이 RESOLVED 또는 REJECTED 로 종료한다. */
+export const CORRECTION_STATUS = {
+  OPEN: "OPEN",
+  RESOLVED: "RESOLVED",
+  REJECTED: "REJECTED",
+} as const;
+
+export type CorrectionStatus =
+  (typeof CORRECTION_STATUS)[keyof typeof CORRECTION_STATUS];
+
+export const MAX_CORRECTION_DESCRIPTION_LENGTH = 500;
 
 /** Auto Play 재생 순서 */
 export const PLAY_MODE = {

@@ -1,5 +1,5 @@
 import { prisma } from "./db";
-import { AppError } from "./errors";
+import { AppError, ForbiddenError, UnauthorizedError } from "./errors";
 import { HOUSEHOLD_ROLE, MAX_NAME_LENGTH, type HouseholdRole } from "./constants";
 import {
   hashPassword,
@@ -53,6 +53,46 @@ export async function getSessionUser(): Promise<SessionUser | null> {
 export async function requireSessionUser(): Promise<SessionUser> {
   const session = await getSessionUser();
   if (!session) throw new AppError("로그인이 필요합니다. 다시 로그인해 주세요.");
+  return session;
+}
+
+/**
+ * 역할별 capability.
+ * OWNER / PARENT 는 Parent 기능만, ADMIN 은 Parent 기능 + 운영자 기능을 가진다.
+ */
+export function isAdminRole(role: string | null | undefined): boolean {
+  return role === HOUSEHOLD_ROLE.ADMIN;
+}
+
+export function hasParentCapability(role: string | null | undefined): boolean {
+  return (
+    role === HOUSEHOLD_ROLE.OWNER ||
+    role === HOUSEHOLD_ROLE.PARENT ||
+    role === HOUSEHOLD_ROLE.ADMIN
+  );
+}
+
+export function isAdminSession(session: SessionUser | null): boolean {
+  return Boolean(session && isAdminRole(session.role));
+}
+
+/** Admin API 용 guard. 미인증 401, 권한 부족 403 을 구분한다. */
+export async function requireAdminSession(): Promise<SessionUser> {
+  const session = await getSessionUser();
+  if (!session) throw new UnauthorizedError("로그인이 필요합니다.");
+  if (!isAdminRole(session.role)) {
+    throw new ForbiddenError("운영자 권한이 필요합니다.");
+  }
+  return session;
+}
+
+/** Parent API 용 guard. 미인증 401 을 명시적으로 구분한다. */
+export async function requireParentSession(): Promise<SessionUser> {
+  const session = await getSessionUser();
+  if (!session) throw new UnauthorizedError("로그인이 필요합니다.");
+  if (!hasParentCapability(session.role)) {
+    throw new ForbiddenError("권한이 없습니다.");
+  }
   return session;
 }
 

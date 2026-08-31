@@ -43,11 +43,15 @@ export function buildThumbnailUrl(videoId: string): string {
   return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 }
 
+export type YouTubeMetadata = { title: string | null; author: string | null };
+
 /**
- * oEmbed 로 제목을 조회한다. API Key 가 필요 없다.
- * 실패하면 null 을 돌려주고 호출부에서 부모가 직접 입력하게 한다.
+ * oEmbed 로 제목과 업로더를 조회한다. API Key 가 필요 없다.
+ * 실패하면 null 값을 돌려주고 호출부에서 직접 입력값이나 기본값을 쓰게 한다.
  */
-export async function fetchYouTubeTitle(videoId: string): Promise<string | null> {
+export async function fetchYouTubeMetadata(
+  videoId: string,
+): Promise<YouTubeMetadata> {
   try {
     const endpoint = `https://www.youtube.com/oembed?url=${encodeURIComponent(
       buildYouTubeWatchUrl(videoId),
@@ -56,12 +60,19 @@ export async function fetchYouTubeTitle(videoId: string): Promise<string | null>
       signal: AbortSignal.timeout(5000),
       cache: "no-store",
     });
-    if (!response.ok) return null;
-    const data = (await response.json()) as { title?: unknown };
-    return typeof data.title === "string" && data.title.trim()
-      ? data.title.trim()
-      : null;
+    if (!response.ok) return { title: null, author: null };
+    const data = (await response.json()) as {
+      title?: unknown;
+      author_name?: unknown;
+    };
+    const text = (value: unknown) =>
+      typeof value === "string" && value.trim() ? value.trim() : null;
+    return { title: text(data.title), author: text(data.author_name) };
   } catch {
-    return null;
+    return { title: null, author: null };
   }
+}
+
+export async function fetchYouTubeTitle(videoId: string): Promise<string | null> {
+  return (await fetchYouTubeMetadata(videoId)).title;
 }

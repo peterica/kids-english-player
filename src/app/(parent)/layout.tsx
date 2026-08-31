@@ -1,3 +1,4 @@
+import { isAdminSession } from "@/lib/auth";
 import { requirePageSession } from "@/lib/guard";
 import { ParentShell } from "@/components/ParentShell";
 
@@ -13,6 +14,7 @@ export default async function ParentLayout({
     <ParentShell
       displayName={session.displayName}
       householdName={session.householdName}
+      isAdmin={isAdminSession(session)}
     >
       {children}
     </ParentShell>

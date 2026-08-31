@@ -51,6 +51,12 @@ async function seedLibrary() {
     const channelId = channelIdBySlug.get(video.channelSlug);
     if (!channelId) continue;
 
+    // seed 데이터에 publisher 가 없으면 Channel 이름을 사용한다(콘텐츠 문서 형식 유지).
+    const publisher =
+      (video as { publisher?: string }).publisher?.trim() ||
+      SEED_CHANNELS.find((channel) => channel.slug === video.channelSlug)?.name ||
+      "Unknown";
+
     const existing = await prisma.video.findUnique({
       where: { youtubeVideoId: video.youtubeVideoId },
     });
@@ -62,7 +68,8 @@ async function seedLibrary() {
         existing.channelId !== channelId ||
         existing.level !== video.level ||
         existing.category !== video.category ||
-        existing.sequence !== sequence;
+        existing.sequence !== sequence ||
+        !existing.publisher;
 
       if (existing.householdId === null && changed) {
         await prisma.video.update({
@@ -72,6 +79,7 @@ async function seedLibrary() {
             level: video.level,
             category: video.category,
             sequence,
+            publisher: existing.publisher || publisher,
           },
         });
         updated += 1;
@@ -82,6 +90,7 @@ async function seedLibrary() {
           youtubeVideoId: video.youtubeVideoId,
           youtubeUrl: buildYouTubeWatchUrl(video.youtubeVideoId),
           title: video.title,
+          publisher,
           thumbnailUrl: buildThumbnailUrl(video.youtubeVideoId),
           channelId,
           level: video.level,

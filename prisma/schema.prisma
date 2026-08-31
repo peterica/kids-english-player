@@ -20,7 +20,8 @@ model User {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  memberships HouseholdMember[]
+  memberships        HouseholdMember[]
+  correctionRequests CorrectionRequest[]
 }
 
 model Household {
@@ -116,6 +117,8 @@ model Video {
   youtubeVideoId  String   @unique
   youtubeUrl      String
   title           String
+  /// 실제 YouTube 업로더(브랜드/내부 Channel 명이 아님)
+  publisher       String
   thumbnailUrl    String?
   channelId       Int
   level           Int
@@ -130,10 +133,11 @@ model Video {
 
   channel           Channel           @relation(fields: [channelId], references: [id], onDelete: Cascade)
   household         Household?        @relation(fields: [householdId], references: [id], onDelete: Cascade)
-  collectionVideos  CollectionVideo[]
-  progress          VideoProgress[]
-  sessions          WatchSession[]
-  autoPlaySessions  AutoPlaySession[]
+  collectionVideos    CollectionVideo[]
+  progress            VideoProgress[]
+  sessions            WatchSession[]
+  autoPlaySessions    AutoPlaySession[]
+  correctionRequests  CorrectionRequest[]
 
   @@index([channelId, level])
   @@index([householdId])
@@ -241,6 +245,25 @@ model AutoPlaySession {
   video   Video?   @relation(fields: [currentVideoId], references: [id], onDelete: SetNull)
 
   @@index([childId, startedAt])
+}
+
+/// 부모가 올린 Video 오류 수정 요청. Admin 이 처리한다.
+model CorrectionRequest {
+  id          Int       @id @default(autoincrement())
+  videoId     Int
+  requesterId Int
+  errorType   String
+  description String
+  status      String    @default("OPEN")
+  createdAt   DateTime  @default(now())
+  resolvedAt  DateTime?
+
+  video     Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  requester User  @relation(fields: [requesterId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+  @@index([videoId])
+  @@index([requesterId])
 }
 
 model Setting {

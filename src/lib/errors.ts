@@ -6,6 +6,29 @@ export class AppError extends Error {
   }
 }
 
+/** 로그인하지 않은 요청 (HTTP 401) */
+export class UnauthorizedError extends Error {
+  constructor(message = "로그인이 필요합니다.") {
+    super(message);
+    this.name = "UnauthorizedError";
+  }
+}
+
+/** 로그인했지만 권한이 없는 요청 (HTTP 403) */
+export class ForbiddenError extends Error {
+  constructor(message = "권한이 없습니다.") {
+    super(message);
+    this.name = "ForbiddenError";
+  }
+}
+
+/** 오류를 API 응답 상태 코드와 메시지로 변환한다. */
+export function toApiError(error: unknown): { status: number; message: string } {
+  if (error instanceof UnauthorizedError) return { status: 401, message: error.message };
+  if (error instanceof ForbiddenError) return { status: 403, message: error.message };
+  return { status: 400, message: toUserMessage(error) };
+}
+
 export function toUserMessage(error: unknown): string {
   if (error instanceof AppError) return error.message;
   console.error("[kids-english-player-v2]", error);

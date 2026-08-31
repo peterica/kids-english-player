@@ -5,7 +5,7 @@ import { authorizeChild, authorizeCollection } from "./auth";
 import {
   buildThumbnailUrl,
   buildYouTubeWatchUrl,
-  fetchYouTubeTitle,
+  fetchYouTubeMetadata,
   parseYouTubeVideoId,
 } from "./youtube";
 import { getVideoForHousehold } from "./library";
@@ -195,8 +195,11 @@ export async function addCustomVideo(
   }
 
   const manualTitle = input.title?.trim();
-  const fetchedTitle = manualTitle ? null : await fetchYouTubeTitle(youtubeVideoId);
+  const metadata = await fetchYouTubeMetadata(youtubeVideoId);
+  const fetchedTitle = manualTitle ? null : metadata.title;
   const title = manualTitle || fetchedTitle || `제목 없음 (${youtubeVideoId})`;
+  // 업로더를 못 가져오면 선택한 Channel 이름을 쓴다(부모 화면에 입력칸을 늘리지 않는다).
+  const publisher = metadata.author || channel.name;
 
   const last = await prisma.video.findFirst({
     where: { householdId },
@@ -208,6 +211,7 @@ export async function addCustomVideo(
       youtubeVideoId,
       youtubeUrl: buildYouTubeWatchUrl(youtubeVideoId),
       title,
+      publisher,
       thumbnailUrl: buildThumbnailUrl(youtubeVideoId),
       channelId: channel.id,
       level: clampLevel(input.level),

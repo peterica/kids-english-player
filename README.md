@@ -153,8 +153,61 @@ http://<hostname>.local:3200
 | `/kids/[childId]/browse` | 영상 찾기 — Level / Channel 필터 |
 | `/kids/[childId]/watch/[videoId]` | Player |
 | `/kids/[childId]/autoplay` | Auto Play 설정 및 재생 |
+| `/requests` | 내가 신고한 영상 오류와 처리 상태 (부모) |
+| `/admin/content` | **운영자** — Content Library 영상 등록/수정/노출/삭제, 검색·필터 |
+| `/admin/content/channels` | **운영자** — Channel 이름/사용 여부 관리 (slug 자동 생성) |
+| `/admin/content/import` | **운영자** — Markdown 일괄등록(.md 업로드 / 붙여넣기) |
+| `/admin/content/requests` | **운영자** — 부모 수정 요청 처리 |
 
-API: `POST /api/sessions`, `POST /api/progress`, `POST /api/autoplay/next`, `POST /api/autoplay/stop`
+API: `POST /api/sessions`, `POST /api/progress`, `POST /api/autoplay/next`, `POST /api/autoplay/stop`,
+`POST /api/correction-requests`, `GET /api/correction-requests/mine`
+
+운영자 전용 API(모두 `ADMIN` 필요, 미인증 401 / 권한 부족 403):
+`/api/admin/videos`(GET·POST), `/api/admin/videos/{id}`(GET·PUT·DELETE), `/api/admin/videos/{id}/enabled`(PATCH),
+`/api/admin/videos/import/validate`(POST), `/api/admin/videos/import`(POST),
+`/api/admin/channels`(GET·POST), `/api/admin/channels/{id}`(PUT·DELETE), `/api/admin/channels/{id}/enabled`(PATCH),
+`/api/admin/correction-requests`(GET), `/api/admin/correction-requests/{id}/status`(PATCH)
+
+### Mac mini 운영 명령 (컨테이너 경유)
+
+mini 호스트에는 프로젝트 `node_modules` 를 두지 않는다. 관리 명령은 실행 중인 컨테이너 안에서 돌린다.
+(컨테이너에는 Prisma CLI 와 tsx 가 이미 들어 있다)
+
+```bash
+# 운영자 권한 부여 / 회수
+docker exec -w /app kids-english-player-v2 \
+  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts parent@example.com
+docker exec -w /app kids-english-player-v2 \
+  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts parent@example.com --revoke
+
+# Content Library seed (idempotent) — 컨테이너 기동 시 자동 실행되므로 보통은 불필요
+docker exec -w /app kids-english-player-v2 \
+  node node_modules/tsx/dist/cli.mjs prisma/seed.ts
+
+# migration 상태 확인 (읽기 전용)
+docker exec -w /app kids-english-player-v2 \
+  node node_modules/prisma/build/index.js migrate status
+
+# DB 백업 (호스트에서, 무중단)
+sqlite3 data/app.db ".backup 'backup/app-$(date +%Y%m%d-%H%M).db'"
+```
+
+Node 버전은 로컬·mini 호스트·컨테이너 모두 24 계열로 맞춰 둔다.
+
+### 운영자(ADMIN) 권한
+
+운영자는 별도 계정 체계가 아니라 기존 부모 계정의 `HouseholdMember.role` 을 `ADMIN` 으로 올려서 만든다.
+seed 는 role 을 건드리지 않는다.
+
+```bash
+npm run admin:grant -- parent@example.com            # 권한 부여
+npm run admin:grant -- parent@example.com --revoke   # 회수(OWNER 로 되돌림)
+```
+
+- ADMIN 은 기존 부모 기능을 그대로 쓰면서 좌측 메뉴에 Admin 영역이 추가된다.
+- 부모(OWNER/PARENT)는 Content Library 원본을 수정할 수 없고, 영상 카드의 "오류 신고"로 수정 요청만 보낼 수 있다.
+- Markdown 일괄등록은 `| Level | Title | Category | Publisher | YouTube URL |` 다섯 컬럼이 필요하며(순서 무관),
+  검증 결과를 행 단위로 미리 보고 정상 행만 골라 등록한다.
 
 ### Content Library 읽기 전용 API
 

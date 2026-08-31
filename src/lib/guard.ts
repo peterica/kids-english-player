@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getSessionUser, type SessionUser } from "./auth";
+import { getSessionUser, isAdminSession, type SessionUser } from "./auth";
 import { prisma } from "./db";
 
 /** 서버 컴포넌트 전용. 로그인하지 않았으면 /login 으로 보낸다. */
@@ -22,4 +22,12 @@ export async function requirePageChild(childId: number) {
     : null;
   if (!child) redirect("/kids");
   return { session, child };
+}
+
+/** 서버 컴포넌트 전용. 운영자가 아니면 Parent Dashboard 로 보낸다. */
+export async function requirePageAdmin(): Promise<SessionUser> {
+  const session = await getSessionUser();
+  if (!session) redirect("/login");
+  if (!isAdminSession(session)) redirect("/admin");
+  return session;
 }

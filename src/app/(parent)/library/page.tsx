@@ -5,6 +5,7 @@ import { listChildren } from "@/lib/children";
 import { CATEGORIES, LEVELS } from "@/lib/constants";
 import { formatCategory } from "@/lib/format";
 import { AddToCollection } from "./AddToCollection";
+import { ReportVideoButton } from "./ReportVideoButton";
 
 export const dynamic = "force-dynamic";
 
@@ -146,6 +147,9 @@ export default async function LibraryPage({
                       name: child.name,
                     }))}
                   />
+                  {video.householdId === null ? (
+                    <ReportVideoButton videoId={video.id} title={video.title} />
+                  ) : null}
                 </div>
               </div>
             ))}

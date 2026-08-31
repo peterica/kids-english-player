@@ -5,10 +5,12 @@ import { logoutAction } from "@/app/actions/auth";
 export function ParentShell({
   displayName,
   householdName,
+  isAdmin = false,
   children,
 }: {
   displayName: string;
   householdName: string;
+  isAdmin?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -25,7 +27,20 @@ export function ParentShell({
           <Link href="/admin/children">아이 관리</Link>
           <Link href="/library">Content Library</Link>
           <Link href="/collections">My Collection</Link>
+          <Link href="/requests">내 수정 요청</Link>
         </nav>
+
+        {isAdmin ? (
+          <>
+            <div className="nav-group-title">Admin</div>
+            <nav className="nav">
+              <Link href="/admin/content">Content Library</Link>
+              <Link href="/admin/content/channels">Channels</Link>
+              <Link href="/admin/content/import">Markdown Import</Link>
+              <Link href="/admin/content/requests">수정 요청</Link>
+            </nav>
+          </>
+        ) : null}
 
         <div className="nav-group-title">Child</div>
         <nav className="nav">

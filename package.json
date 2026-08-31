@@ -2,6 +2,13 @@
   "name": "kids-english-player-v2",
   "version": "2.0.0",
   "private": true,
+  "description": "가정용 영어 학습 플레이어 — 부모가 고른 YouTube 콘텐츠를 아이가 Level·Channel로 탐색하는 자기 호스팅 웹앱",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterica/kids-english-player.git"
+  },
+  "homepage": "https://github.com/peterica/kids-english-player#readme",
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3200",
     "build": "prisma generate && next build",

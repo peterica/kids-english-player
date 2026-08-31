@@ -8,6 +8,51 @@
 - 아이: 이어보기 · 오늘 추천 · 원하는 영상 고르기(Level/Channel) · 계속 틀어놓기
 - 데이터: SQLite 파일 하나 (`data/app.db`)
 
+> 이 프로젝트는 **공개된 YouTube 영상을 임베드로 재생**할 뿐, 어떤 영상도 저장·재배포하지 않는다.
+> 목록에 나오는 채널·프로그램 이름은 각 권리자의 상표다 — [콘텐츠 정책](docs/CONTENT_POLICY.md)
+
+---
+
+## 빠른 시작 (Docker)
+
+Node 를 설치하지 않아도 된다. Docker 만 있으면 된다.
+
+```bash
+git clone https://github.com/peterica/kids-english-player.git
+cd kids-english-player
+
+cp .env.example .env
+# SESSION_SECRET 을 무작위 값으로 채운다 (macOS 기준)
+sed -i '' "s|change-me-to-a-long-random-string|$(openssl rand -hex 48)|" .env
+
+docker compose up -d --build
+```
+
+→ <http://localhost:3200>
+
+컨테이너는 기동할 때 DB migration 과 Content Library seed 를 자동 실행한다.
+따라서 **첫 실행만으로 23개 채널 · 526편이 채워진 상태**로 시작한다.
+
+첫 사용 순서:
+
+```text
+1. http://localhost:3200 → 회원가입(부모 계정 생성)
+2. 아이 추가 → 허용 Level · 선호 Channel 선택
+3. (선택) 운영자 화면(/admin)을 쓰려면 ADMIN 권한 부여:
+   docker compose exec -w /app app \
+     node ./node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts <email>
+```
+
+| 항목 | 값 |
+|---|---|
+| 데이터 위치 | 호스트의 `./data/app.db` (볼륨 마운트) |
+| 백업 | `./data` 폴더 복사 |
+| 포트 변경 | `.env` 에 `PORT=3300` |
+| 중지 / 재시작 | `docker compose down` / `docker compose up -d` |
+| 로그 | `docker compose logs -f` |
+
+`.env` 없이 실행하면 `SESSION_SECRET` 이 없다는 안내와 함께 기동이 중단된다.
+
 ---
 
 ## 기술 스택
@@ -23,7 +68,9 @@ Docker Compose
 
 ---
 
-## 설치
+## 로컬 개발 환경 (기여자용)
+
+소스를 고치려면 Node 24 가 필요하다.
 
 ```bash
 npm install
@@ -45,7 +92,7 @@ cp .env.example .env    # 값 수정
 ```bash
 npm run db:migrate    # 개발: migration 생성 및 적용
 npm run db:deploy     # 운영: 기존 migration 적용만
-npm run db:seed       # Content Library(Channel 6개 · 영상 31편) 등록
+npm run db:seed       # Content Library(채널 23개 · 영상 526편) 등록
 npm run db:reset      # 개발 DB 초기화 (데이터 삭제, 주의)
 ```
 
@@ -69,14 +116,9 @@ npm run build
 npm start             # 0.0.0.0:3200 바인딩
 ```
 
-### Docker (Mac mini 등 상시 실행)
+### 원격 서버에 배포 (Mac mini 등 상시 실행)
 
-```bash
-cp .env.example .env  # SESSION_SECRET 설정 (openssl rand -hex 48)
-docker compose up -d --build
-docker compose logs -f
-```
-
+기동 방법은 위의 [빠른 시작 (Docker)](#빠른-시작-docker) 과 같다.
 원격 서버로 배포할 때는 노트북에서 동기화한 뒤 재기동한다.
 `.env` 와 `data/` 는 제외해 서버의 계정·학습 데이터를 보존한다.
 

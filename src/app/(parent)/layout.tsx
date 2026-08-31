@@ -12,7 +12,7 @@ export default async function ParentLayout({
   const session = await requirePageSession();
   return (
     <ParentShell
-      displayName={session.displayName}
+      username={session.username}
       householdName={session.householdName}
       isAdmin={isAdminSession(session)}
     >

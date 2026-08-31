@@ -3,12 +3,12 @@ import { logoutAction } from "@/app/actions/auth";
 
 /** 부모 화면 공통 셸. Mockup 의 좌측 사이드바 구조를 따른다. */
 export function ParentShell({
-  displayName,
+  username,
   householdName,
   isAdmin = false,
   children,
 }: {
-  displayName: string;
+  username: string;
   householdName: string;
   isAdmin?: boolean;
   children: React.ReactNode;
@@ -56,7 +56,7 @@ export function ParentShell({
         </nav>
 
         <div className="sidebar-footer">
-          {displayName}
+          {username}
           <br />
           Library → Channel → Level → Collection → Child
         </div>

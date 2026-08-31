@@ -27,9 +27,8 @@ beforeAll(async () => {
   ({ GET } = await import("@/app/api/content-library/route"));
 
   const parent = await m.auth.signupUser({
-    email: "api@example.com",
+    username: "apiparent",
     password: "password-api",
-    displayName: "부모",
   });
   householdId = parent.household.id;
   childId = (await m.children.createChild(householdId, "민준")).id;

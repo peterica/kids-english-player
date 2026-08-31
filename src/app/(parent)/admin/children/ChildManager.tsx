@@ -35,7 +35,13 @@ export function ChildManager({
           <h2>아이 추가</h2>
         </div>
         <form action={addAction} className="filterbar" style={{ marginBottom: 0 }}>
-          <input name="name" placeholder="아이 이름" maxLength={20} required aria-label="아이 이름" />
+          <input
+            name="name"
+            placeholder="아이 별명 (실명 아니어도 돼요)"
+            maxLength={20}
+            required
+            aria-label="아이 별명"
+          />
           <button type="submit" className="btn primary" disabled={adding}>
             {adding ? "등록 중..." : "아이 추가"}
           </button>
@@ -61,7 +67,12 @@ export function ChildManager({
                 >
                   <input type="hidden" name="childId" value={child.id} />
                   <input type="hidden" name="intent" value="rename" />
-                  <input name="name" defaultValue={child.name} maxLength={20} aria-label="아이 이름" />
+                  <input
+                    name="name"
+                    defaultValue={child.name}
+                    maxLength={20}
+                    aria-label="아이 별명"
+                  />
                   <button type="submit" className="btn small primary">
                     저장
                   </button>

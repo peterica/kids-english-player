@@ -46,14 +46,12 @@ beforeAll(async () => {
 
   const { createSessionToken } = await import("@/lib/session");
   const parent = await m.auth.signupUser({
-    email: "autoplay@example.com",
+    username: "autoplayparent",
     password: "password-autoplay",
-    displayName: "부모",
   });
   const other = await m.auth.signupUser({
-    email: "other@example.com",
+    username: "otherparent",
     password: "password-other",
-    displayName: "다른 부모",
   });
 
   householdId = parent.household.id;

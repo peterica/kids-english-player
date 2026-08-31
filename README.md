@@ -7,6 +7,7 @@
 - 부모: Library 탐색 → 아이 Collection 구성 → 허용 Level·선호 Channel 지정 → Dashboard 확인
 - 아이: 이어보기 · 오늘 추천 · 원하는 영상 고르기(Level/Channel) · 계속 틀어놓기
 - 데이터: SQLite 파일 하나 (`data/app.db`)
+- 개인정보: **이메일 · 실명 · 연락처를 받지 않는다.** 아이디와 별명만 쓴다
 
 > **비공개 저장소 / 독점 소프트웨어.** 무단 복제·배포·재사용을 금지한다 (`LICENSE`).
 > 재생은 **공개된 YouTube 영상의 공식 임베드**로만 이뤄지며 영상을 저장·재배포하지 않는다.
@@ -37,12 +38,13 @@ docker compose up -d --build
 첫 사용 순서:
 
 ```text
-1. http://localhost:3200 → 회원가입
-   (부모 이름 · 이메일 · 비밀번호, "첫 아이 이름"까지 한 번에 입력 — 아이는 나중에 추가해도 된다)
-2. 부모 화면에서 아이의 허용 Level · 선호 Channel 지정
-3. (선택) 운영자 화면(/admin)을 쓰려면 ADMIN 권한 부여:
+1. http://localhost:3200 → 계정 만들기
+   (아이디 · 비밀번호만. 이메일 · 실명은 받지 않는다)
+   → **첫 계정은 자동으로 ADMIN** 이 되어 운영자 화면까지 바로 쓸 수 있다
+2. 부모 화면에서 아이 별명을 추가하고 허용 Level · 선호 Channel 지정
+3. 비밀번호를 잊었다면 서버에서 재설정한다 (이메일 복구 없음):
    docker compose exec -w /app app \
-     node ./node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts <email>
+     node ./node_modules/tsx/dist/cli.mjs prisma/reset-password.ts <아이디>
 ```
 
 | 항목 | 값 |
@@ -88,6 +90,24 @@ cp .env.example .env    # 값 수정
 | `COOKIE_SECURE` | HTTPS 로 서비스할 때만 `true`. LAN(HTTP)이면 비워 둔다 | `false` |
 
 `.env` 는 커밋하지 않는다. 비밀번호는 scrypt 해시로만 저장된다.
+
+### 계정과 개인정보
+
+이 서비스는 **가정별 self-hosted 인스턴스**를 전제로 하며, 중앙 회원 서버가 없다.
+
+| 저장한다 | 저장하지 않는다 |
+|---|---|
+| 로그인 아이디(`username`) | 이메일 · 전화번호 · 실명 |
+| scrypt 비밀번호 해시 | 생년월일 · 성별 · 주소 |
+| 아이 별명 · Level · 선호 Channel | 외부 계정 식별자(OAuth 등) |
+| 시청 진행률(`childId` 기준) | 아이의 실명 요구 |
+
+```bash
+npm run admin:passwd -- appa               # 임시 비밀번호 생성 후 출력
+npm run admin:passwd -- appa 새비밀번호8자   # 지정한 값으로 변경
+```
+
+이메일 기반 비밀번호 찾기는 제공하지 않는다. 서버에 접근할 수 있는 사람이 위 명령으로 복구한다.
 
 ### DB migration / seed
 
@@ -240,16 +260,17 @@ Node 버전은 로컬·mini 호스트·컨테이너 모두 24 계열로 맞춰 �
 
 ### 운영자(ADMIN) 권한
 
-운영자는 별도 계정 체계가 아니라 기존 부모 계정의 `HouseholdMember.role` 을 `ADMIN` 으로 올려서 만든다.
-seed 는 role 을 건드리지 않는다.
+**첫 계정은 가입할 때 자동으로 ADMIN** 이 된다(단일 가정 인스턴스 전제).
+두 번째 이후 계정은 PARENT 로 만들어지며, 필요하면 아래로 권한을 조정한다.
+운영자는 별도 계정 체계가 아니라 `HouseholdMember.role` 값이다. seed 는 role 을 건드리지 않는다.
 
 ```bash
-npm run admin:grant -- parent@example.com            # 권한 부여
-npm run admin:grant -- parent@example.com --revoke   # 회수(OWNER 로 되돌림)
+npm run admin:grant -- appa            # 권한 부여
+npm run admin:grant -- appa --revoke   # 회수(PARENT 로 되돌림)
 ```
 
 - ADMIN 은 기존 부모 기능을 그대로 쓰면서 좌측 메뉴에 Admin 영역이 추가된다.
-- 부모(OWNER/PARENT)는 Content Library 원본을 수정할 수 없고, 영상 카드의 "오류 신고"로 수정 요청만 보낼 수 있다.
+- 부모(PARENT)는 Content Library 원본을 수정할 수 없고, 영상 카드의 "오류 신고"로 수정 요청만 보낼 수 있다.
 - Markdown 일괄등록은 `| Level | Title | Category | Publisher | YouTube URL |` 다섯 컬럼이 필요하며(순서 무관),
   검증 결과를 행 단위로 미리 보고 정상 행만 골라 등록한다.
 

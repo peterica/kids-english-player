@@ -89,6 +89,11 @@ export const SESSION_COOKIE = "kep2_session";
 
 export const MAX_NAME_LENGTH = 20;
 export const MIN_PASSWORD_LENGTH = 8;
+/** 로그인 아이디. 인스턴스 내부에서만 쓰며 개인 식별정보를 담지 않는다. */
+export const MIN_USERNAME_LENGTH = 3;
+export const MAX_USERNAME_LENGTH = 20;
+/** 단일 가정 인스턴스의 기본 가정 이름. 개인 실명을 쓰지 않는다. */
+export const DEFAULT_HOUSEHOLD_NAME = "우리 가족";
 export const MAX_CHILDREN_PER_HOUSEHOLD = 10;
 
 /** Auto Play 재생 시간 선택지(분). null 은 제한 없음. */

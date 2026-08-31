@@ -91,7 +91,7 @@ export async function listCorrectionRequestsForAdmin(
     orderBy: [{ status: "asc" }, { createdAt: "desc" }],
     include: {
       video: { select: { id: true, title: true } },
-      requester: { select: { id: true, displayName: true } },
+      requester: { select: { id: true, username: true } },
     },
   });
   return rows.map(toCorrectionRequest);
@@ -131,7 +131,7 @@ type CorrectionRow = {
   createdAt: Date;
   resolvedAt: Date | null;
   video?: { id: number; title: string } | null;
-  requester?: { id: number; displayName: string } | null;
+  requester?: { id: number; username: string } | null;
 };
 
 function toCorrectionRequest(row: CorrectionRow) {
@@ -140,7 +140,7 @@ function toCorrectionRequest(row: CorrectionRow) {
     videoId: row.videoId,
     videoTitle: row.video?.title ?? null,
     requesterId: row.requesterId,
-    requesterName: row.requester?.displayName ?? null,
+    requesterName: row.requester?.username ?? null,
     errorType: row.errorType as CorrectionErrorType,
     description: row.description,
     status: row.status as CorrectionStatus,

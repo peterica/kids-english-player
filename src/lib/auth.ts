@@ -1,19 +1,25 @@
 import { prisma } from "./db";
 import { AppError, ForbiddenError, UnauthorizedError } from "./errors";
-import { HOUSEHOLD_ROLE, MAX_NAME_LENGTH, type HouseholdRole } from "./constants";
+import {
+  DEFAULT_HOUSEHOLD_NAME,
+  HOUSEHOLD_ROLE,
+  MAX_NAME_LENGTH,
+  MAX_USERNAME_LENGTH,
+  MIN_USERNAME_LENGTH,
+  type HouseholdRole,
+} from "./constants";
 import {
   hashPassword,
-  isValidEmail,
   isValidPassword,
-  normalizeEmail,
+  isValidUsername,
+  normalizeUsername,
   verifyPassword,
 } from "./password";
 import { readSessionUserId } from "./session";
 
 export type SessionUser = {
   userId: number;
-  email: string;
-  displayName: string;
+  username: string;
   householdId: number;
   householdName: string;
   role: HouseholdRole;
@@ -37,8 +43,7 @@ export async function resolveSessionUser(
 
   return {
     userId: membership.userId,
-    email: membership.user.email,
-    displayName: membership.user.displayName,
+    username: membership.user.username,
     householdId: membership.householdId,
     householdName: membership.household.name,
     role: membership.role as HouseholdRole,
@@ -139,53 +144,63 @@ export async function authorizeAutoPlaySession(
 }
 
 export type SignupInput = {
-  email: string;
+  username: string;
   password: string;
-  displayName: string;
+  /** 가정 이름. 비우면 기본값을 쓴다. 개인 실명을 요구하지 않는다. */
+  householdName?: string;
 };
 
-/** 회원가입: User + Household + HouseholdMember(OWNER) 를 한 트랜잭션으로 만든다. */
+/**
+ * 계정 생성: User + Household + HouseholdMember 를 한 트랜잭션으로 만든다.
+ *
+ * Self-hosted 단일 가정 인스턴스이므로 **첫 계정은 자동으로 ADMIN** 이 된다.
+ * (별도 CLI 로 권한을 부여하지 않아도 바로 운영 화면을 쓸 수 있다.)
+ * 이후 추가되는 계정은 PARENT 로 만든다.
+ */
 export async function signupUser(input: SignupInput) {
-  const email = normalizeEmail(input.email);
-  const displayName = input.displayName?.trim() ?? "";
+  const username = normalizeUsername(input.username);
+  const householdName = input.householdName?.trim() || DEFAULT_HOUSEHOLD_NAME;
 
-  if (!isValidEmail(email)) throw new AppError("이메일 형식을 확인해 주세요.");
+  if (!isValidUsername(username)) {
+    throw new AppError(
+      `아이디는 ${MIN_USERNAME_LENGTH}~${MAX_USERNAME_LENGTH}자의 영문 소문자·숫자·(. _ -) 로 입력해 주세요.`,
+    );
+  }
   if (!isValidPassword(input.password)) {
     throw new AppError("비밀번호는 8자 이상이어야 합니다.");
   }
-  if (!displayName) throw new AppError("이름을 입력해 주세요.");
-  if (displayName.length > MAX_NAME_LENGTH) {
-    throw new AppError(`이름은 ${MAX_NAME_LENGTH}자 이내로 입력해 주세요.`);
+  if (householdName.length > MAX_NAME_LENGTH) {
+    throw new AppError(`가정 이름은 ${MAX_NAME_LENGTH}자 이내로 입력해 주세요.`);
   }
-  if (await prisma.user.findUnique({ where: { email } })) {
-    throw new AppError("이미 가입된 이메일입니다.");
+  if (await prisma.user.findUnique({ where: { username } })) {
+    throw new AppError("이미 사용 중인 아이디입니다.");
   }
+
+  const isFirstUser = (await prisma.user.count()) === 0;
 
   return prisma.$transaction(async (tx) => {
     const user = await tx.user.create({
-      data: { email, passwordHash: hashPassword(input.password), displayName },
+      data: { username, passwordHash: hashPassword(input.password) },
     });
-    const household = await tx.household.create({
-      data: { name: `${displayName}님의 가족` },
-    });
+    const household = await tx.household.create({ data: { name: householdName } });
     await tx.householdMember.create({
       data: {
         householdId: household.id,
         userId: user.id,
-        role: HOUSEHOLD_ROLE.OWNER,
+        role: isFirstUser ? HOUSEHOLD_ROLE.ADMIN : HOUSEHOLD_ROLE.PARENT,
       },
     });
     return { user, household };
   });
 }
 
-/** 로그인. 실패 사유를 이메일/비밀번호로 구분해 알려주지 않는다. */
-export async function loginUser(email: string, password: string) {
+/** 로그인. 실패 사유를 아이디/비밀번호로 구분해 알려주지 않는다. */
+export async function loginUser(username: string, password: string) {
   const user = await prisma.user.findUnique({
-    where: { email: normalizeEmail(email) },
+    where: { username: normalizeUsername(username) },
   });
   if (!verifyPassword(password ?? "", user?.passwordHash ?? null)) {
-    throw new AppError("이메일 또는 비밀번호가 올바르지 않습니다.");
+    throw new AppError("아이디 또는 비밀번호가 올바르지 않습니다.");
   }
   return user!;
 }

@@ -12,11 +12,13 @@ datasource db {
 // 보안 경계는 Household 다. 아이·Collection·시청기록 조회는 모두 이 단위로 제한한다.
 // ---------------------------------------------------------------------------
 
+/// Self-hosted 가정용 인스턴스의 로그인 계정.
+/// 이메일·실명 등 외부 식별정보는 저장하지 않는다.
 model User {
   id           Int      @id @default(autoincrement())
-  email        String   @unique
+  /// 인스턴스 내부에서만 쓰는 로그인 아이디. 개인 식별정보를 담지 않는다.
+  username     String   @unique
   passwordHash String
-  displayName  String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 

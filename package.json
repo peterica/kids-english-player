@@ -19,7 +19,8 @@
     "db:deploy": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
     "db:reset": "prisma migrate reset --force",
-    "admin:grant": "tsx prisma/grant-admin.ts"
+    "admin:grant": "tsx prisma/grant-admin.ts",
+    "admin:passwd": "tsx prisma/reset-password.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

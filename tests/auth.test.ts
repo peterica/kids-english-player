@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 import {
   hashPassword,
-  isValidEmail,
   isValidPassword,
-  normalizeEmail,
+  isValidUsername,
+  normalizeUsername,
   verifyPassword,
 } from "@/lib/password";
 import { createSessionToken, readSessionToken } from "@/lib/session";
@@ -30,12 +30,20 @@ describe("비밀번호", () => {
   });
 });
 
-describe("이메일", () => {
+describe("로그인 아이디", () => {
   it("정규화하고 형식을 검사한다", () => {
-    expect(normalizeEmail("  Parent@Example.COM ")).toBe("parent@example.com");
-    expect(isValidEmail("parent@example.com")).toBe(true);
-    expect(isValidEmail("parent@example")).toBe(false);
-    expect(isValidEmail("")).toBe(false);
+    expect(normalizeUsername("  AppA ")).toBe("appa");
+    expect(isValidUsername("appa")).toBe(true);
+    expect(isValidUsername("app.a_1-2")).toBe(true);
+    expect(isValidUsername("ab")).toBe(false);
+    expect(isValidUsername("a".repeat(21))).toBe(false);
+    expect(isValidUsername("")).toBe(false);
+  });
+
+  it("개인정보로 쓰이기 쉬운 형식(이메일·공백·한글)을 가입에서 거부한다", () => {
+    expect(isValidUsername("parent@example.com")).toBe(false);
+    expect(isValidUsername("app a")).toBe(false);
+    expect(isValidUsername("아빠")).toBe(false);
   });
 });
 

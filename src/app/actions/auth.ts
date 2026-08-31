@@ -14,9 +14,9 @@ export async function signupAction(
   let target = "/admin/children";
   try {
     const result = await signupUser({
-      email: String(formData.get("email") ?? ""),
+      username: String(formData.get("username") ?? ""),
       password: String(formData.get("password") ?? ""),
-      displayName: String(formData.get("displayName") ?? ""),
+      householdName: String(formData.get("householdName") ?? ""),
     });
 
     const childName = String(formData.get("childName") ?? "").trim();
@@ -37,7 +37,7 @@ export async function loginAction(
 ): Promise<ActionState> {
   try {
     const user = await loginUser(
-      String(formData.get("email") ?? ""),
+      String(formData.get("username") ?? ""),
       String(formData.get("password") ?? ""),
     );
     await startSession(user.id);

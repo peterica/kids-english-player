@@ -24,14 +24,13 @@ beforeAll(async () => {
   m = await importModules();
 
   const a = await m.auth.signupUser({
-    email: "Parent.A@example.com",
+    username: "ParentA",
     password: "password-a1",
-    displayName: "부모A",
+    householdName: "A집",
   });
   const b = await m.auth.signupUser({
-    email: "parent.b@example.com",
+    username: "parentb",
     password: "password-b1",
-    displayName: "부모B",
   });
   householdA = a.household.id;
   householdB = b.household.id;
@@ -51,49 +50,90 @@ afterAll(async () => {
 });
 
 describe("Auth", () => {
-  it("가입하면 User + Household + OWNER 구성원이 함께 생긴다", async () => {
-    const member = await m.prisma.householdMember.findFirst({
+  it("첫 계정은 ADMIN, 이후 계정은 PARENT 로 만들어진다", async () => {
+    const first = await m.prisma.householdMember.findFirst({
       where: { householdId: householdA },
       include: { user: true },
     });
-    expect(member?.role).toBe("OWNER");
-    expect(member?.user.email).toBe("parent.a@example.com");
-    expect(member?.user.passwordHash).not.toContain("password-a1");
+    expect(first?.role).toBe("ADMIN");
+    expect(first?.user.username).toBe("parenta");
+    expect(first?.user.passwordHash).not.toContain("password-a1");
+
+    const second = await m.prisma.householdMember.findFirst({
+      where: { householdId: householdB },
+    });
+    expect(second?.role).toBe("PARENT");
   });
 
-  it("같은 이메일로 다시 가입할 수 없다", async () => {
+  it("계정에 이메일·실명 컬럼이 존재하지 않는다", async () => {
+    const columns: Array<{ name: string }> = await m.prisma.$queryRawUnsafe(
+      "PRAGMA table_info('User')",
+    );
+    const names = columns.map((c) => c.name);
+    expect(names).toEqual(
+      expect.arrayContaining(["id", "username", "passwordHash"]),
+    );
+    expect(names).not.toContain("email");
+    expect(names).not.toContain("displayName");
+  });
+
+  it("Child Profile 에 이메일·생년월일 등 식별정보 컬럼이 없다", async () => {
+    const columns: Array<{ name: string }> = await m.prisma.$queryRawUnsafe(
+      "PRAGMA table_info('Child')",
+    );
+    const names = columns.map((c) => c.name);
+    expect(names).toEqual(expect.arrayContaining(["id", "name", "householdId"]));
+    for (const forbidden of ["email", "birthday", "birthDate", "phone", "gender"]) {
+      expect(names).not.toContain(forbidden);
+    }
+  });
+
+  it("시청 기록은 아이 이름이 아니라 childId 로만 연결된다", async () => {
+    const columns: Array<{ name: string }> = await m.prisma.$queryRawUnsafe(
+      "PRAGMA table_info('VideoProgress')",
+    );
+    const names = columns.map((c) => c.name);
+    expect(names).toContain("childId");
+    expect(names).not.toContain("childName");
+    expect(names).not.toContain("name");
+  });
+
+  it("가정 이름을 비우면 기본값을 쓴다", async () => {
+    const household = await m.prisma.household.findUnique({
+      where: { id: householdB },
+    });
+    expect(household?.name).toBe("우리 가족");
+  });
+
+  it("같은 아이디로 다시 가입할 수 없다 (대소문자 무시)", async () => {
     await expect(
-      m.auth.signupUser({
-        email: "PARENT.A@example.com",
-        password: "password-a1",
-        displayName: "부모A2",
-      }),
+      m.auth.signupUser({ username: "PARENTA", password: "password-a1" }),
     ).rejects.toBeInstanceOf(AppError);
   });
 
-  it("짧은 비밀번호 / 잘못된 이메일을 거부한다", async () => {
+  it("짧은 비밀번호 / 잘못된 아이디를 거부한다", async () => {
     await expect(
-      m.auth.signupUser({ email: "c@example.com", password: "123", displayName: "C" }),
+      m.auth.signupUser({ username: "cccc", password: "123" }),
     ).rejects.toBeInstanceOf(AppError);
     await expect(
-      m.auth.signupUser({ email: "not-email", password: "password-c1", displayName: "C" }),
+      m.auth.signupUser({ username: "c@example.com", password: "password-c1" }),
     ).rejects.toBeInstanceOf(AppError);
   });
 
   it("로그인 성공 / 실패", async () => {
-    const user = await m.auth.loginUser("Parent.A@example.com", "password-a1");
-    expect(user.displayName).toBe("부모A");
-    await expect(m.auth.loginUser("parent.a@example.com", "wrong")).rejects.toThrow(
-      "이메일 또는 비밀번호가 올바르지 않습니다.",
+    const user = await m.auth.loginUser("ParentA", "password-a1");
+    expect(user.username).toBe("parenta");
+    await expect(m.auth.loginUser("parenta", "wrong")).rejects.toThrow(
+      "아이디 또는 비밀번호가 올바르지 않습니다.",
     );
-    await expect(m.auth.loginUser("nobody@example.com", "whatever")).rejects.toThrow(
-      "이메일 또는 비밀번호가 올바르지 않습니다.",
+    await expect(m.auth.loginUser("nobody", "whatever")).rejects.toThrow(
+      "아이디 또는 비밀번호가 올바르지 않습니다.",
     );
   });
 
   it("세션 사용자는 자기 Household 로만 해석된다", async () => {
     const user = await m.prisma.user.findUnique({
-      where: { email: "parent.a@example.com" },
+      where: { username: "parenta" },
     });
     const session = await m.auth.resolveSessionUser(user!.id);
     expect(session?.householdId).toBe(householdA);

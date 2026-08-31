@@ -111,14 +111,12 @@ beforeAll(async () => {
   const { createSessionToken } = await import("@/lib/session");
 
   const admin = await m.auth.signupUser({
-    email: "admin@example.com",
+    username: "adminuser",
     password: "password-admin",
-    displayName: "운영자",
   });
   const parent = await m.auth.signupUser({
-    email: "parent@example.com",
+    username: "parentuser",
     password: "password-parent",
-    displayName: "부모",
   });
 
   adminUserId = admin.user.id;
@@ -157,7 +155,7 @@ describe("A. Admin 접근", () => {
     expect(result.status).toBe(401);
   });
 
-  it("ADMIN 이 아닌 Parent(OWNER) 는 403", async () => {
+  it("ADMIN 이 아닌 Parent 는 403", async () => {
     asParent();
     expect((await json(await h.videos.GET(new Request(url("/api/admin/videos"))))).status).toBe(403);
     expect(
@@ -699,7 +697,7 @@ describe("H. Parent 수정 요청", () => {
     );
     expect(list.body.requests.some((r: { id: number }) => r.id === requestId)).toBe(true);
     expect(list.body.requests[0]).toMatchObject({
-      requesterName: "부모",
+      requesterName: "parentuser",
       status: "OPEN",
     });
 

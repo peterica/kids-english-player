@@ -1,5 +1,9 @@
 import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
-import { MIN_PASSWORD_LENGTH } from "./constants";
+import {
+  MAX_USERNAME_LENGTH,
+  MIN_PASSWORD_LENGTH,
+  MIN_USERNAME_LENGTH,
+} from "./constants";
 
 const KEY_LENGTH = 32;
 
@@ -24,14 +28,21 @@ export function verifyPassword(
   return timingSafeEqual(a, b);
 }
 
-/** 이메일은 소문자/공백 제거 형태로 통일해 저장·조회한다. */
-export function normalizeEmail(email: string): string {
-  return (email ?? "").trim().toLowerCase();
+/** 로그인 아이디는 소문자/공백 제거 형태로 통일해 저장·조회한다. */
+export function normalizeUsername(username: string): string {
+  return (username ?? "").trim().toLowerCase();
 }
 
-export function isValidEmail(email: string): boolean {
-  const value = normalizeEmail(email);
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) && value.length <= 254;
+/**
+ * 가입 시에만 형식을 검사한다.
+ * 로그인은 이전 계정(이메일 이관분)도 찾을 수 있어야 하므로 형식 검사를 하지 않는다.
+ */
+export function isValidUsername(username: string): boolean {
+  const value = normalizeUsername(username);
+  if (value.length < MIN_USERNAME_LENGTH || value.length > MAX_USERNAME_LENGTH) {
+    return false;
+  }
+  return /^[a-z0-9][a-z0-9._-]*$/.test(value);
 }
 
 export function isValidPassword(password: string): boolean {

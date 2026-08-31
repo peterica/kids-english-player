@@ -22,9 +22,8 @@ beforeAll(async () => {
   m = await importModules();
 
   const parent = await m.auth.signupUser({
-    email: "auto@example.com",
+    username: "autoparent",
     password: "password-auto",
-    displayName: "부모",
   });
   householdId = parent.household.id;
   childId = (await m.children.createChild(householdId, "민준")).id;

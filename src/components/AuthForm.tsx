@@ -12,16 +12,15 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
 
   return (
     <form action={formAction}>
-      {mode === "signup" ? (
-        <label className="field">
-          <span>부모 이름</span>
-          <input name="displayName" maxLength={20} required />
-        </label>
-      ) : null}
-
       <label className="field">
-        <span>이메일</span>
-        <input name="email" type="email" autoComplete="email" required />
+        <span>아이디</span>
+        <input
+          name="username"
+          autoComplete="username"
+          maxLength={20}
+          required
+          placeholder={mode === "signup" ? "영문 소문자·숫자 3~20자" : undefined}
+        />
       </label>
 
       <label className="field">
@@ -35,10 +34,19 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
       </label>
 
       {mode === "signup" ? (
-        <label className="field">
-          <span>첫 아이 이름 (나중에 추가해도 돼요)</span>
-          <input name="childName" maxLength={20} />
-        </label>
+        <>
+          <label className="field">
+            <span>가정 이름 (비워도 돼요)</span>
+            <input name="householdName" maxLength={20} placeholder="우리 가족" />
+          </label>
+          <label className="field">
+            <span>첫 아이 별명 (나중에 추가해도 돼요)</span>
+            <input name="childName" maxLength={20} placeholder="실명 대신 별명" />
+          </label>
+          <p className="muted small">
+            이메일·실명은 받지 않아요. 이 서버 안에서만 쓰는 아이디예요.
+          </p>
+        </>
       ) : null}
 
       <button type="submit" className="btn primary block" disabled={pending}>

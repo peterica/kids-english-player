@@ -761,7 +761,7 @@ main.content {
   font-weight: 700;
   margin-bottom: 6px;
 }
-.field input,
+.field input:not([type="checkbox"]):not([type="radio"]),
 .field select {
   width: 100%;
   min-height: 44px;
@@ -780,17 +780,37 @@ main.content {
 .checkbox-chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 8px 13px;
+  padding: 9px 14px;
   background: var(--surface);
   font-size: 13px;
   font-weight: 700;
   color: #657087;
+  line-height: 1.2;
+  /* 채널 이름이 줄바꿈되면 칩 높이가 커지므로 한 줄로 유지한다 */
+  white-space: nowrap;
+  cursor: pointer;
 }
-.checkbox-chip input {
+.checkbox-chip:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+/* 체크박스는 칩 높이나 남은 폭에 따라 늘어나면 안 된다 */
+.checkbox-chip input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  min-height: 16px;
+  margin: 0;
   accent-color: var(--primary);
+}
+.checkbox-chip:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary);
 }
 
 @media (max-width: 1100px) {

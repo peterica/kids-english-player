@@ -1,6 +1,6 @@
 import { prisma } from "./db";
 import { authorizeChild } from "./auth";
-import { PROGRESS_STATUS, type ProgressStatus } from "./constants";
+import { type ProgressStatus } from "./constants";
 import {
   NO_WATCH,
   applyFilters,
@@ -108,10 +108,4 @@ export function filterCatalog(
 /** 아이가 이 영상을 볼 수 있는지 (Player 접근 검증에 사용) */
 export function canWatch(catalog: ChildCatalog, videoId: number): boolean {
   return catalog.items.some((item) => item.id === videoId);
-}
-
-export function watchStatusLabel(status: ProgressStatus, percent: number): string {
-  if (status === PROGRESS_STATUS.COMPLETED) return "봤어요";
-  if (status === PROGRESS_STATUS.IN_PROGRESS) return `${percent}%`;
-  return "새 영상";
 }

@@ -30,16 +30,6 @@ export function formatTimeOfDay(date: Date): string {
   }).format(date);
 }
 
-export function formatKoreanDate(date: Date): string {
-  return new Intl.DateTimeFormat("ko-KR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    weekday: "long",
-    timeZone: "Asia/Seoul",
-  }).format(date);
-}
-
 /** 카테고리 표시용 (DAILY_LIFE → DAILY LIFE) */
 export function formatCategory(category: string): string {
   return category.replace(/_/g, " ");

@@ -16,14 +16,6 @@ export async function listChildren(householdId: number) {
   });
 }
 
-export async function getChildWithPreference(householdId: number, childId: number) {
-  await authorizeChild(householdId, childId);
-  return prisma.child.findUnique({
-    where: { id: childId },
-    include: { preference: { include: { preferredChannels: true } } },
-  });
-}
-
 export async function createChild(householdId: number, name: string) {
   const trimmed = validateName(name);
   const count = await prisma.child.count({ where: { householdId } });

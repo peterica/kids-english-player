@@ -77,13 +77,13 @@ describe("Video 값 검증", () => {
 describe("role capability", () => {
   it("ADMIN 만 운영자 기능을 가진다", () => {
     expect(isAdminRole("ADMIN")).toBe(true);
-    expect(isAdminRole("OWNER")).toBe(false);
+    expect(isAdminRole("PARENT")).toBe(false);
     expect(isAdminRole("PARENT")).toBe(false);
     expect(isAdminRole(null)).toBe(false);
   });
 
-  it("OWNER / PARENT / ADMIN 모두 Parent 기능을 가진다", () => {
-    expect(hasParentCapability("OWNER")).toBe(true);
+  it("PARENT / ADMIN 은 Parent 기능을 가진다", () => {
+    expect(hasParentCapability("OWNER")).toBe(false);
     expect(hasParentCapability("PARENT")).toBe(true);
     expect(hasParentCapability("ADMIN")).toBe(true);
     expect(hasParentCapability("GUEST")).toBe(false);

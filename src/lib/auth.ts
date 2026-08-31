@@ -63,18 +63,14 @@ export async function requireSessionUser(): Promise<SessionUser> {
 
 /**
  * 역할별 capability.
- * OWNER / PARENT 는 Parent 기능만, ADMIN 은 Parent 기능 + 운영자 기능을 가진다.
+ * PARENT 는 Parent 기능만, ADMIN 은 Parent 기능 + 운영자 기능을 가진다.
  */
 export function isAdminRole(role: string | null | undefined): boolean {
   return role === HOUSEHOLD_ROLE.ADMIN;
 }
 
 export function hasParentCapability(role: string | null | undefined): boolean {
-  return (
-    role === HOUSEHOLD_ROLE.OWNER ||
-    role === HOUSEHOLD_ROLE.PARENT ||
-    role === HOUSEHOLD_ROLE.ADMIN
-  );
+  return role === HOUSEHOLD_ROLE.PARENT || role === HOUSEHOLD_ROLE.ADMIN;
 }
 
 export function isAdminSession(session: SessionUser | null): boolean {

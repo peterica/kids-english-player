@@ -9,9 +9,9 @@
 이 작업의 목표는 **과거 v1 코드를 분석하거나 재사용하지 않고**, 현재 root에 있는 아래 3개 파일만 SSOT로 사용하여 Kids English Player V2를 처음부터 구현하는 것이다.
 
 ```text
-KIDS_ENGLISH_PLAYER_V2_CONCEPT.md
-KIDS_ENGLISH_PLAYER_V2_MOCKUP.html
-CLAUDE_V2_USER_EXPERIENCE.md
+V2_CONCEPT.md
+V2_MOCKUP.html
+V2_USER_EXPERIENCE.md
 ```
 
 이 3개 파일 외의 과거 구현, tag, branch, commit은 참조하지 않는다.
@@ -55,23 +55,23 @@ Mockup만 정적 복사하고 종료
 반드시 다음 순서로 읽는다.
 
 ```text
-1. KIDS_ENGLISH_PLAYER_V2_CONCEPT.md
-2. KIDS_ENGLISH_PLAYER_V2_MOCKUP.html
-3. CLAUDE_V2_USER_EXPERIENCE.md
+1. V2_CONCEPT.md
+2. V2_MOCKUP.html
+3. V2_USER_EXPERIENCE.md
 ```
 
 역할:
 
 ```text
-KIDS_ENGLISH_PLAYER_V2_CONCEPT.md
+V2_CONCEPT.md
 → WHY / WHAT
 → 제품 철학, 핵심 개념, 기능 방향
 
-KIDS_ENGLISH_PLAYER_V2_MOCKUP.html
+V2_MOCKUP.html
 → UX / IA
 → 화면 구조, 정보 배치, 사용자 흐름
 
-CLAUDE_V2_USER_EXPERIENCE.md
+V2_USER_EXPERIENCE.md
 → HOW
 → 구현 원칙, 범위, 완료 조건
 ```
@@ -1047,7 +1047,7 @@ seed는 외부 네트워크 실패로 전체 실패하지 않도록 한다.
 
 # 34. UI
 
-`KIDS_ENGLISH_PLAYER_V2_MOCKUP.html`을 정보구조와 디자인 참고로 사용한다.
+`V2_MOCKUP.html`을 정보구조와 디자인 참고로 사용한다.
 
 금지:
 
@@ -1500,9 +1500,9 @@ feat: build kids english player v2
 이제 아래 3개 파일만 읽고 바로 작업을 시작한다.
 
 ```text
-KIDS_ENGLISH_PLAYER_V2_CONCEPT.md
-KIDS_ENGLISH_PLAYER_V2_MOCKUP.html
-CLAUDE_V2_USER_EXPERIENCE.md
+V2_CONCEPT.md
+V2_MOCKUP.html
+V2_USER_EXPERIENCE.md
 ```
 
 과거 v1 코드, tag, branch, commit은 절대 열지 않는다.

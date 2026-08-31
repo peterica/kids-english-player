@@ -9,7 +9,6 @@ export type ProgressStatus =
   (typeof PROGRESS_STATUS)[keyof typeof PROGRESS_STATUS];
 
 export const HOUSEHOLD_ROLE = {
-  OWNER: "OWNER",
   PARENT: "PARENT",
   /** 운영자. Parent 기능을 그대로 쓰면서 Content Library 원본을 관리한다. */
   ADMIN: "ADMIN",

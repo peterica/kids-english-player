@@ -157,9 +157,3 @@ async function updateSession(
   });
   return session.id;
 }
-
-/** 부모만 실행한다. 그 아이의 그 영상 기록만 지운다. */
-export async function resetChildVideoProgress(childId: number, videoId: number) {
-  await prisma.videoProgress.deleteMany({ where: { childId, videoId } });
-  await prisma.watchSession.deleteMany({ where: { childId, videoId } });
-}

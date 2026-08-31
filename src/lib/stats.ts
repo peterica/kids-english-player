@@ -100,15 +100,3 @@ export async function getHouseholdSummary(
     collectionCount,
   };
 }
-
-/** 아이별 진행률: 볼 수 있는 영상 중 완료 비율 */
-export async function getChildProgressSummary(childId: number, catalogSize: number) {
-  const completed = await prisma.videoProgress.count({
-    where: { childId, status: PROGRESS_STATUS.COMPLETED },
-  });
-  return {
-    completedCount: completed,
-    catalogSize,
-    percent: catalogSize === 0 ? 0 : Math.min(100, Math.floor((completed / catalogSize) * 100)),
-  };
-}

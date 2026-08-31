@@ -9,7 +9,7 @@ export function getDayRange(reference: Date = new Date()): {
   return { start, end: new Date(start.getTime() + 24 * 60 * 60 * 1000) };
 }
 
-export function startOfLocalDay(reference: Date): Date {
+function startOfLocalDay(reference: Date): Date {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: TIME_ZONE,
     hour: "2-digit",

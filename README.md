@@ -59,6 +59,20 @@ docker compose up -d --build
 
 ---
 
+## 문서
+
+| 문서 | 내용 |
+|---|---|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 구조와 설계 결정 |
+| [docs/V2_CONCEPT.md](docs/V2_CONCEPT.md) | 제품 컨셉(원본 사양) |
+| [docs/V2_USER_EXPERIENCE.md](docs/V2_USER_EXPERIENCE.md) | 화면·사용 흐름 사양 |
+| [docs/V2_MOCKUP.html](docs/V2_MOCKUP.html) | 초기 목업 |
+| [docs/IMPLEMENTATION_RESULT.md](docs/IMPLEMENTATION_RESULT.md) | 구현 결과·검증 기록 |
+| [docs/CONTENT_HARNESS.md](docs/CONTENT_HARNESS.md) | Content Library 확장 작업 루프 |
+| [docs/CONTENT_POLICY.md](docs/CONTENT_POLICY.md) | 콘텐츠 취급 원칙 |
+
+---
+
 ## 기술 스택
 
 ```text

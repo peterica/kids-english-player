@@ -1,15 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { LEVELS, PLAY_MODE } from "@/lib/constants";
+import { AUTO_PLAY_DURATION_OPTIONS, LEVELS, PLAY_MODE } from "@/lib/constants";
 import type { StartedAutoPlay } from "./AutoPlayShell";
 
-const DURATIONS: { label: string; value: string }[] = [
-  { label: "15분", value: "15" },
-  { label: "30분", value: "30" },
-  { label: "60분", value: "60" },
-  { label: "제한 없음", value: "" },
-];
+/** 선택지는 상수 한 곳에서만 정의한다. null 은 "제한 없음". */
+const DURATIONS = AUTO_PLAY_DURATION_OPTIONS.map((minutes) => ({
+  label: minutes === null ? "제한 없음" : `${minutes}분`,
+  value: minutes === null ? "" : String(minutes),
+}));
 
 export function AutoPlaySetup({
   childId,

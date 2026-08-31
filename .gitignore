@@ -4,6 +4,10 @@ out/
 build/
 .DS_Store
 
+# 에디터 설정
+.idea/
+.vscode/
+
 # 실데이터 SQLite 파일은 커밋하지 않는다
 data/
 *.db

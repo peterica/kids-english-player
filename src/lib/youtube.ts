@@ -72,7 +72,3 @@ export async function fetchYouTubeMetadata(
     return { title: null, author: null };
   }
 }
-
-export async function fetchYouTubeTitle(videoId: string): Promise<string | null> {
-  return (await fetchYouTubeMetadata(videoId)).title;
-}

@@ -1,7 +1,7 @@
 # Implementation Result — Kids English Player V2
 
 작성일: 2026-08-28
-SSOT: `KIDS_ENGLISH_PLAYER_V2_CONCEPT.md`, `KIDS_ENGLISH_PLAYER_V2_MOCKUP.html`, `CLAUDE_V2_USER_EXPERIENCE.md`
+SSOT: `V2_CONCEPT.md`, `V2_MOCKUP.html`, `V2_USER_EXPERIENCE.md`
 브랜치: `feature/v2-rebuild` (fresh workspace 에서 새로 구현. 과거 구현/커밋은 참조하지 않음)
 
 ## Status

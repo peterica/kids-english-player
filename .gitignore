@@ -16,6 +16,7 @@ data/
 *.db-shm
 
 .env
+scripts/deploy.env
 .env.local
 *.tsbuildinfo
 next-env.d.ts

@@ -247,6 +247,18 @@ git pull
 docker compose up -d --build
 ```
 
+반복해서 배포한다면 `scripts/deploy.sh` 를 쓰면 된다.
+백업 → 동기화 → 재빌드 → 기동 확인 → **정리**까지 한 번에 처리한다.
+
+```bash
+cp scripts/deploy.env.example scripts/deploy.env   # 서버 주소·경로 입력 (커밋되지 않는다)
+scripts/deploy.sh
+```
+
+`docker compose up --build` 를 반복하면 **빌드 캐시가 계속 쌓여 디스크를 채운다.**
+이 스크립트는 배포가 끝날 때마다 캐시를 상한(기본 5GB) 이하로 줄이고,
+DB 백업도 최근 20개만 남긴다. 태그 없는 이미지만 정리하므로 다른 프로젝트의 이미지는 건드리지 않는다.
+
 서버에서 git 을 쓰지 않는다면 개발 머신에서 파일만 동기화해도 된다.
 이때 `.env` 와 `data/` 는 **반드시 제외**한다. 서버의 설정과 계정·학습 데이터를 덮어쓰지 않기 위해서다.
 

@@ -1,3 +1,5 @@
+![Kids English Player](docs/images/00-thumbnail.png)
+
 # Kids English Player V2
 
 **A self-hosted web app that lets parents curate English-language YouTube videos for their
@@ -144,7 +146,7 @@ docker compose up -d --build
 | [docs/V2_CONCEPT.md](docs/V2_CONCEPT.md) | 제품 컨셉(원본 사양) |
 | [docs/V2_USER_EXPERIENCE.md](docs/V2_USER_EXPERIENCE.md) | 화면·사용 흐름 사양 |
 | [docs/V2_MOCKUP.html](docs/V2_MOCKUP.html) | 초기 목업 |
-| [docs/IMPLEMENTATION_RESULT.md](docs/IMPLEMENTATION_RESULT.md) | 구현 결과·검증 기록 |
+| [docs/IMPLEMENTATION_RESULT.md](docs/IMPLEMENTATION_RESULT.md) | 작성자의 구현·검증 기록 (설치 안내 아님) |
 | [docs/CONTENT_HARNESS.md](docs/CONTENT_HARNESS.md) | Content Library 확장 작업 루프 |
 | [docs/CONTENT_POLICY.md](docs/CONTENT_POLICY.md) | 콘텐츠 취급 원칙 |
 | [docs/PRIVACY.md](docs/PRIVACY.md) | 무엇을 저장하고 무엇을 저장하지 않는가 |
@@ -233,11 +235,20 @@ npm run build
 npm start             # 0.0.0.0:3200 바인딩
 ```
 
-### 원격 서버에 배포 (Mac mini 등 상시 실행)
+### 상시 실행 서버에 배포
 
-기동 방법은 위의 [빠른 시작 (Docker)](#빠른-시작-docker) 과 같다.
-원격 서버로 배포할 때는 노트북에서 동기화한 뒤 재기동한다.
-`.env` 와 `data/` 는 제외해 서버의 계정·학습 데이터를 보존한다.
+집에 늘 켜두는 기기(미니 PC · NAS · 홈서버 등)가 있다면 거기에 올려두고 쓰면 된다.
+기동 방법은 위의 [빠른 시작 (Docker)](#빠른-시작-docker) 과 같고, 갱신은 서버에서 받아 다시 띄우면 된다.
+
+```bash
+ssh <user>@<server>
+cd /path/to/kids-english-player
+git pull
+docker compose up -d --build
+```
+
+서버에서 git 을 쓰지 않는다면 개발 머신에서 파일만 동기화해도 된다.
+이때 `.env` 와 `data/` 는 **반드시 제외**한다. 서버의 설정과 계정·학습 데이터를 덮어쓰지 않기 위해서다.
 
 ```bash
 rsync -az --delete \
@@ -245,6 +256,12 @@ rsync -az --delete \
   ./ <user>@<server>:/path/to/kids-english-player/
 
 ssh <user>@<server> 'cd /path/to/kids-english-player && docker compose up -d --build'
+```
+
+업데이트 전에 DB 를 복사해 두면 안전하다.
+
+```bash
+cp data/app.db backup/app-$(date +%Y%m%d-%H%M).db
 ```
 
 컨테이너는 기동 시 `prisma migrate deploy` 와 Content Library seed 를 실행한 뒤 서버를 띄운다.
@@ -264,8 +281,8 @@ docker compose up -d
 서버 IP 를 확인한 뒤 같은 Wi-Fi 기기에서 접속한다.
 
 ```bash
-ipconfig getifaddr en0     # macOS 유선
-ipconfig getifaddr en1     # macOS 무선
+ipconfig getifaddr en0     # macOS (유선), 무선은 en1
+hostname -I                # Linux
 ```
 
 ```text
@@ -327,31 +344,35 @@ API: `POST /api/sessions`, `POST /api/progress`, `POST /api/autoplay/next`, `POS
 `/api/admin/channels`(GET·POST), `/api/admin/channels/{id}`(PUT·DELETE), `/api/admin/channels/{id}/enabled`(PATCH),
 `/api/admin/correction-requests`(GET), `/api/admin/correction-requests/{id}/status`(PATCH)
 
-### Mac mini 운영 명령 (컨테이너 경유)
+### 컨테이너 경유 운영 명령
 
-mini 호스트에는 프로젝트 `node_modules` 를 두지 않는다. 관리 명령은 실행 중인 컨테이너 안에서 돌린다.
-(컨테이너에는 Prisma CLI 와 tsx 가 이미 들어 있다)
+Docker 로 운영한다면 서버 호스트에 Node 나 `node_modules` 를 둘 필요가 없다.
+관리 명령은 실행 중인 컨테이너 안에서 돌린다. (컨테이너에 Prisma CLI 와 tsx 가 들어 있다)
 
 ```bash
-# 운영자 권한 부여 / 회수
-docker exec -w /app kids-english-player-v2 \
-  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts parent@example.com
-docker exec -w /app kids-english-player-v2 \
-  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts parent@example.com --revoke
+# 운영자 권한 부여 / 회수  ─ 첫 계정은 자동 ADMIN 이라 보통은 불필요
+docker compose exec -w /app app \
+  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts <아이디>
+docker compose exec -w /app app \
+  node node_modules/tsx/dist/cli.mjs prisma/grant-admin.ts <아이디> --revoke
+
+# 비밀번호 재설정 (이메일 복구가 없으므로 이 방법으로 복구한다)
+docker compose exec -w /app app \
+  node node_modules/tsx/dist/cli.mjs prisma/reset-password.ts <아이디>
 
 # Content Library seed (idempotent) — 컨테이너 기동 시 자동 실행되므로 보통은 불필요
-docker exec -w /app kids-english-player-v2 \
+docker compose exec -w /app app \
   node node_modules/tsx/dist/cli.mjs prisma/seed.ts
 
 # migration 상태 확인 (읽기 전용)
-docker exec -w /app kids-english-player-v2 \
+docker compose exec -w /app app \
   node node_modules/prisma/build/index.js migrate status
 
 # DB 백업 (호스트에서, 무중단)
 sqlite3 data/app.db ".backup 'backup/app-$(date +%Y%m%d-%H%M).db'"
 ```
 
-Node 버전은 로컬·mini 호스트·컨테이너 모두 24 계열로 맞춰 둔다.
+Node 버전은 개발 환경·서버·컨테이너 모두 24 계열로 맞추는 것을 권장한다.
 
 ### 운영자(ADMIN) 권한
 

@@ -1,5 +1,9 @@
 # Implementation Result — Kids English Player V2
 
+> 이 문서는 **작성자의 검증 환경에서 실제로 실행한 기록**이다. 설치 안내가 아니다.
+> 본문에 나오는 Mac mini·특정 네트워크는 그때 사용한 환경일 뿐이며,
+> 설치와 사용 방법은 [README](../README.md) 를 참고한다.
+
 작성일: 2026-08-28
 SSOT: `V2_CONCEPT.md`, `V2_MOCKUP.html`, `V2_USER_EXPERIENCE.md`
 브랜치: `feature/v2-rebuild` (fresh workspace 에서 새로 구현. 과거 구현/커밋은 참조하지 않음)

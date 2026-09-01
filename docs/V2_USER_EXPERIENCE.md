@@ -1265,7 +1265,7 @@ DB migration
 seed
 개발 실행
 production build
-Docker 또는 Mac mini 실행
+Docker 실행
 LAN 접속
 DB backup
 주요 route

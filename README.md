@@ -8,6 +8,8 @@ kids — and lets kids freely pick what to watch inside those boundaries.**
 - **Automatic progress** — resume position, watch time, and completion (90%) recorded per child
 - **Nothing in the cloud** — one SQLite file on your own machine. No email, no real names, no analytics
 
+MIT licensed. Personal project — no support guaranteed.
+
 Runs with `docker compose up -d --build`, seeded and ready on first boot.
 Documentation below is in Korean.
 
@@ -26,9 +28,11 @@ Documentation below is in Korean.
 
 ![Kids English Player](docs/images/01-intro.png)
 
-> **비공개 저장소 / 독점 소프트웨어.** 무단 복제·배포·재사용을 금지한다 (`LICENSE`).
+> **MIT 라이선스**로 공개된 개인 프로젝트다 (`LICENSE`). 자유롭게 쓰고 고쳐도 된다.
+> 다만 개인 프로젝트라 지원을 보장하지 않는다.
 > 재생은 **공개된 YouTube 영상의 공식 임베드**로만 이뤄지며 영상을 저장·재배포하지 않는다.
-> 채널·프로그램 이름은 각 권리자의 상표다 — [콘텐츠 정책](docs/CONTENT_POLICY.md)
+> 채널·프로그램 이름은 각 권리자의 상표이며, 이 프로젝트는 그들과 무관하다 —
+> [콘텐츠 정책](docs/CONTENT_POLICY.md)
 
 ---
 
@@ -90,7 +94,7 @@ Documentation below is in Korean.
 Node 를 설치하지 않아도 된다. Docker 만 있으면 된다.
 
 ```bash
-git clone <저장소 URL>   # 비공개 저장소 (접근 권한 필요)
+git clone https://github.com/peterica/kids-english-player.git
 cd kids-english-player
 
 cp .env.example .env

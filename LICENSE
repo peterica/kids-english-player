@@ -1,15 +1,21 @@
-Copyright (c) 2026 peterseo. All Rights Reserved.
+MIT License
 
-이 저장소의 소스 코드, 문서, 콘텐츠 선별 목록(curation)을 포함한 모든 자료는
-저작권자의 독점 자산이다.
+Copyright (c) 2026 peterseo
 
-저작권자의 사전 서면 동의 없이 다음 행위를 금지한다.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  - 복제, 배포, 전송, 공중송신
-  - 2차적 저작물 작성, 개작, 역컴파일, 역어셈블
-  - 상업적·비상업적 이용, 재라이선스, 판매, 대여
-  - 제3자에 대한 접근 권한 부여
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
-문의: (연락처를 여기에 기재)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

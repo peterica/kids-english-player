@@ -1,5 +1,18 @@
 # Kids English Player V2
 
+**A self-hosted web app that lets parents curate English-language YouTube videos for their
+kids — and lets kids freely pick what to watch inside those boundaries.**
+
+- **Content Library** — 526 hand-picked videos across 23 channels, tagged by level (1–5) and category
+- **Per-child collections** — parents set allowed levels and channels; kids browse only what's allowed
+- **Automatic progress** — resume position, watch time, and completion (90%) recorded per child
+- **Nothing in the cloud** — one SQLite file on your own machine. No email, no real names, no analytics
+
+Runs with `docker compose up -d --build`, seeded and ready on first boot.
+Documentation below is in Korean.
+
+---
+
 부모가 검증된 영어 영상 **Content Library**에서 아이에게 맞는 Level과 Channel을 고르고,
 아이는 **추천 · 자유 탐색 · Auto Play**로 영어 콘텐츠를 보는 가정용 웹 서비스다.
 시청 진행률과 학습 기록은 아이별로 자동 저장된다.
@@ -55,6 +68,20 @@
 **Dashboard** — 전체 진행률, 완료한 영상, 오늘 학습 시간, 최근 시청 기록.
 
 ![Dashboard](docs/images/07-dashboard.png)
+
+---
+
+## 무엇이 아닌지
+
+오해를 줄이기 위해 먼저 적는다.
+
+- **클라우드 서비스가 아니다.** 우리 집 서버나 노트북에서 직접 띄워 쓴다. 가입할 곳이 없다.
+- **중앙 계정 서버가 없다.** 계정은 그 서버의 SQLite 파일 안에만 있고, 다른 가정과 공유되지 않는다.
+- **영상을 저장하거나 재배포하지 않는다.** YouTube 공식 임베드로 재생만 한다
+  ([콘텐츠 정책](docs/CONTENT_POLICY.md)).
+- **분석 도구·트래킹이 없다.** 시청 기록은 서버 밖으로 나가지 않는다.
+- **아이 계정이 아니다.** 아이는 로그인하지 않는다. 부모 계정 아래의 프로필로만 존재한다.
+- **학습 커리큘럼이 아니다.** 문제·평가·레벨테스트가 없다. 좋은 콘텐츠에 자연스럽게 노출되는 환경을 만드는 데 집중한다.
 
 ---
 

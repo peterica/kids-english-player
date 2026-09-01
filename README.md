@@ -9,9 +9,52 @@
 - 데이터: SQLite 파일 하나 (`data/app.db`)
 - 개인정보: **이메일 · 실명 · 연락처를 받지 않는다.** 아이디와 별명만 쓴다
 
+원칙은 하나다. **부모는 좋은 콘텐츠의 경계를 만들고, 아이는 그 안에서 자유롭게 선택한다.**
+
+![Kids English Player](docs/images/01-intro.png)
+
 > **비공개 저장소 / 독점 소프트웨어.** 무단 복제·배포·재사용을 금지한다 (`LICENSE`).
 > 재생은 **공개된 YouTube 영상의 공식 임베드**로만 이뤄지며 영상을 저장·재배포하지 않는다.
 > 채널·프로그램 이름은 각 권리자의 상표다 — [콘텐츠 정책](docs/CONTENT_POLICY.md)
+
+---
+
+## 화면
+
+만들게 된 배경과 설계 의도는 소개 글에 정리했다 —
+[Kids English Player - 아이가 직접 고르는 영어 영상 학습 서비스](https://peterica.tistory.com/1126)
+
+### 부모 — 콘텐츠의 경계를 정한다
+
+**Content Library** — 서비스가 기본 제공하는 채널을 Level·Category로 정리해 보여준다.
+
+![Content Library](docs/images/02-content-library.png)
+
+**Library에서 담기** — Level·Channel·Category·제목으로 찾아 아이 Collection에 담는다.
+잘못된 정보가 보이면 그 자리에서 오류 신고를 보낼 수 있다.
+
+![Library에서 담기](docs/images/03-library-add.png)
+
+**My Collection** — 아이별로 순서를 바꾸고, 숨기고, 뺀다. 원본 Library는 바뀌지 않는다.
+
+![My Collection](docs/images/04-my-collection.png)
+
+### 아이 — 그 안에서 자유롭게 고른다
+
+**아이 화면** — 이어서 보기, 오늘 추천, 좋아하는 Channel. 고르기 어려우면 계속 틀어놓기.
+
+![아이 화면](docs/images/05-kids-home.png)
+
+**영상 재생** — YouTube 공식 플레이어로 재생하고, 진행률과 시청시간은 자동으로 저장된다.
+90% 이상 보면 완료로 기록된다.
+
+![영상 재생](docs/images/06-watch.png)
+
+### 기록은 부모가 확인한다
+
+**Dashboard** — 전체 진행률, 완료한 영상, 오늘 학습 시간, 최근 시청 기록.
+
+![Dashboard](docs/images/07-dashboard.png)
 
 ---
 
@@ -70,6 +113,7 @@ docker compose up -d --build
 | [docs/IMPLEMENTATION_RESULT.md](docs/IMPLEMENTATION_RESULT.md) | 구현 결과·검증 기록 |
 | [docs/CONTENT_HARNESS.md](docs/CONTENT_HARNESS.md) | Content Library 확장 작업 루프 |
 | [docs/CONTENT_POLICY.md](docs/CONTENT_POLICY.md) | 콘텐츠 취급 원칙 |
+| [소개 글 (tistory)](https://peterica.tistory.com/1126) | 만들게 된 배경과 설계 의도 |
 
 ---
 

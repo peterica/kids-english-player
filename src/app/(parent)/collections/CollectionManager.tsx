@@ -47,7 +47,7 @@ export function CollectionManager({
       {customState.error ? <div className="alert error">{customState.error}</div> : null}
       {customState.message ? <div className="alert ok">{customState.message}</div> : null}
 
-      <div className="grid equal2">
+      <div className="grid autofit">
         {collections.map((collection) => (
           <section className="card" key={collection.id}>
             <div className="section-title">

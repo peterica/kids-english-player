@@ -133,7 +133,7 @@ export default async function DashboardPage() {
             Collection 관리
           </Link>
         </div>
-        <div className="grid equal2">
+        <div className="grid autofit">
           {activeChildren.map((child) => (
             <div className="stat" key={child.id}>
               <span className="label">{child.name}</span>

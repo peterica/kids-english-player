@@ -54,7 +54,7 @@ export function ChildManager({
       {prefState.error ? <div className="alert error">{prefState.error}</div> : null}
       {prefState.message ? <div className="alert ok">{prefState.message}</div> : null}
 
-      <div className="grid equal2" style={{ marginTop: 18 }}>
+      <div className="grid autofit" style={{ marginTop: 18 }}>
         {kids.map((child) => (
           <section className="card" key={child.id}>
             <div className="section-title">

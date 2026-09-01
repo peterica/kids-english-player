@@ -228,6 +228,14 @@ main.content {
 .grid.equal2 {
   grid-template-columns: repeat(2, 1fr);
 }
+/*
+ * 개수가 달라지는 목록용 그리드.
+ * equal2 는 항상 2트랙이라 카드가 1개면 오른쪽 절반이 빈 채로 남는다.
+ * auto-fit 은 빈 트랙을 접어서, 1개일 때 가로를 꽉 채우고 2개 이상이면 2열이 된다.
+ */
+.grid.autofit {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+}
 .grid.three {
   grid-template-columns: repeat(3, 1fr);
 }

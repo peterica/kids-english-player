@@ -2,8 +2,24 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { SESSION_COOKIE, SESSION_TTL_SECONDS } from "./constants";
 
+const DEV_SECRET = "kids-english-player-v2-dev-secret";
+
+/**
+ * 세션 쿠키 서명 키.
+ *
+ * 개발 편의를 위한 기본값이 있지만, 이 값은 공개 저장소에 그대로 있어
+ * 운영에서 쓰면 누구나 세션 쿠키를 위조할 수 있다.
+ * 따라서 production 에서는 값이 없으면 기동을 멈춘다.
+ */
 function secret(): string {
-  return process.env.SESSION_SECRET || "kids-english-player-v2-dev-secret";
+  const configured = process.env.SESSION_SECRET;
+  if (configured) return configured;
+  if (process.env.NODE_ENV === "production") {
+    throw new Error(
+      "SESSION_SECRET 이 설정되지 않았습니다. `openssl rand -hex 48` 로 만들어 환경변수에 넣어 주세요.",
+    );
+  }
+  return DEV_SECRET;
 }
 
 function sign(payload: string): string {

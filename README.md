@@ -87,6 +87,9 @@ Documentation below is in Korean.
 - **아이 계정이 아니다.** 아이는 로그인하지 않는다. 부모 계정 아래의 프로필로만 존재한다.
 - **학습 커리큘럼이 아니다.** 문제·평가·레벨테스트가 없다. 좋은 콘텐츠에 자연스럽게 노출되는 환경을 만드는 데 집중한다.
 
+> ⚠️ **가정 내부 네트워크(LAN) 전제로 만들었다.** HTTPS 가 없고 아이 화면에 별도 인증이 없다.
+> 인터넷에 포트를 열기 전에 [SECURITY.md](SECURITY.md) 를 먼저 읽어 주기 바란다.
+
 ---
 
 ## 빠른 시작 (Docker)
@@ -144,6 +147,9 @@ docker compose up -d --build
 | [docs/IMPLEMENTATION_RESULT.md](docs/IMPLEMENTATION_RESULT.md) | 구현 결과·검증 기록 |
 | [docs/CONTENT_HARNESS.md](docs/CONTENT_HARNESS.md) | Content Library 확장 작업 루프 |
 | [docs/CONTENT_POLICY.md](docs/CONTENT_POLICY.md) | 콘텐츠 취급 원칙 |
+| [docs/PRIVACY.md](docs/PRIVACY.md) | 무엇을 저장하고 무엇을 저장하지 않는가 |
+| [SECURITY.md](SECURITY.md) | 보안 전제와 인터넷 노출 시 주의사항 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | 개발 환경과 PR 기준 |
 | [소개 글 (tistory)](https://peterica.tistory.com/1126) | 만들게 된 배경과 설계 의도 |
 
 ---

@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   hashPassword,
   isValidPassword,
@@ -44,6 +44,24 @@ describe("로그인 아이디", () => {
     expect(isValidUsername("parent@example.com")).toBe(false);
     expect(isValidUsername("app a")).toBe(false);
     expect(isValidUsername("아빠")).toBe(false);
+  });
+});
+
+describe("세션 시크릿", () => {
+  afterEach(() => {
+    vi.unstubAllEnvs();
+  });
+
+  it("production 에서 SESSION_SECRET 이 없으면 토큰을 만들지 않는다", () => {
+    vi.stubEnv("SESSION_SECRET", "");
+    vi.stubEnv("NODE_ENV", "production");
+    expect(() => createSessionToken(1)).toThrow("SESSION_SECRET");
+  });
+
+  it("개발 환경에서는 기본값으로 동작한다", () => {
+    vi.stubEnv("SESSION_SECRET", "");
+    vi.stubEnv("NODE_ENV", "development");
+    expect(readSessionToken(createSessionToken(7))).toBe(7);
   });
 });
 

@@ -1,7 +1,7 @@
 # Sesame Street
 
 - slug: `sesame-street`
-- 영상: 4편
+- 영상: 3편 (숨김 1편 별도)
 - 노출: 사용
 - 설명: 알파벳 · 일상 · 사회성
 
@@ -10,6 +10,9 @@
 | Level | Title | Category | Publisher | YouTube URL |
 | --- | --- | --- | --- | --- |
 | 2 | Cookie Monster Has a Recipe for You! | DAILY_LIFE | Sesame Street | https://www.youtube.com/watch?v=olF4gVlPTVU |
-| 2 | Grover's Jam Session | SONG | Sesame Street | https://www.youtube.com/watch?v=lwU4tLAyZZA |
 | 2 | New TWO HOUR Elmo's World Compilation! | DAILY_LIFE | Sesame Street | https://www.youtube.com/watch?v=9l54NfLvAOQ |
 | 2 | Sesame Street: Alphabet | PHONICS | Sesame Street | https://www.youtube.com/watch?v=Xn5PnwGUYhc |
+
+## 숨김 영상 (복구 대상 아님)
+
+- Grover's Jam Session — https://www.youtube.com/watch?v=lwU4tLAyZZA

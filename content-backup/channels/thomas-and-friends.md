@@ -14,9 +14,9 @@
 | 3 | Percy's New Whistle | DAILY_LIFE | Thomas & Friends | https://www.youtube.com/watch?v=u4HPQtIATZU |
 | 3 | Terence the Tractor | STORY | Thomas & Friends | https://www.youtube.com/watch?v=4XZbvwqkIso |
 | 3 | The Sad Story of Henry | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=J4B4BKYEXIA |
-| 3 | Thomas & Friends | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=39uRkGwnCjs |
-| 3 | Thomas & Friends | STORY | Thomas & Friends | https://www.youtube.com/watch?v=KCax7yae56E |
-| 3 | Thomas & Friends | STORY | Thomas & Friends | https://www.youtube.com/watch?v=TPp5zg-ZB14 |
+| 3 | James in a Mess | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=39uRkGwnCjs |
+| 3 | Down the Mine | STORY | Thomas & Friends | https://www.youtube.com/watch?v=KCax7yae56E |
+| 3 | Snow | STORY | Thomas & Friends | https://www.youtube.com/watch?v=TPp5zg-ZB14 |
 | 3 | Thomas & Friends Classics 🚂 Train Tales | STORY | Thomas & Friends | https://www.youtube.com/watch?v=kahGjXcj880 |
 | 3 | Thomas & Friends Classics 🚂 Train Tales | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=rJEpxU1R9Bg |
 | 3 | Thomas & Friends Classics 🚂 Train Tales | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=OhGhwcI9ydI |
@@ -29,7 +29,7 @@
 | 3 | Thomas Saves the Day | STORY | Thomas & Friends | https://www.youtube.com/watch?v=qv8OM1njbhg |
 | 3 | Whistles and Sneezes | STORY | Thomas & Friends | https://www.youtube.com/watch?v=NKlLftswbAE |
 | 4 | Gordon Takes Charge | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=Ouzso_U5LPs |
-| 4 | Thomas & Friends | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=W32CLjJAe9w |
+| 4 | You Can't Win! | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=W32CLjJAe9w |
 | 4 | Thomas & Friends Classics 🚂 Train Tales | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=Z4OllBjsmAA |
 | 4 | Thomas & Friends Classics 🚂 Train Tales | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=5hMf7J5aZ4o |
 | 4 | Thomas & Friends Classics 🚂 Train Tales | FEELINGS | Thomas & Friends | https://www.youtube.com/watch?v=CwcJMi4RzxQ |

@@ -35,6 +35,7 @@ async function main() {
   });
 
   const total = channels.reduce((sum, c) => sum + c.videos.length, 0);
+  const shownTotal = channels.reduce((sum, c) => sum + c.videos.filter((v) => v.enabled).length, 0);
   const exportedAt = new Date().toISOString().slice(0, 19).replace("T", " ");
 
   rmSync(join(outDir, "channels"), { recursive: true, force: true });
@@ -42,11 +43,13 @@ async function main() {
 
   // ── 채널별 Markdown (그대로 재등록 가능) ──
   for (const channel of channels) {
+    const shown = channel.videos.filter((v) => v.enabled);
+    const hidden = channel.videos.filter((v) => !v.enabled);
     const lines: string[] = [
       `# ${channel.name}`,
       "",
       `- slug: \`${channel.slug}\``,
-      `- 영상: ${channel.videos.length}편`,
+      `- 영상: ${shown.length}편${hidden.length ? ` (숨김 ${hidden.length}편 별도)` : ""}`,
       `- 노출: ${channel.enabled ? "사용" : "해제"}`,
       channel.description ? `- 설명: ${channel.description}` : null,
       "",
@@ -56,12 +59,19 @@ async function main() {
       "| --- | --- | --- | --- | --- |",
     ].filter((line): line is string => line !== null);
 
-    for (const video of channel.videos) {
+    for (const video of shown) {
       lines.push(
         `| ${video.level} | ${cell(video.title)} | ${cell(video.category)} | ${cell(
           video.publisher,
         )} | ${watchUrl(video.youtubeVideoId)} |`,
       );
+    }
+    // 숨김 영상은 붙여 넣어도 다시 등록되지 않도록 표 밖에 기록만 남긴다.
+    if (hidden.length) {
+      lines.push("", "## 숨김 영상 (복구 대상 아님)", "");
+      for (const video of hidden) {
+        lines.push(`- ${video.title} — ${watchUrl(video.youtubeVideoId)}`);
+      }
     }
     lines.push("");
     writeFileSync(join(outDir, "channels", `${channel.slug}.md`), lines.join("\n"), "utf8");
@@ -72,7 +82,7 @@ async function main() {
     "# Content Library 백업",
     "",
     `- 내보낸 시각: ${exportedAt}`,
-    `- 채널 ${channels.length}개 / 영상 ${total}편`,
+    `- 채널 ${channels.length}개 / 영상 ${shownTotal}편 (숨김 ${total - shownTotal}편은 채널 문서에 따로 기록)`,
     "- 대상: 공용 Content Library (계정·아이·시청기록은 포함하지 않는다)",
     "",
     "## 복구 방법",
@@ -90,7 +100,8 @@ async function main() {
   ];
 
   channels.forEach((channel, i) => {
-    const levels = channel.videos.reduce<Record<number, number>>((acc, v) => {
+    const shown = channel.videos.filter((v) => v.enabled);
+    const levels = shown.reduce<Record<number, number>>((acc, v) => {
       acc[v.level] = (acc[v.level] ?? 0) + 1;
       return acc;
     }, {});
@@ -101,7 +112,7 @@ async function main() {
       .join(" ");
     index.push(
       `| ${i + 1} | [${channel.name}](channels/${channel.slug}.md) | \`${channel.slug}\` | ${
-        channel.videos.length
+        shown.length
       } | ${channel.enabled ? "사용" : "해제"} | ${dist || "-"} |`,
     );
   });
@@ -141,7 +152,7 @@ async function main() {
   );
 
   console.log(`${outDir}/ 에 백업했습니다.`);
-  console.log(`  채널 ${channels.length}개 / 영상 ${total}편`);
+  console.log(`  채널 ${channels.length}개 / 영상 ${shownTotal}편 (숨김 ${total - shownTotal}편)`);
   console.log(`  README.md · content-library.json · channels/*.md`);
 }
 

@@ -5,7 +5,7 @@ import {
   SETTING_KEYS,
 } from "../src/lib/constants";
 import { buildThumbnailUrl, buildYouTubeWatchUrl } from "../src/lib/youtube";
-import { SEED_CHANNELS, SEED_VIDEOS } from "./seed-content";
+import { RETIRED_VIDEOS, SEED_CHANNELS, SEED_VIDEOS, WRONG_TITLES } from "./seed-content";
 
 const prisma = new PrismaClient();
 
@@ -64,7 +64,9 @@ async function seedLibrary() {
     if (existing) {
       // 공용 Library 항목만 갱신한다. 부모가 직접 등록한 영상은 그대로 둔다.
       // 값이 그대로면 쓰지 않는다(기존 행의 updatedAt 을 건드리지 않기 위함).
+      const fixTitle = WRONG_TITLES.includes(existing.title) && existing.title !== video.title;
       const changed =
+        fixTitle ||
         existing.channelId !== channelId ||
         existing.level !== video.level ||
         existing.category !== video.category ||
@@ -75,6 +77,7 @@ async function seedLibrary() {
         await prisma.video.update({
           where: { id: existing.id },
           data: {
+            ...(fixTitle ? { title: video.title } : {}),
             channelId,
             level: video.level,
             category: video.category,
@@ -108,10 +111,27 @@ async function seedLibrary() {
   );
 }
 
+/**
+ * 공용 Library 에서 뺀 영상을 숨긴다(enabled=false).
+ * 지우지 않으므로 아이의 시청 기록은 그대로 남는다. 부모가 직접 등록한 영상은 건드리지 않는다.
+ */
+async function retireVideos() {
+  const result = await prisma.video.updateMany({
+    where: {
+      youtubeVideoId: { in: RETIRED_VIDEOS.map((video) => video.youtubeVideoId) },
+      householdId: null,
+      enabled: true,
+    },
+    data: { enabled: false },
+  });
+  console.log(`- retired: 목록 ${RETIRED_VIDEOS.length}편 (이번에 숨김 ${result.count}편)`);
+}
+
 async function main() {
   console.log("seed 시작");
   await seedSettings();
   await seedLibrary();
+  await retireVideos();
   console.log("seed 완료");
 }
 

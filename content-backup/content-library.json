@@ -1,7 +1,7 @@
 {
-  "exportedAt": "2026-08-31 14:31:44",
+  "exportedAt": "2026-10-20 13:05:21",
   "channelCount": 23,
-  "videoCount": 526,
+  "videoCount": 608,
   "channels": [
     {
       "slug": "caillou",
@@ -17,7 +17,7 @@
           "category": "SCHOOL",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 190,
+          "sequence": 170,
           "enabled": true
         },
         {
@@ -27,7 +27,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 200,
+          "sequence": 180,
           "enabled": true
         },
         {
@@ -37,7 +37,7 @@
           "category": "SCHOOL",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 210,
+          "sequence": 190,
           "enabled": true
         },
         {
@@ -47,7 +47,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 220,
+          "sequence": 200,
           "enabled": true
         },
         {
@@ -57,7 +57,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 230,
+          "sequence": 210,
           "enabled": true
         },
         {
@@ -67,7 +67,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 240,
+          "sequence": 220,
           "enabled": true
         },
         {
@@ -77,7 +77,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2310,
+          "sequence": 2240,
           "enabled": true
         },
         {
@@ -87,7 +87,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2320,
+          "sequence": 2250,
           "enabled": true
         },
         {
@@ -97,7 +97,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2330,
+          "sequence": 2260,
           "enabled": true
         },
         {
@@ -107,7 +107,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2340,
+          "sequence": 2270,
           "enabled": true
         },
         {
@@ -117,7 +117,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2350,
+          "sequence": 2280,
           "enabled": true
         },
         {
@@ -127,7 +127,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2360,
+          "sequence": 2290,
           "enabled": true
         },
         {
@@ -137,7 +137,7 @@
           "category": "SCHOOL",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2370,
+          "sequence": 2300,
           "enabled": true
         },
         {
@@ -148,7 +148,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3430,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Q99qqAkrlGc",
@@ -158,27 +158,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3440,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "ZW7S_547ZZY",
-          "title": "Caillou's New Shoes",
-          "publisher": "Caillou",
-          "category": "DAILY_LIFE",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3450,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "yewvBQlnew4",
-          "title": "Caillou's Sleepover",
-          "publisher": "Caillou",
-          "category": "FAMILY",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3460,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "FGeBfFKHVZs",
@@ -188,6 +168,66 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3470,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "ZW7S_547ZZY",
+          "title": "Caillou's New Shoes",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "yewvBQlnew4",
+          "title": "Caillou's Sleepover",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Fg8bliAcS2k",
+          "title": "Caillou Has a High Fever",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3590,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "we8amlzi-jg",
+          "title": "Caillou and the Loud Lunch",
+          "publisher": "Caillou",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3600,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "RjGoO__JthQ",
+          "title": "Caillou and the Dirty Car",
+          "publisher": "Caillou",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3610,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "twqFuPMLGBE",
+          "title": "Caillou Fights with Rosie",
+          "publisher": "Caillou",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3620,
           "enabled": true
         },
         {
@@ -196,8 +236,8 @@
           "publisher": "Caillou",
           "category": "DAILY_LIFE",
           "level": 4,
-          "durationSeconds": 2722,
-          "sequence": 250,
+          "durationSeconds": null,
+          "sequence": 230,
           "enabled": true
         },
         {
@@ -206,8 +246,8 @@
           "publisher": "Caillou",
           "category": "DAILY_LIFE",
           "level": 4,
-          "durationSeconds": 3382,
-          "sequence": 260,
+          "durationSeconds": null,
+          "sequence": 240,
           "enabled": true
         },
         {
@@ -218,7 +258,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 3480,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Fpf2qdeZG5Q",
@@ -227,7 +267,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3490,
+          "sequence": 3500,
           "enabled": true
         },
         {
@@ -237,7 +277,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3500,
+          "sequence": 3510,
           "enabled": true
         },
         {
@@ -247,7 +287,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3510,
+          "sequence": 3520,
           "enabled": true
         },
         {
@@ -257,7 +297,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3520,
+          "sequence": 3530,
           "enabled": true
         },
         {
@@ -267,7 +307,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3530,
+          "sequence": 3540,
           "enabled": true
         },
         {
@@ -277,7 +317,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3540,
+          "sequence": 3550,
           "enabled": true
         },
         {
@@ -287,7 +327,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3550,
+          "sequence": 3560,
           "enabled": true
         },
         {
@@ -297,7 +337,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3560,
+          "sequence": 3570,
           "enabled": true
         },
         {
@@ -307,7 +347,7 @@
           "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3570,
+          "sequence": 3580,
           "enabled": true
         }
       ]
@@ -346,7 +386,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1220,
+          "sequence": 1160,
           "enabled": true
         },
         {
@@ -356,7 +396,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1230,
+          "sequence": 1170,
           "enabled": true
         },
         {
@@ -366,7 +406,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1240,
+          "sequence": 1180,
           "enabled": true
         },
         {
@@ -376,7 +416,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1250,
+          "sequence": 1190,
           "enabled": true
         },
         {
@@ -386,7 +426,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1260,
+          "sequence": 1200,
           "enabled": true
         },
         {
@@ -396,7 +436,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1270,
+          "sequence": 1210,
           "enabled": true
         },
         {
@@ -406,7 +446,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1280,
+          "sequence": 1220,
           "enabled": true
         },
         {
@@ -416,7 +456,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1290,
+          "sequence": 1230,
           "enabled": true
         },
         {
@@ -426,7 +466,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1300,
+          "sequence": 1240,
           "enabled": true
         },
         {
@@ -436,7 +476,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1310,
+          "sequence": 1250,
           "enabled": true
         },
         {
@@ -446,7 +486,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1320,
+          "sequence": 1260,
           "enabled": true
         },
         {
@@ -456,7 +496,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1330,
+          "sequence": 1270,
           "enabled": true
         },
         {
@@ -466,7 +506,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1340,
+          "sequence": 1280,
           "enabled": true
         },
         {
@@ -476,7 +516,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1350,
+          "sequence": 1290,
           "enabled": true
         },
         {
@@ -486,7 +526,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1360,
+          "sequence": 1300,
           "enabled": true
         },
         {
@@ -496,7 +536,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1370,
+          "sequence": 1310,
           "enabled": true
         },
         {
@@ -506,7 +546,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1380,
+          "sequence": 1320,
           "enabled": true
         },
         {
@@ -516,7 +556,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1390,
+          "sequence": 1330,
           "enabled": true
         },
         {
@@ -526,7 +566,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1400,
+          "sequence": 1340,
           "enabled": true
         },
         {
@@ -536,7 +576,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1410,
+          "sequence": 1350,
           "enabled": true
         },
         {
@@ -546,7 +586,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1420,
+          "sequence": 1360,
           "enabled": true
         },
         {
@@ -556,7 +596,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1430,
+          "sequence": 1370,
           "enabled": true
         },
         {
@@ -566,7 +606,7 @@
           "category": "PHONICS",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1440,
+          "sequence": 1380,
           "enabled": true
         },
         {
@@ -585,7 +625,7 @@
           "publisher": "Alphablocks",
           "category": "PHONICS",
           "level": 2,
-          "durationSeconds": null,
+          "durationSeconds": 600,
           "sequence": 140,
           "enabled": true
         },
@@ -616,7 +656,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1450,
+          "sequence": 1390,
           "enabled": true
         },
         {
@@ -626,7 +666,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1460,
+          "sequence": 1400,
           "enabled": true
         },
         {
@@ -636,7 +676,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1470,
+          "sequence": 1410,
           "enabled": true
         },
         {
@@ -646,7 +686,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1480,
+          "sequence": 1420,
           "enabled": true
         },
         {
@@ -656,7 +696,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1490,
+          "sequence": 1430,
           "enabled": true
         },
         {
@@ -666,7 +706,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1500,
+          "sequence": 1440,
           "enabled": true
         },
         {
@@ -676,7 +716,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1510,
+          "sequence": 1450,
           "enabled": true
         }
       ]
@@ -755,7 +795,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1820,
+          "sequence": 1760,
           "enabled": true
         },
         {
@@ -765,7 +805,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1830,
+          "sequence": 1770,
           "enabled": true
         },
         {
@@ -775,7 +815,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1840,
+          "sequence": 1780,
           "enabled": true
         },
         {
@@ -785,7 +825,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1850,
+          "sequence": 1790,
           "enabled": true
         },
         {
@@ -795,7 +835,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1860,
+          "sequence": 1800,
           "enabled": true
         },
         {
@@ -805,7 +845,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1870,
+          "sequence": 1810,
           "enabled": true
         },
         {
@@ -815,7 +855,7 @@
           "category": "SCHOOL",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1880,
+          "sequence": 1820,
           "enabled": true
         },
         {
@@ -825,7 +865,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1890,
+          "sequence": 1830,
           "enabled": true
         },
         {
@@ -835,7 +875,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1900,
+          "sequence": 1840,
           "enabled": true
         },
         {
@@ -845,7 +885,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3280,
+          "sequence": 3330,
           "enabled": true
         },
         {
@@ -855,7 +895,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3290,
+          "sequence": 3340,
           "enabled": true
         },
         {
@@ -865,7 +905,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3300,
+          "sequence": 3350,
           "enabled": true
         },
         {
@@ -875,7 +915,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3310,
+          "sequence": 3360,
           "enabled": true
         },
         {
@@ -885,7 +925,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3320,
+          "sequence": 3370,
           "enabled": true
         },
         {
@@ -895,7 +935,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3330,
+          "sequence": 3380,
           "enabled": true
         },
         {
@@ -905,7 +945,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3340,
+          "sequence": 3390,
           "enabled": true
         },
         {
@@ -915,7 +955,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3350,
+          "sequence": 3400,
           "enabled": true
         },
         {
@@ -925,7 +965,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3360,
+          "sequence": 3410,
           "enabled": true
         },
         {
@@ -935,7 +975,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3370,
+          "sequence": 3420,
           "enabled": true
         },
         {
@@ -945,7 +985,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3380,
+          "sequence": 3430,
           "enabled": true
         },
         {
@@ -955,7 +995,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3390,
+          "sequence": 3440,
           "enabled": true
         },
         {
@@ -965,7 +1005,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3400,
+          "sequence": 3450,
           "enabled": true
         },
         {
@@ -975,7 +1015,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3410,
+          "sequence": 3460,
           "enabled": true
         },
         {
@@ -985,7 +1025,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3420,
+          "sequence": 3470,
           "enabled": true
         }
       ]
@@ -998,23 +1038,13 @@
       "enabled": true,
       "videos": [
         {
-          "youtubeVideoId": "jEJqg4f92wQ",
-          "title": "Peppa Pig Loves Muddy Puddles",
-          "publisher": "Peppa Pig",
-          "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": 3603,
-          "sequence": 270,
-          "enabled": true
-        },
-        {
           "youtubeVideoId": "Z3BJHrAL6Fo",
           "title": "Peppa Pig at the Dentist",
           "publisher": "Peppa Pig",
           "category": "DAILY_LIFE",
           "level": 4,
-          "durationSeconds": 825,
-          "sequence": 280,
+          "durationSeconds": null,
+          "sequence": 250,
           "enabled": true
         },
         {
@@ -1024,8 +1054,18 @@
           "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 290,
+          "sequence": 260,
           "enabled": true
+        },
+        {
+          "youtubeVideoId": "jEJqg4f92wQ",
+          "title": "Peppa Pig Loves Muddy Puddles",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 270,
+          "enabled": false
         },
         {
           "youtubeVideoId": "c32STr46nWA",
@@ -1035,7 +1075,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 300,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "kYpVG4U0-Rg",
@@ -1044,12 +1084,42 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2410,
+          "sequence": 2380,
           "enabled": true
         },
         {
           "youtubeVideoId": "XjDZfeFwjxs",
           "title": "George and the YUMMY Ice Cream!",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2390,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "S2n5_MrT5HI",
+          "title": "Peppa Goes to an American DINER!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2400,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "3MMW14jMNEY",
+          "title": "Peppa Picks Out NEW Bedroom",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2410,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "celFbOlP-_U",
+          "title": "Peppa Pig & George's BIG Family Adventures",
           "publisher": "Peppa Pig",
           "category": "FAMILY",
           "level": 4,
@@ -1065,6 +1135,16 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2430,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "d0cnjy0RJz0",
+          "title": "Peppa Pig Finds a GIANT Puddle!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2430,
           "enabled": true
         },
         {
@@ -1075,47 +1155,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2440,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "S2n5_MrT5HI",
-          "title": "Peppa Goes to an American DINER!",
-          "publisher": "Peppa Pig",
-          "category": "DAILY_LIFE",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2450,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "3MMW14jMNEY",
-          "title": "Peppa Picks Out NEW Bedroom",
-          "publisher": "Peppa Pig",
-          "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": 14465,
-          "sequence": 2460,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "celFbOlP-_U",
-          "title": "Peppa Pig & George's BIG Family Adventures",
-          "publisher": "Peppa Pig",
-          "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2470,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "d0cnjy0RJz0",
-          "title": "Peppa Pig Finds a GIANT Puddle!",
-          "publisher": "Peppa Pig",
-          "category": "STORY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2480,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "hWqT80gVa5M",
@@ -1124,7 +1164,7 @@
           "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2490,
+          "sequence": 2440,
           "enabled": true
         },
         {
@@ -1134,7 +1174,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2500,
+          "sequence": 2450,
           "enabled": true
         },
         {
@@ -1142,6 +1182,56 @@
           "title": "Peppa Pig Season 1 Episode 1 - Muddy Puddles",
           "publisher": "Peppa Pig",
           "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "52hOoEqIiPc",
+          "title": "The Rainy Beach Day!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "U27dCsZT5HI",
+          "title": "Peppa Plays With Friends",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DYSTZz_dNLs",
+          "title": "Peppa's Family Camping Adventure",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DEPzEhmXpG8",
+          "title": "Peppa's MASSIVE Mystery Present Christmas Special",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "HMDga2C1Uck",
+          "title": "Peppa's Sore Knee!",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
           "sequence": 2510,
@@ -1155,6 +1245,16 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2520,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "Yy_W3qUB6t8",
+          "title": "Peppa's Ultimate Pillow Fort!",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2520,
           "enabled": true
         },
         {
@@ -1162,6 +1262,16 @@
           "title": "Peppa Pig and Friends",
           "publisher": "Peppa Pig",
           "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2530,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "qURTlRUvcnA",
+          "title": "Picnic in the Thunderstorm",
+          "publisher": "Peppa Pig",
+          "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
           "sequence": 2530,
@@ -1175,17 +1285,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2540,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "52hOoEqIiPc",
-          "title": "Peppa Pig and Friends",
-          "publisher": "Peppa Pig",
-          "category": "STORY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2550,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "KTE-10dWclU",
@@ -1195,66 +1295,86 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2560,
-          "enabled": true
+          "enabled": false
         },
         {
-          "youtubeVideoId": "U27dCsZT5HI",
-          "title": "Peppa Plays With Friends",
-          "publisher": "Peppa Pig",
-          "category": "DAILY_LIFE",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2570,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "DYSTZz_dNLs",
-          "title": "Peppa's Family Camping Adventure",
+          "youtubeVideoId": "hWdLhB2okqA",
+          "title": "Swimming",
           "publisher": "Peppa Pig",
           "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2580,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "DEPzEhmXpG8",
-          "title": "Peppa's MASSIVE Mystery Present Christmas Special",
-          "publisher": "Peppa Pig",
-          "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2590,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "HMDga2C1Uck",
-          "title": "Peppa's Sore Knee!",
-          "publisher": "Peppa Pig",
-          "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
           "sequence": 2600,
           "enabled": true
         },
         {
-          "youtubeVideoId": "Yy_W3qUB6t8",
-          "title": "Peppa's Ultimate Pillow Fort!",
+          "youtubeVideoId": "u6O-v3n2hk8",
+          "title": "Secret Playground for Grown-ups",
           "publisher": "Peppa Pig",
-          "category": "STORY",
+          "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
           "sequence": 2610,
           "enabled": true
         },
         {
-          "youtubeVideoId": "qURTlRUvcnA",
-          "title": "Picnic in the Thunderstorm",
+          "youtubeVideoId": "xX2rQ2cayFk",
+          "title": "Silly Spaghetti! (Peppa Pig Tales)",
           "publisher": "Peppa Pig",
-          "category": "FAMILY",
+          "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
           "sequence": 2620,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "DwFhrV_gA2c",
+          "title": "The Marble Run World Record",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2630,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "2aWUgbdD4L0",
+          "title": "Peppa Makes Her Own Perfume",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2640,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "8FQWmwgw3Io",
+          "title": "Peppa Rescues Tortoise in a Tree",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2650,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_8j4Vxb4DRI",
+          "title": "Controlling the Weather",
+          "publisher": "Peppa Pig",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2660,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uDiZzAxCLCc",
+          "title": "Shopping at the Food Market",
+          "publisher": "Peppa Pig",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2670,
           "enabled": true
         },
         {
@@ -1264,7 +1384,7 @@
           "category": "SCHOOL",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 310,
+          "sequence": 270,
           "enabled": true
         },
         {
@@ -1274,7 +1394,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2630,
+          "sequence": 2540,
           "enabled": true
         },
         {
@@ -1284,7 +1404,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2640,
+          "sequence": 2550,
           "enabled": true
         },
         {
@@ -1294,7 +1414,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2650,
+          "sequence": 2560,
           "enabled": true
         },
         {
@@ -1304,7 +1424,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2660,
+          "sequence": 2570,
           "enabled": true
         },
         {
@@ -1314,7 +1434,7 @@
           "category": "SCHOOL",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2670,
+          "sequence": 2580,
           "enabled": true
         },
         {
@@ -1324,7 +1444,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2680,
+          "sequence": 2590,
           "enabled": true
         }
       ]
@@ -1344,7 +1464,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 170,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "jOtVYMc8rYA",
@@ -1354,27 +1474,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 180,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "MTE0frVXOI4",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3000,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "KTVx2fP5z9U",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3010,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "-jtSFT53Jlg",
@@ -1384,16 +1484,26 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3020,
-          "enabled": true
+          "enabled": false
         },
         {
-          "youtubeVideoId": "nHNBq5ug53s",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "MTE0frVXOI4",
+          "title": "Daniel's Day of Many Feelings",
           "publisher": "Daniel Tiger",
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
           "sequence": 3030,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KTVx2fP5z9U",
+          "title": "Daniel Feels Left Out",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3040,
           "enabled": true
         },
         {
@@ -1404,16 +1514,26 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3040,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "nHNBq5ug53s",
+          "title": "Grown-Ups Come Back",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3050,
           "enabled": true
         },
         {
           "youtubeVideoId": "bRR67YvCEAU",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "title": "Daniel Tries a New Food",
           "publisher": "Daniel Tiger",
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3050,
+          "sequence": 3060,
           "enabled": true
         },
         {
@@ -1424,11 +1544,11 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3060,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "FCthgeJFnEQ",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "title": "Getting Mad: Dealing With Feelings",
           "publisher": "Daniel Tiger",
           "category": "FEELINGS",
           "level": 3,
@@ -1444,6 +1564,16 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3080,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "6aIo635hYAE",
+          "title": "Daniel Does Gymnastics",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3080,
           "enabled": true
         },
         {
@@ -1454,11 +1584,21 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3090,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "eMUsRciiHzg",
+          "title": "Daniel's Rocking Chair",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3090,
           "enabled": true
         },
         {
-          "youtubeVideoId": "6aIo635hYAE",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "U_0QjQ1YzFQ",
+          "title": "Prince Wednesday Gives Away His Book",
           "publisher": "Daniel Tiger",
           "category": "FEELINGS",
           "level": 3,
@@ -1467,10 +1607,10 @@
           "enabled": true
         },
         {
-          "youtubeVideoId": "eMUsRciiHzg",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "3smgIUB1dhk",
+          "title": "A New Friend at School",
           "publisher": "Daniel Tiger",
-          "category": "DAILY_LIFE",
+          "category": "SCHOOL",
           "level": 3,
           "durationSeconds": null,
           "sequence": 3110,
@@ -1484,46 +1624,26 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3120,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "U_0QjQ1YzFQ",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3130,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "3smgIUB1dhk",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "SCHOOL",
-          "level": 3,
-          "durationSeconds": null,
-          "sequence": 3140,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "TcycpcPYjY0",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "title": "Family Day",
           "publisher": "Daniel Tiger",
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3150,
+          "sequence": 3120,
           "enabled": true
         },
         {
           "youtubeVideoId": "qf9Bj6uHf1k",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "title": "Daniel Visits School",
           "publisher": "Daniel Tiger",
           "category": "SCHOOL",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3160,
+          "sequence": 3130,
           "enabled": true
         },
         {
@@ -1534,11 +1654,131 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 3170,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "pYE1isaHuPc",
+          "title": "Daniel's Lunch",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3230,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5qJu0BjZddY",
+          "title": "Mad at the Crayon Factory",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3240,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6WlXnv_QPWs",
+          "title": "Daniel's Blueberry Paws",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qhePX4WX19g",
+          "title": "Margaret's Birthday Party",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3260,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "BbOCUpwQwL8",
+          "title": "The Fire Drill",
+          "publisher": "Daniel Tiger",
+          "category": "SCHOOL",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3270,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "eykxCTA73nI",
+          "title": "Daniel Does It Himself",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3280,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "a5H4RBDNpaQ",
+          "title": "Prince Wednesday's Accident",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3290,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "gYJ56vUlPWo",
+          "title": "Daniel Visits the Dentist",
+          "publisher": "Daniel Tiger",
+          "category": "DAILY_LIFE",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 3300,
           "enabled": true
         },
         {
           "youtubeVideoId": "zlsK15PTrVA",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "title": "The Family Campout",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "sRtd-UD0qIg",
+          "title": "Mom Tiger Is Sick",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "fPUT4M8AV_0",
+          "title": "Daniel Gets Mad",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3160,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9MW8YxYhE9I",
+          "title": "Family Time with Mom & Dad",
+          "publisher": "Daniel Tiger",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3170,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VImsAy__9Lo",
+          "title": "Daniel's Sleepover",
           "publisher": "Daniel Tiger",
           "category": "FAMILY",
           "level": 4,
@@ -1547,20 +1787,20 @@
           "enabled": true
         },
         {
-          "youtubeVideoId": "sRtd-UD0qIg",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "r9zOHKzvfP8",
+          "title": "Daniel's Picnic",
           "publisher": "Daniel Tiger",
-          "category": "FAMILY",
+          "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
           "sequence": 3190,
           "enabled": true
         },
         {
-          "youtubeVideoId": "fPUT4M8AV_0",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "W4lwWuBMKDc",
+          "title": "Thank You, Grandpere Tiger!",
           "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
+          "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
           "sequence": 3200,
@@ -1574,66 +1814,46 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 3210,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "87BXko_cUbU",
+          "title": "Daniel Uses His Words",
+          "publisher": "Daniel Tiger",
+          "category": "FEELINGS",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 3210,
           "enabled": true
         },
         {
-          "youtubeVideoId": "9MW8YxYhE9I",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "cmyxBCfK4oo",
+          "title": "Daniel Says I'm Sorry",
           "publisher": "Daniel Tiger",
-          "category": "FAMILY",
+          "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
           "sequence": 3220,
           "enabled": true
         },
         {
-          "youtubeVideoId": "VImsAy__9Lo",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FAMILY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 3230,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "r9zOHKzvfP8",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "c_kHNm3j_VU",
+          "title": "Calm at the Restaurant",
           "publisher": "Daniel Tiger",
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3240,
+          "sequence": 3310,
           "enabled": true
         },
         {
-          "youtubeVideoId": "W4lwWuBMKDc",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
+          "youtubeVideoId": "xB3RceRnC8w",
+          "title": "Daniel's First Haircut",
           "publisher": "Daniel Tiger",
-          "category": "FAMILY",
+          "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3250,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "87BXko_cUbU",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 3260,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "cmyxBCfK4oo",
-          "title": "Daniel Tiger's Neighbourhood - Scholastic",
-          "publisher": "Daniel Tiger",
-          "category": "FEELINGS",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 3270,
+          "sequence": 3320,
           "enabled": true
         }
       ]
@@ -1651,7 +1871,7 @@
           "publisher": "Caitie's Classroom",
           "category": "FEELINGS",
           "level": 1,
-          "durationSeconds": 128,
+          "durationSeconds": null,
           "sequence": 10,
           "enabled": true
         },
@@ -1692,7 +1912,7 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 920,
+          "sequence": 870,
           "enabled": true
         },
         {
@@ -1702,7 +1922,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 930,
+          "sequence": 880,
           "enabled": true
         },
         {
@@ -1712,7 +1932,7 @@
           "category": "SCHOOL",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 940,
+          "sequence": 890,
           "enabled": true
         },
         {
@@ -1722,7 +1942,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 950,
+          "sequence": 900,
           "enabled": true
         },
         {
@@ -1732,7 +1952,7 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 960,
+          "sequence": 910,
           "enabled": true
         },
         {
@@ -1742,7 +1962,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 970,
+          "sequence": 920,
           "enabled": true
         },
         {
@@ -1752,7 +1972,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 980,
+          "sequence": 930,
           "enabled": true
         },
         {
@@ -1762,7 +1982,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 990,
+          "sequence": 940,
           "enabled": true
         },
         {
@@ -1772,7 +1992,7 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1000,
+          "sequence": 950,
           "enabled": true
         },
         {
@@ -1782,7 +2002,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1010,
+          "sequence": 960,
           "enabled": true
         },
         {
@@ -1792,7 +2012,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1020,
+          "sequence": 970,
           "enabled": true
         },
         {
@@ -1802,7 +2022,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1030,
+          "sequence": 980,
           "enabled": true
         },
         {
@@ -1812,7 +2032,7 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1040,
+          "sequence": 990,
           "enabled": true
         },
         {
@@ -1822,7 +2042,7 @@
           "category": "SCHOOL",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1050,
+          "sequence": 1000,
           "enabled": true
         },
         {
@@ -1832,7 +2052,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1060,
+          "sequence": 1010,
           "enabled": true
         },
         {
@@ -1842,7 +2062,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1070,
+          "sequence": 1020,
           "enabled": true
         },
         {
@@ -1852,7 +2072,7 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1080,
+          "sequence": 1030,
           "enabled": true
         },
         {
@@ -1862,7 +2082,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1090,
+          "sequence": 1040,
           "enabled": true
         },
         {
@@ -1872,7 +2092,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1100,
+          "sequence": 1050,
           "enabled": true
         },
         {
@@ -1882,7 +2102,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1110,
+          "sequence": 1060,
           "enabled": true
         },
         {
@@ -1892,7 +2112,7 @@
           "category": "STORY",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1120,
+          "sequence": 1070,
           "enabled": true
         },
         {
@@ -1902,7 +2122,17 @@
           "category": "DAILY_LIFE",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 1130,
+          "sequence": 1080,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "VV1T43w1y-k",
+          "title": "Yummy Yummy Pizza",
+          "publisher": "Caitie's Classroom",
+          "category": "DAILY_LIFE",
+          "level": 1,
+          "durationSeconds": null,
+          "sequence": 1090,
           "enabled": true
         },
         {
@@ -1913,17 +2143,7 @@
           "level": 1,
           "durationSeconds": null,
           "sequence": 1140,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "VV1T43w1y-k",
-          "title": "Yummy Yummy Pizza",
-          "publisher": "Caitie's Classroom",
-          "category": "DAILY_LIFE",
-          "level": 1,
-          "durationSeconds": null,
-          "sequence": 1150,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "BzzFRQsmb74",
@@ -1932,7 +2152,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1160,
+          "sequence": 1100,
           "enabled": true
         },
         {
@@ -1942,7 +2162,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1170,
+          "sequence": 1110,
           "enabled": true
         },
         {
@@ -1952,7 +2172,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1180,
+          "sequence": 1120,
           "enabled": true
         },
         {
@@ -1962,7 +2182,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1190,
+          "sequence": 1130,
           "enabled": true
         },
         {
@@ -1972,7 +2192,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1200,
+          "sequence": 1140,
           "enabled": true
         },
         {
@@ -1982,7 +2202,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1210,
+          "sequence": 1150,
           "enabled": true
         }
       ]
@@ -2001,7 +2221,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 320,
+          "sequence": 280,
           "enabled": true
         },
         {
@@ -2011,7 +2231,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 330,
+          "sequence": 290,
           "enabled": true
         },
         {
@@ -2021,7 +2241,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 340,
+          "sequence": 300,
           "enabled": true
         },
         {
@@ -2031,7 +2251,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 350,
+          "sequence": 310,
           "enabled": true
         },
         {
@@ -2041,7 +2261,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 360,
+          "sequence": 320,
           "enabled": true
         },
         {
@@ -2050,7 +2270,47 @@
           "publisher": "Bluey",
           "category": "FAMILY",
           "level": 5,
-          "durationSeconds": 420,
+          "durationSeconds": null,
+          "sequence": 330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vAdXLDVkjVA",
+          "title": "Yoga Ball",
+          "publisher": "Bluey",
+          "category": "FEELINGS",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "ewekkT49lsM",
+          "title": "Seesaw",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "V3r4UWtoN_o",
+          "title": "The Sleepover",
+          "publisher": "Bluey",
+          "category": "FAMILY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MmuDI7lbJpk",
+          "title": "The Beach",
+          "publisher": "Bluey",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
           "sequence": 370,
           "enabled": true
         },
@@ -2062,47 +2322,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 380,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "vAdXLDVkjVA",
-          "title": "Yoga Ball",
-          "publisher": "Bluey",
-          "category": "FEELINGS",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 390,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "ewekkT49lsM",
-          "title": "Seesaw",
-          "publisher": "Bluey",
-          "category": "STORY",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 400,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "V3r4UWtoN_o",
-          "title": "The Sleepover",
-          "publisher": "Bluey",
-          "category": "FAMILY",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 410,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "MmuDI7lbJpk",
-          "title": "The Beach",
-          "publisher": "Bluey",
-          "category": "STORY",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 420,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Z7s0tcZZ_mM",
@@ -2111,7 +2331,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 430,
+          "sequence": 380,
           "enabled": true
         },
         {
@@ -2120,8 +2340,8 @@
           "publisher": "Bluey",
           "category": "DAILY_LIFE",
           "level": 5,
-          "durationSeconds": 2379,
-          "sequence": 440,
+          "durationSeconds": null,
+          "sequence": 390,
           "enabled": true
         },
         {
@@ -2131,7 +2351,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 450,
+          "sequence": 400,
           "enabled": true
         },
         {
@@ -2141,7 +2361,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 460,
+          "sequence": 410,
           "enabled": true
         },
         {
@@ -2151,7 +2371,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 470,
+          "sequence": 420,
           "enabled": true
         },
         {
@@ -2161,7 +2381,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 480,
+          "sequence": 430,
           "enabled": true
         },
         {
@@ -2171,7 +2391,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 490,
+          "sequence": 440,
           "enabled": true
         },
         {
@@ -2181,7 +2401,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 500,
+          "sequence": 450,
           "enabled": true
         },
         {
@@ -2191,7 +2411,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 510,
+          "sequence": 460,
           "enabled": true
         },
         {
@@ -2201,7 +2421,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 520,
+          "sequence": 470,
           "enabled": true
         },
         {
@@ -2211,7 +2431,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 530,
+          "sequence": 480,
           "enabled": true
         },
         {
@@ -2221,7 +2441,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 540,
+          "sequence": 490,
           "enabled": true
         },
         {
@@ -2231,7 +2451,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 550,
+          "sequence": 500,
           "enabled": true
         },
         {
@@ -2241,7 +2461,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 560,
+          "sequence": 510,
           "enabled": true
         },
         {
@@ -2251,7 +2471,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 570,
+          "sequence": 520,
           "enabled": true
         },
         {
@@ -2261,7 +2481,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 580,
+          "sequence": 530,
           "enabled": true
         },
         {
@@ -2271,7 +2491,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 590,
+          "sequence": 540,
           "enabled": true
         },
         {
@@ -2281,7 +2501,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 600,
+          "sequence": 550,
           "enabled": true
         },
         {
@@ -2291,7 +2511,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 610,
+          "sequence": 560,
           "enabled": true
         }
       ]
@@ -2310,7 +2530,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 620,
+          "sequence": 570,
           "enabled": true
         },
         {
@@ -2320,7 +2540,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 630,
+          "sequence": 580,
           "enabled": true
         },
         {
@@ -2330,7 +2550,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 640,
+          "sequence": 590,
           "enabled": true
         },
         {
@@ -2340,7 +2560,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 650,
+          "sequence": 600,
           "enabled": true
         },
         {
@@ -2350,7 +2570,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 660,
+          "sequence": 610,
           "enabled": true
         },
         {
@@ -2360,7 +2580,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 670,
+          "sequence": 620,
           "enabled": true
         },
         {
@@ -2370,7 +2590,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 680,
+          "sequence": 630,
           "enabled": true
         },
         {
@@ -2380,7 +2600,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 690,
+          "sequence": 640,
           "enabled": true
         },
         {
@@ -2390,7 +2610,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 700,
+          "sequence": 650,
           "enabled": true
         },
         {
@@ -2400,7 +2620,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 710,
+          "sequence": 660,
           "enabled": true
         },
         {
@@ -2410,7 +2630,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 720,
+          "sequence": 670,
           "enabled": true
         },
         {
@@ -2420,7 +2640,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 730,
+          "sequence": 680,
           "enabled": true
         },
         {
@@ -2430,7 +2650,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 740,
+          "sequence": 690,
           "enabled": true
         },
         {
@@ -2440,7 +2660,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 750,
+          "sequence": 700,
           "enabled": true
         },
         {
@@ -2450,7 +2670,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 760,
+          "sequence": 710,
           "enabled": true
         },
         {
@@ -2460,7 +2680,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 770,
+          "sequence": 720,
           "enabled": true
         },
         {
@@ -2470,7 +2690,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 780,
+          "sequence": 730,
           "enabled": true
         },
         {
@@ -2480,7 +2700,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 790,
+          "sequence": 740,
           "enabled": true
         },
         {
@@ -2490,7 +2710,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 800,
+          "sequence": 750,
           "enabled": true
         },
         {
@@ -2500,7 +2720,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 810,
+          "sequence": 760,
           "enabled": true
         },
         {
@@ -2510,7 +2730,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 820,
+          "sequence": 770,
           "enabled": true
         },
         {
@@ -2520,7 +2740,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 830,
+          "sequence": 780,
           "enabled": true
         },
         {
@@ -2530,7 +2750,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 840,
+          "sequence": 790,
           "enabled": true
         },
         {
@@ -2540,7 +2760,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 850,
+          "sequence": 800,
           "enabled": true
         },
         {
@@ -2550,7 +2770,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 860,
+          "sequence": 810,
           "enabled": true
         },
         {
@@ -2560,7 +2780,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 870,
+          "sequence": 820,
           "enabled": true
         },
         {
@@ -2570,7 +2790,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 880,
+          "sequence": 830,
           "enabled": true
         },
         {
@@ -2580,7 +2800,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 890,
+          "sequence": 840,
           "enabled": true
         },
         {
@@ -2590,7 +2810,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 900,
+          "sequence": 850,
           "enabled": true
         },
         {
@@ -2600,7 +2820,7 @@
           "category": "SONG",
           "level": 1,
           "durationSeconds": null,
-          "sequence": 910,
+          "sequence": 860,
           "enabled": true
         }
       ]
@@ -2613,10 +2833,80 @@
       "enabled": true,
       "videos": [
         {
+          "youtubeVideoId": "nQEkJg4WUDg",
+          "title": "Holes",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Js9jVSMSD40",
+          "title": "Learn to Add with the Numberblocks",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "X_CFk9Fsiyc",
+          "title": "Learn to Subtract with the Numberblocks",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "D9zgxdC7tQA",
+          "title": "Meet Number Eight!",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "MwjibIsXUr4",
+          "title": "Meet Number Four",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "YI0bd8Tw8rE",
+          "title": "Meet Number Seven",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1510,
+          "enabled": true
+        },
+        {
           "youtubeVideoId": "8IymF8M_nLk",
           "title": "Aliens in Numberland?!",
           "publisher": "Numberblocks",
           "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1520,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "JpXjTQJXmVY",
+          "title": "Meet Number Ten",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
           "level": 2,
           "durationSeconds": null,
           "sequence": 1520,
@@ -2630,11 +2920,31 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1530,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "eGsS0X3kvGc",
+          "title": "Meet Numbers 6-10",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1530,
           "enabled": true
         },
         {
           "youtubeVideoId": "MbgkPRXyCXI",
           "title": "Back to School Sports Special!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1540,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "n-7PT-CU24Y",
+          "title": "New to Counting? Start Here!",
           "publisher": "Numberblocks",
           "category": "STORY",
           "level": 2,
@@ -2650,11 +2960,31 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1550,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "yhNdfCHmuMI",
+          "title": "On my way to the Numberblock Fair",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1550,
           "enabled": true
         },
         {
           "youtubeVideoId": "vO2bD4UHwnk",
           "title": "Double Trouble!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1560,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "XnMPuxDtrbE",
+          "title": "Ride the Rays!",
           "publisher": "Numberblocks",
           "category": "STORY",
           "level": 2,
@@ -2670,6 +3000,16 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1570,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "myDRecuhRgk",
+          "title": "Block Star!",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1570,
           "enabled": true
         },
         {
@@ -2680,11 +3020,21 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1580,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "RrPFbVGmZVc",
+          "title": "The Heist",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1580,
           "enabled": true
         },
         {
-          "youtubeVideoId": "nQEkJg4WUDg",
-          "title": "Holes",
+          "youtubeVideoId": "b8qe06QXi1Q",
+          "title": "The Team Factor",
           "publisher": "Numberblocks",
           "category": "STORY",
           "level": 2,
@@ -2700,6 +3050,16 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1600,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "-KFdq63cVVo",
+          "title": "Club Picnic",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1600,
           "enabled": true
         },
         {
@@ -2707,6 +3067,16 @@
           "title": "Just Add One!",
           "publisher": "Numberblocks",
           "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1610,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "0CObWcFLfwM",
+          "title": "Octoblock and the Path of Justice",
+          "publisher": "Numberblocks",
+          "category": "STORY",
           "level": 2,
           "durationSeconds": null,
           "sequence": 1610,
@@ -2720,11 +3090,21 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1620,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "E_zTmPPEzQk",
+          "title": "Capacity for Magic",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1620,
           "enabled": true
         },
         {
-          "youtubeVideoId": "Js9jVSMSD40",
-          "title": "Learn to Add with the Numberblocks",
+          "youtubeVideoId": "F4LK3CEV-_0",
+          "title": "Double Duets",
           "publisher": "Numberblocks",
           "category": "SCHOOL",
           "level": 2,
@@ -2733,8 +3113,8 @@
           "enabled": true
         },
         {
-          "youtubeVideoId": "X_CFk9Fsiyc",
-          "title": "Learn to Subtract with the Numberblocks",
+          "youtubeVideoId": "M3Ig3c0PGFc",
+          "title": "Double Doors, Double Locked",
           "publisher": "Numberblocks",
           "category": "SCHOOL",
           "level": 2,
@@ -2750,6 +3130,16 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1650,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "ZY5_H8iuNog",
+          "title": "Tenpin Tournament",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1650,
           "enabled": true
         },
         {
@@ -2760,31 +3150,41 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1660,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "cXclqZG393E",
+          "title": "The Pyramid of Puzzles",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1660,
           "enabled": true
         },
         {
-          "youtubeVideoId": "D9zgxdC7tQA",
-          "title": "Meet Number Eight!",
+          "youtubeVideoId": "OEImTjGGheE",
+          "title": "One's Fix-it Shop",
           "publisher": "Numberblocks",
-          "category": "SCHOOL",
+          "category": "STORY",
           "level": 2,
           "durationSeconds": null,
           "sequence": 1670,
           "enabled": true
         },
         {
-          "youtubeVideoId": "MwjibIsXUr4",
-          "title": "Meet Number Four",
+          "youtubeVideoId": "HZvPSQmZkPg",
+          "title": "Happy Campers",
           "publisher": "Numberblocks",
-          "category": "SCHOOL",
+          "category": "STORY",
           "level": 2,
           "durationSeconds": null,
           "sequence": 1680,
           "enabled": true
         },
         {
-          "youtubeVideoId": "YI0bd8Tw8rE",
-          "title": "Meet Number Seven",
+          "youtubeVideoId": "JC-YYFXol1k",
+          "title": "Octonaughty and the Fractionator",
           "publisher": "Numberblocks",
           "category": "SCHOOL",
           "level": 2,
@@ -2800,21 +3200,31 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1700,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "UglDhUBsj0k",
+          "title": "The Rings of Unity",
+          "publisher": "Numberblocks",
+          "category": "SCHOOL",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1700,
           "enabled": true
         },
         {
-          "youtubeVideoId": "JpXjTQJXmVY",
-          "title": "Meet Number Ten",
+          "youtubeVideoId": "VFrgWPn_Sk4",
+          "title": "Carnival Special!",
           "publisher": "Numberblocks",
-          "category": "SCHOOL",
+          "category": "STORY",
           "level": 2,
           "durationSeconds": null,
           "sequence": 1710,
           "enabled": true
         },
         {
-          "youtubeVideoId": "eGsS0X3kvGc",
-          "title": "Meet Numbers 6-10",
+          "youtubeVideoId": "8a4sYTueSJE",
+          "title": "Patterns and Shapes (Full Episodes)",
           "publisher": "Numberblocks",
           "category": "SCHOOL",
           "level": 2,
@@ -2830,11 +3240,21 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1730,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "FVYqpqWj4SE",
+          "title": "The Numberblocks Express (Full Episodes)",
+          "publisher": "Numberblocks",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 1730,
           "enabled": true
         },
         {
-          "youtubeVideoId": "n-7PT-CU24Y",
-          "title": "New to Counting? Start Here!",
+          "youtubeVideoId": "TSO6fk72QQE",
+          "title": "Numberblocks Fun! (Full Episodes)",
           "publisher": "Numberblocks",
           "category": "STORY",
           "level": 2,
@@ -2850,16 +3270,16 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1750,
-          "enabled": true
+          "enabled": false
         },
         {
-          "youtubeVideoId": "yhNdfCHmuMI",
-          "title": "On my way to the Numberblock Fair",
+          "youtubeVideoId": "yj5p0-uGR5U",
+          "title": "Number Adventures (Full Episodes)",
           "publisher": "Numberblocks",
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1760,
+          "sequence": 1750,
           "enabled": true
         },
         {
@@ -2870,7 +3290,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1770,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Vz9kT3Ntbw0",
@@ -2880,7 +3300,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1780,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "L-rhmrj7rYk",
@@ -2890,7 +3310,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1790,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "cZVkOHz2880",
@@ -2900,7 +3320,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1800,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Rb5Vknz5M6k",
@@ -2910,7 +3330,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 1810,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -2928,7 +3348,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1910,
+          "sequence": 1850,
           "enabled": true
         },
         {
@@ -2938,7 +3358,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1920,
+          "sequence": 1860,
           "enabled": true
         },
         {
@@ -2948,7 +3368,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1930,
+          "sequence": 1870,
           "enabled": true
         },
         {
@@ -2958,7 +3378,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1940,
+          "sequence": 1880,
           "enabled": true
         },
         {
@@ -2968,7 +3388,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1950,
+          "sequence": 1890,
           "enabled": true
         },
         {
@@ -2978,7 +3398,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1960,
+          "sequence": 1900,
           "enabled": true
         },
         {
@@ -2988,7 +3408,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1970,
+          "sequence": 1910,
           "enabled": true
         },
         {
@@ -2998,7 +3418,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1980,
+          "sequence": 1920,
           "enabled": true
         },
         {
@@ -3008,7 +3428,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 1990,
+          "sequence": 1930,
           "enabled": true
         },
         {
@@ -3018,7 +3438,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2000,
+          "sequence": 1940,
           "enabled": true
         },
         {
@@ -3028,7 +3448,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2010,
+          "sequence": 1950,
           "enabled": true
         },
         {
@@ -3038,7 +3458,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2020,
+          "sequence": 1960,
           "enabled": true
         },
         {
@@ -3048,7 +3468,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2030,
+          "sequence": 1970,
           "enabled": true
         },
         {
@@ -3058,27 +3478,27 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2040,
+          "sequence": 1980,
           "enabled": true
         },
         {
           "youtubeVideoId": "j3-6Ov5Q_gI",
-          "title": "Blippi - Educational Videos for Kids",
+          "title": "Blippi at Amy's Playground",
           "publisher": "Blippi",
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 3580,
+          "sequence": 3630,
           "enabled": true
         },
         {
           "youtubeVideoId": "a7g3iyWQtBM",
-          "title": "Blippi - Educational Videos for Kids",
+          "title": "Blippi Visits Soak City Water Park",
           "publisher": "Blippi",
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 3590,
+          "sequence": 3640,
           "enabled": true
         },
         {
@@ -3088,7 +3508,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 3600,
+          "sequence": 3650,
           "enabled": true
         },
         {
@@ -3098,7 +3518,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2050,
+          "sequence": 1990,
           "enabled": true
         },
         {
@@ -3108,7 +3528,7 @@
           "category": "SONG",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2060,
+          "sequence": 2000,
           "enabled": true
         },
         {
@@ -3118,7 +3538,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2070,
+          "sequence": 2010,
           "enabled": true
         },
         {
@@ -3128,7 +3548,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2080,
+          "sequence": 2020,
           "enabled": true
         },
         {
@@ -3138,7 +3558,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2090,
+          "sequence": 2030,
           "enabled": true
         },
         {
@@ -3148,7 +3568,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2100,
+          "sequence": 2040,
           "enabled": true
         },
         {
@@ -3158,7 +3578,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2110,
+          "sequence": 2050,
           "enabled": true
         },
         {
@@ -3168,7 +3588,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2120,
+          "sequence": 2060,
           "enabled": true
         },
         {
@@ -3178,7 +3598,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2130,
+          "sequence": 2070,
           "enabled": true
         },
         {
@@ -3188,7 +3608,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2140,
+          "sequence": 2080,
           "enabled": true
         },
         {
@@ -3198,7 +3618,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2150,
+          "sequence": 2090,
           "enabled": true
         },
         {
@@ -3208,7 +3628,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2160,
+          "sequence": 2100,
           "enabled": true
         },
         {
@@ -3218,7 +3638,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2170,
+          "sequence": 2110,
           "enabled": true
         },
         {
@@ -3228,7 +3648,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2180,
+          "sequence": 2120,
           "enabled": true
         },
         {
@@ -3238,7 +3658,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2190,
+          "sequence": 2130,
           "enabled": true
         },
         {
@@ -3248,7 +3668,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3610,
+          "sequence": 3660,
           "enabled": true
         },
         {
@@ -3258,7 +3678,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3620,
+          "sequence": 3670,
           "enabled": true
         }
       ]
@@ -3277,7 +3697,27 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2200,
+          "sequence": 2140,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9l54NfLvAOQ",
+          "title": "New TWO HOUR Elmo's World Compilation!",
+          "publisher": "Sesame Street",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2150,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Xn5PnwGUYhc",
+          "title": "Sesame Street: Alphabet",
+          "publisher": "Sesame Street",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 2160,
           "enabled": true
         },
         {
@@ -3288,27 +3728,7 @@
           "level": 2,
           "durationSeconds": null,
           "sequence": 2210,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "9l54NfLvAOQ",
-          "title": "New TWO HOUR Elmo's World Compilation!",
-          "publisher": "Sesame Street",
-          "category": "DAILY_LIFE",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 2220,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "Xn5PnwGUYhc",
-          "title": "Sesame Street: Alphabet",
-          "publisher": "Sesame Street",
-          "category": "PHONICS",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 2230,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3326,7 +3746,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 2240,
+          "sequence": 2170,
           "enabled": true
         }
       ]
@@ -3345,7 +3765,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2250,
+          "sequence": 2180,
           "enabled": true
         },
         {
@@ -3355,7 +3775,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2260,
+          "sequence": 2190,
           "enabled": true
         },
         {
@@ -3365,7 +3785,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2270,
+          "sequence": 2200,
           "enabled": true
         },
         {
@@ -3375,7 +3795,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2280,
+          "sequence": 2210,
           "enabled": true
         },
         {
@@ -3385,7 +3805,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2290,
+          "sequence": 2220,
           "enabled": true
         },
         {
@@ -3395,7 +3815,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 2300,
+          "sequence": 2230,
           "enabled": true
         }
       ]
@@ -3408,6 +3828,76 @@
       "enabled": true,
       "videos": [
         {
+          "youtubeVideoId": "9CTt5RZcoEs",
+          "title": "Underwater Animals!",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "OeWG1pTIA14",
+          "title": "George's Getaway Kite!",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vrYyu48QN4A",
+          "title": "Pool Cleaning Monkey",
+          "publisher": "Curious George",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "512jwbQ7NoE",
+          "title": "George and the Light Train!",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2340,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "5VY4CSht5SE",
+          "title": "George Goes to Clown School!",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "uNMkzejC1LM",
+          "title": "Where is the Skunk!?",
+          "publisher": "Curious George",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "6gI1gr3ghos",
+          "title": "It's George's Bed Time!",
+          "publisher": "Curious George",
+          "category": "DAILY_LIFE",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 2370,
+          "enabled": true
+        },
+        {
           "youtubeVideoId": "Z3LzjwyKYtw",
           "title": "Curious George 1 Hour Compilation",
           "publisher": "Curious George",
@@ -3415,7 +3905,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2380,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "8i5_oSj2i4o",
@@ -3425,17 +3915,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 2390,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "9CTt5RZcoEs",
-          "title": "Underwater Animals!",
-          "publisher": "Curious George",
-          "category": "STORY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 2400,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3453,7 +3933,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2690,
+          "sequence": 2680,
           "enabled": true
         },
         {
@@ -3463,7 +3943,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2700,
+          "sequence": 2690,
           "enabled": true
         },
         {
@@ -3473,7 +3953,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2710,
+          "sequence": 2700,
           "enabled": true
         },
         {
@@ -3483,7 +3963,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2720,
+          "sequence": 2710,
           "enabled": true
         },
         {
@@ -3493,7 +3973,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2730,
+          "sequence": 2720,
           "enabled": true
         },
         {
@@ -3503,7 +3983,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2740,
+          "sequence": 2730,
           "enabled": true
         },
         {
@@ -3513,7 +3993,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2750,
+          "sequence": 2740,
           "enabled": true
         },
         {
@@ -3523,7 +4003,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2760,
+          "sequence": 2750,
           "enabled": true
         },
         {
@@ -3533,7 +4013,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2770,
+          "sequence": 2760,
           "enabled": true
         },
         {
@@ -3543,7 +4023,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2780,
+          "sequence": 2770,
           "enabled": true
         },
         {
@@ -3553,7 +4033,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2790,
+          "sequence": 2780,
           "enabled": true
         },
         {
@@ -3563,7 +4043,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2800,
+          "sequence": 2790,
           "enabled": true
         },
         {
@@ -3573,7 +4053,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2810,
+          "sequence": 2800,
           "enabled": true
         },
         {
@@ -3583,7 +4063,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2820,
+          "sequence": 2810,
           "enabled": true
         },
         {
@@ -3593,7 +4073,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2830,
+          "sequence": 2820,
           "enabled": true
         },
         {
@@ -3603,7 +4083,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2840,
+          "sequence": 2830,
           "enabled": true
         },
         {
@@ -3613,7 +4093,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2850,
+          "sequence": 2840,
           "enabled": true
         },
         {
@@ -3623,7 +4103,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2860,
+          "sequence": 2850,
           "enabled": true
         },
         {
@@ -3633,7 +4113,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 2870,
+          "sequence": 2860,
           "enabled": true
         },
         {
@@ -3642,8 +4122,8 @@
           "publisher": "SciShow Kids",
           "category": "STORY",
           "level": 5,
-          "durationSeconds": 503,
-          "sequence": 2880,
+          "durationSeconds": null,
+          "sequence": 2870,
           "enabled": true
         },
         {
@@ -3652,8 +4132,8 @@
           "publisher": "SciShow Kids",
           "category": "DAILY_LIFE",
           "level": 5,
-          "durationSeconds": 502,
-          "sequence": 2890,
+          "durationSeconds": null,
+          "sequence": 2880,
           "enabled": true
         },
         {
@@ -3663,7 +4143,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2900,
+          "sequence": 2890,
           "enabled": true
         },
         {
@@ -3673,7 +4153,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2910,
+          "sequence": 2900,
           "enabled": true
         },
         {
@@ -3683,7 +4163,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2920,
+          "sequence": 2910,
           "enabled": true
         },
         {
@@ -3693,7 +4173,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2930,
+          "sequence": 2920,
           "enabled": true
         },
         {
@@ -3703,7 +4183,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2940,
+          "sequence": 2930,
           "enabled": true
         },
         {
@@ -3713,7 +4193,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2950,
+          "sequence": 2940,
           "enabled": true
         },
         {
@@ -3723,7 +4203,7 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2960,
+          "sequence": 2950,
           "enabled": true
         },
         {
@@ -3733,7 +4213,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 2970,
+          "sequence": 2960,
           "enabled": true
         }
       ]
@@ -3752,7 +4232,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3630,
+          "sequence": 3680,
           "enabled": true
         },
         {
@@ -3762,7 +4242,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3640,
+          "sequence": 3690,
           "enabled": true
         },
         {
@@ -3772,7 +4252,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3650,
+          "sequence": 3700,
           "enabled": true
         },
         {
@@ -3782,7 +4262,7 @@
           "category": "FAMILY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3660,
+          "sequence": 3710,
           "enabled": true
         },
         {
@@ -3792,7 +4272,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3670,
+          "sequence": 3720,
           "enabled": true
         },
         {
@@ -3802,7 +4282,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3680,
+          "sequence": 3730,
           "enabled": true
         },
         {
@@ -3812,7 +4292,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3690,
+          "sequence": 3740,
           "enabled": true
         },
         {
@@ -3822,7 +4302,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3700,
+          "sequence": 3750,
           "enabled": true
         },
         {
@@ -3832,7 +4312,7 @@
           "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3710,
+          "sequence": 3760,
           "enabled": true
         },
         {
@@ -3842,7 +4322,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3720,
+          "sequence": 3770,
           "enabled": true
         },
         {
@@ -3852,7 +4332,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3730,
+          "sequence": 3780,
           "enabled": true
         }
       ]
@@ -3871,7 +4351,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3740,
+          "sequence": 3790,
           "enabled": true
         },
         {
@@ -3881,7 +4361,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3750,
+          "sequence": 3800,
           "enabled": true
         },
         {
@@ -3891,7 +4371,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3760,
+          "sequence": 3810,
           "enabled": true
         },
         {
@@ -3901,7 +4381,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3770,
+          "sequence": 3820,
           "enabled": true
         },
         {
@@ -3911,37 +4391,37 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3780,
+          "sequence": 3830,
           "enabled": true
         },
         {
           "youtubeVideoId": "39uRkGwnCjs",
-          "title": "Thomas & Friends",
+          "title": "James in a Mess",
           "publisher": "Thomas & Friends",
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3790,
+          "sequence": 3840,
           "enabled": true
         },
         {
           "youtubeVideoId": "KCax7yae56E",
-          "title": "Thomas & Friends",
+          "title": "Down the Mine",
           "publisher": "Thomas & Friends",
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3800,
+          "sequence": 3850,
           "enabled": true
         },
         {
           "youtubeVideoId": "TPp5zg-ZB14",
-          "title": "Thomas & Friends",
+          "title": "Snow",
           "publisher": "Thomas & Friends",
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3810,
+          "sequence": 3860,
           "enabled": true
         },
         {
@@ -3951,7 +4431,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3820,
+          "sequence": 3870,
           "enabled": true
         },
         {
@@ -3961,7 +4441,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3830,
+          "sequence": 3880,
           "enabled": true
         },
         {
@@ -3971,7 +4451,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3840,
+          "sequence": 3890,
           "enabled": true
         },
         {
@@ -3981,7 +4461,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3850,
+          "sequence": 3900,
           "enabled": true
         },
         {
@@ -3991,7 +4471,7 @@
           "category": "DAILY_LIFE",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3860,
+          "sequence": 3910,
           "enabled": true
         },
         {
@@ -4001,7 +4481,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3870,
+          "sequence": 3920,
           "enabled": true
         },
         {
@@ -4011,7 +4491,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3880,
+          "sequence": 3930,
           "enabled": true
         },
         {
@@ -4021,7 +4501,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3890,
+          "sequence": 3940,
           "enabled": true
         },
         {
@@ -4031,7 +4511,7 @@
           "category": "FEELINGS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3900,
+          "sequence": 3950,
           "enabled": true
         },
         {
@@ -4041,7 +4521,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3910,
+          "sequence": 3960,
           "enabled": true
         },
         {
@@ -4051,7 +4531,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 3920,
+          "sequence": 3970,
           "enabled": true
         },
         {
@@ -4061,17 +4541,17 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3930,
+          "sequence": 3980,
           "enabled": true
         },
         {
           "youtubeVideoId": "W32CLjJAe9w",
-          "title": "Thomas & Friends",
+          "title": "You Can't Win!",
           "publisher": "Thomas & Friends",
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3940,
+          "sequence": 3990,
           "enabled": true
         },
         {
@@ -4081,7 +4561,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3950,
+          "sequence": 4000,
           "enabled": true
         },
         {
@@ -4091,7 +4571,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3960,
+          "sequence": 4010,
           "enabled": true
         },
         {
@@ -4101,7 +4581,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3970,
+          "sequence": 4020,
           "enabled": true
         },
         {
@@ -4111,7 +4591,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3980,
+          "sequence": 4030,
           "enabled": true
         },
         {
@@ -4121,7 +4601,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 3990,
+          "sequence": 4040,
           "enabled": true
         },
         {
@@ -4130,8 +4610,8 @@
           "publisher": "Thomas & Friends",
           "category": "FEELINGS",
           "level": 4,
-          "durationSeconds": 269,
-          "sequence": 4000,
+          "durationSeconds": null,
+          "sequence": 4050,
           "enabled": true
         },
         {
@@ -4141,7 +4621,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4010,
+          "sequence": 4060,
           "enabled": true
         },
         {
@@ -4151,7 +4631,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4020,
+          "sequence": 4070,
           "enabled": true
         },
         {
@@ -4161,7 +4641,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4030,
+          "sequence": 4080,
           "enabled": true
         }
       ]
@@ -4180,7 +4660,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4040,
+          "sequence": 4090,
           "enabled": true
         },
         {
@@ -4190,7 +4670,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4050,
+          "sequence": 4100,
           "enabled": true
         },
         {
@@ -4200,7 +4680,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4060,
+          "sequence": 4110,
           "enabled": true
         },
         {
@@ -4210,7 +4690,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4070,
+          "sequence": 4120,
           "enabled": true
         },
         {
@@ -4220,7 +4700,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4080,
+          "sequence": 4130,
           "enabled": true
         },
         {
@@ -4230,7 +4710,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4090,
+          "sequence": 4140,
           "enabled": true
         },
         {
@@ -4240,7 +4720,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4100,
+          "sequence": 4150,
           "enabled": true
         },
         {
@@ -4250,7 +4730,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4110,
+          "sequence": 4160,
           "enabled": true
         },
         {
@@ -4260,7 +4740,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4120,
+          "sequence": 4170,
           "enabled": true
         },
         {
@@ -4270,7 +4750,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4130,
+          "sequence": 4180,
           "enabled": true
         },
         {
@@ -4280,7 +4760,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4140,
+          "sequence": 4190,
           "enabled": true
         },
         {
@@ -4290,7 +4770,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4150,
+          "sequence": 4200,
           "enabled": true
         },
         {
@@ -4300,7 +4780,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4160,
+          "sequence": 4210,
           "enabled": true
         },
         {
@@ -4310,7 +4790,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4170,
+          "sequence": 4220,
           "enabled": true
         },
         {
@@ -4320,7 +4800,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4180,
+          "sequence": 4230,
           "enabled": true
         },
         {
@@ -4330,7 +4810,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4190,
+          "sequence": 4240,
           "enabled": true
         },
         {
@@ -4340,7 +4820,47 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4200,
+          "sequence": 4250,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "by2xLvpoq-I",
+          "title": "The Mantis Shrimp",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4310,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "tnseA-7Hmv0",
+          "title": "The Snapper Shrimp (Full Episodes)",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4320,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-RDjPa--BU0",
+          "title": "World Wetlands Day and The Hungry Hippos",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4330,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "fWTL-e2dsAQ",
+          "title": "Cutest Spring Babies",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4340,
           "enabled": true
         },
         {
@@ -4351,7 +4871,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4210,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "cXQV3UoVO1k",
@@ -4361,7 +4881,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4220,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "U-nOUUxNp_c",
@@ -4371,7 +4891,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4230,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "bWFXMYZadh0",
@@ -4381,7 +4901,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4240,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "dRsphBjXGhM",
@@ -4391,11 +4911,21 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4250,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "_5fiEN_BUJ0",
           "title": "Creature Report: Sailfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4260,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "ptGEyCeBZB8",
+          "title": "The Combtooth Blenny",
           "publisher": "Octonauts",
           "category": "STORY",
           "level": 5,
@@ -4411,11 +4941,21 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4270,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "jnWaL2Rd0Vs",
+          "title": "The Lion's Mane Jellyfish",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4270,
           "enabled": true
         },
         {
-          "youtubeVideoId": "ptGEyCeBZB8",
-          "title": "The Combtooth Blenny",
+          "youtubeVideoId": "XVAvCOEPcIM",
+          "title": "The Oarfish",
           "publisher": "Octonauts",
           "category": "STORY",
           "level": 5,
@@ -4424,8 +4964,8 @@
           "enabled": true
         },
         {
-          "youtubeVideoId": "jnWaL2Rd0Vs",
-          "title": "The Lion's Mane Jellyfish",
+          "youtubeVideoId": "5Bb4IcTIl74",
+          "title": "The Slime Eels",
           "publisher": "Octonauts",
           "category": "STORY",
           "level": 5,
@@ -4441,27 +4981,7 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 4300,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "XVAvCOEPcIM",
-          "title": "The Oarfish",
-          "publisher": "Octonauts",
-          "category": "STORY",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 4310,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "5Bb4IcTIl74",
-          "title": "The Slime Eels",
-          "publisher": "Octonauts",
-          "category": "STORY",
-          "level": 5,
-          "durationSeconds": null,
-          "sequence": 4320,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "DH2vqSwhV-I",
@@ -4470,7 +4990,47 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 4330,
+          "sequence": 4300,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "mE1Jr6WRnUs",
+          "title": "Healing Sick Sea Creatures",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4350,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "qWcxxbNSXwA",
+          "title": "Junior Secret Agents Alert",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4360,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "JWd5Umus17c",
+          "title": "The Vegimals Save Summer!",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4370,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9-bfWYIR_v8",
+          "title": "Halloween Pick n' Mix Collection",
+          "publisher": "Octonauts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 4380,
           "enabled": true
         }
       ]
@@ -4489,7 +5049,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4340,
+          "sequence": 4390,
           "enabled": true
         },
         {
@@ -4499,7 +5059,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4350,
+          "sequence": 4400,
           "enabled": true
         },
         {
@@ -4509,7 +5069,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4360,
+          "sequence": 4410,
           "enabled": true
         },
         {
@@ -4519,62 +5079,12 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4370,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "qPYS9M6LEiI",
-          "title": "Super Why - WildBrain",
-          "publisher": "Super Why!",
-          "category": "STORY",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 4380,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "dLVLFdYNv5g",
-          "title": "Super Why - WildBrain",
-          "publisher": "Super Why!",
-          "category": "PHONICS",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 4390,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "014_8pAEFG0",
-          "title": "Super Why - WildBrain",
-          "publisher": "Super Why!",
-          "category": "STORY",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 4400,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "OYh_ifl0PlM",
-          "title": "Super Why - WildBrain",
-          "publisher": "Super Why!",
-          "category": "DAILY_LIFE",
-          "level": 2,
-          "durationSeconds": null,
-          "sequence": 4410,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "vma78vvnGQk",
-          "title": "Super Why - WildBrain",
-          "publisher": "Super Why!",
-          "category": "PHONICS",
-          "level": 2,
-          "durationSeconds": null,
           "sequence": 4420,
           "enabled": true
         },
         {
-          "youtubeVideoId": "y9sOqpGFlEA",
-          "title": "Super Why - WildBrain",
+          "youtubeVideoId": "qPYS9M6LEiI",
+          "title": "Zora's Art Adventure",
           "publisher": "Super Why!",
           "category": "STORY",
           "level": 2,
@@ -4583,33 +5093,83 @@
           "enabled": true
         },
         {
-          "youtubeVideoId": "oyyPJrm5xZ0",
-          "title": "Super Why - WildBrain",
+          "youtubeVideoId": "dLVLFdYNv5g",
+          "title": "The Rhyming Carnival",
           "publisher": "Super Why!",
-          "category": "FEELINGS",
+          "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
           "sequence": 4440,
           "enabled": true
         },
         {
-          "youtubeVideoId": "zaHsXgyBxss",
-          "title": "Super Why - WildBrain",
+          "youtubeVideoId": "014_8pAEFG0",
+          "title": "The Cowgirl Mystery",
           "publisher": "Super Why!",
-          "category": "DAILY_LIFE",
+          "category": "STORY",
           "level": 2,
           "durationSeconds": null,
           "sequence": 4450,
           "enabled": true
         },
         {
-          "youtubeVideoId": "KdLtdObPci0",
-          "title": "Super Why - WildBrain",
+          "youtubeVideoId": "OYh_ifl0PlM",
+          "title": "Webby in Bathland",
+          "publisher": "Super Why!",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4460,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "vma78vvnGQk",
+          "title": "The Silly Word Play",
+          "publisher": "Super Why!",
+          "category": "PHONICS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4470,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "y9sOqpGFlEA",
+          "title": "The Great Robot Race",
           "publisher": "Super Why!",
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4460,
+          "sequence": 4480,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "oyyPJrm5xZ0",
+          "title": "The Unhappy Puppy",
+          "publisher": "Super Why!",
+          "category": "FEELINGS",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4490,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "zaHsXgyBxss",
+          "title": "The Cookbook",
+          "publisher": "Super Why!",
+          "category": "DAILY_LIFE",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4500,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KdLtdObPci0",
+          "title": "Alice in Wonderland",
+          "publisher": "Super Why!",
+          "category": "STORY",
+          "level": 2,
+          "durationSeconds": null,
+          "sequence": 4510,
           "enabled": true
         },
         {
@@ -4619,7 +5179,7 @@
           "category": "SCHOOL",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4470,
+          "sequence": 4520,
           "enabled": true
         },
         {
@@ -4629,7 +5189,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4480,
+          "sequence": 4530,
           "enabled": true
         },
         {
@@ -4639,7 +5199,7 @@
           "category": "FEELINGS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4490,
+          "sequence": 4540,
           "enabled": true
         },
         {
@@ -4649,7 +5209,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4500,
+          "sequence": 4550,
           "enabled": true
         },
         {
@@ -4659,7 +5219,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4510,
+          "sequence": 4560,
           "enabled": true
         },
         {
@@ -4669,7 +5229,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4520,
+          "sequence": 4570,
           "enabled": true
         },
         {
@@ -4679,7 +5239,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 4530,
+          "sequence": 4580,
           "enabled": true
         },
         {
@@ -4689,7 +5249,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4540,
+          "sequence": 4590,
           "enabled": true
         },
         {
@@ -4699,7 +5259,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4550,
+          "sequence": 4600,
           "enabled": true
         },
         {
@@ -4709,7 +5269,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4560,
+          "sequence": 4610,
           "enabled": true
         },
         {
@@ -4719,7 +5279,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4570,
+          "sequence": 4620,
           "enabled": true
         },
         {
@@ -4729,27 +5289,27 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4580,
+          "sequence": 4630,
           "enabled": true
         },
         {
           "youtubeVideoId": "d0fds5jzk48",
-          "title": "Super Why - WildBrain",
+          "title": "Dr. Dolittle",
           "publisher": "Super Why!",
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4590,
+          "sequence": 4640,
           "enabled": true
         },
         {
           "youtubeVideoId": "VeGuhJr1kEg",
-          "title": "Super Why - WildBrain",
+          "title": "Molly's Dance Show",
           "publisher": "Super Why!",
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4600,
+          "sequence": 4650,
           "enabled": true
         },
         {
@@ -4759,7 +5319,7 @@
           "category": "PHONICS",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4610,
+          "sequence": 4660,
           "enabled": true
         },
         {
@@ -4769,7 +5329,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4620,
+          "sequence": 4670,
           "enabled": true
         },
         {
@@ -4779,7 +5339,7 @@
           "category": "STORY",
           "level": 3,
           "durationSeconds": null,
-          "sequence": 4630,
+          "sequence": 4680,
           "enabled": true
         }
       ]
@@ -4799,7 +5359,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4640,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "pdvHw-yHGS8",
@@ -4809,7 +5369,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4650,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "6F-r8k52hr8",
@@ -4819,7 +5379,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4660,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "ZoALT1kxpmA",
@@ -4829,7 +5389,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4670,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "REZ9O1b5Yqw",
@@ -4839,7 +5399,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4680,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "RT4vi0xK88o",
@@ -4849,7 +5409,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4690,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "3nmeTpnS_3A",
@@ -4859,7 +5419,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4700,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "nvdzGoVrCS4",
@@ -4869,7 +5429,7 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4710,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "3Um7w08c4G0",
@@ -4879,11 +5439,31 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4720,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "4V-QE2GyMKc",
+          "title": "Valley of the Stygimolochs",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4720,
           "enabled": true
         },
         {
           "youtubeVideoId": "dF5Xz0jqjLI",
           "title": "Jim Henson's Family Hub",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4730,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "c9z52rLlC8k",
+          "title": "The Call of the Wild Corythosaurus",
           "publisher": "Dinosaur Train",
           "category": "STORY",
           "level": 3,
@@ -4899,11 +5479,31 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4740,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "pATPnEJvUnE",
+          "title": "Valley of Stygimoloch",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4740,
           "enabled": true
         },
         {
           "youtubeVideoId": "Mkp70PBXMKE",
           "title": "Meeting the T-Rex Family",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4750,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "iKdjGPzCl98",
+          "title": "Tiny Likes Fish",
           "publisher": "Dinosaur Train",
           "category": "FAMILY",
           "level": 3,
@@ -4919,6 +5519,16 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4760,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "o8FfMjCU6tU",
+          "title": "One Big Dinosaur",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4760,
           "enabled": true
         },
         {
@@ -4929,6 +5539,116 @@
           "level": 3,
           "durationSeconds": null,
           "sequence": 4770,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "l0wBJApY9rw",
+          "title": "Triceratops for Lunch",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4770,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "xEjwH-pNKws",
+          "title": "I'm a T. rex",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4780,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "w15NP755U5E",
+          "title": "T. rex Teeth",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4790,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "7FKmebZ-bSw",
+          "title": "Fast Friends",
+          "publisher": "Dinosaur Train",
+          "category": "FEELINGS",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4800,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Nvf4KZ6KOOM",
+          "title": "One Smart Dinosaur",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4810,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "80Ce6LIwVcU",
+          "title": "Now With Feathers",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4820,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "-j_USwFUyvE",
+          "title": "A Frill a Minute",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4830,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "sIMq2zKj6FM",
+          "title": "Flowers for Mom",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 3,
+          "durationSeconds": null,
+          "sequence": 4840,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "jgW91GzFY_0",
+          "title": "Amazing Dinosaur Eggs!",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4690,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "wVb9oZmrrcc",
+          "title": "Mr. Conductor vs Thurston Troodon",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4700,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9tUyD8FuIjI",
+          "title": "Adventure Camp: Ziplining",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4710,
           "enabled": true
         },
         {
@@ -4939,7 +5659,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4780,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "2FCz6MGaHCA",
@@ -4949,17 +5669,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4790,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "jgW91GzFY_0",
-          "title": "Jim Henson's Family Hub",
-          "publisher": "Dinosaur Train",
-          "category": "STORY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 4800,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "Of11gxG5cT0",
@@ -4969,17 +5679,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4810,
-          "enabled": true
-        },
-        {
-          "youtubeVideoId": "wVb9oZmrrcc",
-          "title": "Mr. Conductor vs Thurston Troodon",
-          "publisher": "Dinosaur Train",
-          "category": "STORY",
-          "level": 4,
-          "durationSeconds": null,
-          "sequence": 4820,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "LuTGPXOXu1o",
@@ -4989,7 +5689,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4830,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "KzpeXuGFIYI",
@@ -4999,7 +5699,7 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4840,
-          "enabled": true
+          "enabled": false
         },
         {
           "youtubeVideoId": "voWVfAZFUkY",
@@ -5009,6 +5709,76 @@
           "level": 4,
           "durationSeconds": null,
           "sequence": 4850,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "hnvuW0qLs9s",
+          "title": "Laura the Giganotosaurus",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4850,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "KVB_pwVCg8Y",
+          "title": "Derek the Deinonychus",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4860,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "btl3sKTNeas",
+          "title": "One Small Dinosaur",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4870,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "rUp24yJuoEo",
+          "title": "Campout",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4880,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "9EgQZbIi8fA",
+          "title": "Dinosaur Poop",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4890,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "peBl3lrKglU",
+          "title": "T. rex Migration",
+          "publisher": "Dinosaur Train",
+          "category": "STORY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4900,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "GovbDlVjKhk",
+          "title": "Hatching Party",
+          "publisher": "Dinosaur Train",
+          "category": "FAMILY",
+          "level": 4,
+          "durationSeconds": null,
+          "sequence": 4910,
           "enabled": true
         }
       ]
@@ -5027,7 +5797,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4860,
+          "sequence": 4920,
           "enabled": true
         },
         {
@@ -5037,7 +5807,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4870,
+          "sequence": 4930,
           "enabled": true
         },
         {
@@ -5047,7 +5817,7 @@
           "category": "FAMILY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4880,
+          "sequence": 4940,
           "enabled": true
         },
         {
@@ -5057,7 +5827,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4890,
+          "sequence": 4950,
           "enabled": true
         },
         {
@@ -5067,7 +5837,7 @@
           "category": "SCHOOL",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4900,
+          "sequence": 4960,
           "enabled": true
         },
         {
@@ -5077,7 +5847,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4910,
+          "sequence": 4970,
           "enabled": true
         },
         {
@@ -5087,7 +5857,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4920,
+          "sequence": 4980,
           "enabled": true
         },
         {
@@ -5097,7 +5867,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4930,
+          "sequence": 4990,
           "enabled": true
         },
         {
@@ -5107,7 +5877,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4940,
+          "sequence": 5000,
           "enabled": true
         },
         {
@@ -5117,7 +5887,7 @@
           "category": "DAILY_LIFE",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4950,
+          "sequence": 5010,
           "enabled": true
         },
         {
@@ -5127,7 +5897,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4960,
+          "sequence": 5020,
           "enabled": true
         },
         {
@@ -5137,7 +5907,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4970,
+          "sequence": 5030,
           "enabled": true
         },
         {
@@ -5147,7 +5917,7 @@
           "category": "FEELINGS",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4980,
+          "sequence": 5040,
           "enabled": true
         },
         {
@@ -5157,7 +5927,7 @@
           "category": "STORY",
           "level": 4,
           "durationSeconds": null,
-          "sequence": 4990,
+          "sequence": 5050,
           "enabled": true
         },
         {
@@ -5167,7 +5937,7 @@
           "category": "FAMILY",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 5000,
+          "sequence": 5060,
           "enabled": true
         },
         {
@@ -5177,7 +5947,7 @@
           "category": "SCHOOL",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 5010,
+          "sequence": 5070,
           "enabled": true
         },
         {
@@ -5187,7 +5957,7 @@
           "category": "FEELINGS",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 5020,
+          "sequence": 5080,
           "enabled": true
         },
         {
@@ -5197,7 +5967,7 @@
           "category": "DAILY_LIFE",
           "level": 5,
           "durationSeconds": null,
-          "sequence": 5030,
+          "sequence": 5090,
           "enabled": true
         }
       ]
@@ -5216,7 +5986,7 @@
           "category": "FEELINGS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5040,
+          "sequence": 5100,
           "enabled": true
         },
         {
@@ -5226,7 +5996,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5050,
+          "sequence": 5110,
           "enabled": true
         },
         {
@@ -5236,7 +6006,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5060,
+          "sequence": 5120,
           "enabled": true
         },
         {
@@ -5246,7 +6016,7 @@
           "category": "DAILY_LIFE",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5070,
+          "sequence": 5130,
           "enabled": true
         },
         {
@@ -5256,7 +6026,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5080,
+          "sequence": 5140,
           "enabled": true
         },
         {
@@ -5266,7 +6036,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5090,
+          "sequence": 5150,
           "enabled": true
         },
         {
@@ -5276,7 +6046,7 @@
           "category": "FEELINGS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5100,
+          "sequence": 5160,
           "enabled": true
         },
         {
@@ -5286,7 +6056,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5110,
+          "sequence": 5170,
           "enabled": true
         },
         {
@@ -5296,7 +6066,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5120,
+          "sequence": 5180,
           "enabled": true
         },
         {
@@ -5306,7 +6076,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5130,
+          "sequence": 5190,
           "enabled": true
         },
         {
@@ -5316,7 +6086,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5140,
+          "sequence": 5200,
           "enabled": true
         },
         {
@@ -5326,7 +6096,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5150,
+          "sequence": 5210,
           "enabled": true
         },
         {
@@ -5336,7 +6106,7 @@
           "category": "FEELINGS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5160,
+          "sequence": 5220,
           "enabled": true
         },
         {
@@ -5346,7 +6116,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5170,
+          "sequence": 5230,
           "enabled": true
         },
         {
@@ -5356,7 +6126,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5180,
+          "sequence": 5240,
           "enabled": true
         },
         {
@@ -5366,7 +6136,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5190,
+          "sequence": 5250,
           "enabled": true
         },
         {
@@ -5376,7 +6146,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5200,
+          "sequence": 5260,
           "enabled": true
         },
         {
@@ -5386,7 +6156,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5210,
+          "sequence": 5270,
           "enabled": true
         },
         {
@@ -5396,7 +6166,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5220,
+          "sequence": 5280,
           "enabled": true
         },
         {
@@ -5406,7 +6176,7 @@
           "category": "FAMILY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5230,
+          "sequence": 5290,
           "enabled": true
         },
         {
@@ -5416,7 +6186,7 @@
           "category": "PHONICS",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5240,
+          "sequence": 5300,
           "enabled": true
         },
         {
@@ -5426,7 +6196,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5250,
+          "sequence": 5310,
           "enabled": true
         },
         {
@@ -5436,7 +6206,7 @@
           "category": "STORY",
           "level": 2,
           "durationSeconds": null,
-          "sequence": 5260,
+          "sequence": 5320,
           "enabled": true
         }
       ]
@@ -5455,6 +6225,16 @@
           "category": "STORY",
           "level": 5,
           "durationSeconds": null,
+          "sequence": 2970,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "NQ9Y1w6shCE",
+          "title": "To Touch a Hummingbird",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
           "sequence": 2980,
           "enabled": true
         },
@@ -5466,6 +6246,46 @@
           "level": 5,
           "durationSeconds": null,
           "sequence": 2990,
+          "enabled": false
+        },
+        {
+          "youtubeVideoId": "OEBf6whyztY",
+          "title": "Under Frozen Pond",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 2990,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "_fxykkooA1I",
+          "title": "Aye Aye",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 3000,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "WiyoeAlM520",
+          "title": "Search for the Florida Panther",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 3010,
+          "enabled": true
+        },
+        {
+          "youtubeVideoId": "Xjf93qQQXXs",
+          "title": "Back in Creature Time: Day of the Dodo",
+          "publisher": "Wild Kratts",
+          "category": "STORY",
+          "level": 5,
+          "durationSeconds": null,
+          "sequence": 3020,
           "enabled": true
         }
       ]

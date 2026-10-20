@@ -1,7 +1,7 @@
 # Caitie's Classroom
 
 - slug: `caities-classroom`
-- 영상: 34편
+- 영상: 33편 (숨김 1편 별도)
 - 노출: 사용
 - 설명: 노래 · 따라 하기 · 첫 영어
 
@@ -35,7 +35,6 @@
 | 1 | New Year's Eve Countdown with Caitie and Tobee | SONG | Caitie's Classroom | https://www.youtube.com/watch?v=n8prfs_MWUE |
 | 1 | Spectacular Snow | STORY | Caitie's Classroom | https://www.youtube.com/watch?v=2KYaXd6Ff_U |
 | 1 | Staying Clean & Healthy | DAILY_LIFE | Caitie's Classroom | https://www.youtube.com/watch?v=QqS008ULbIs |
-| 1 | Welcome To Caitie's Classroom! | DAILY_LIFE | Caitie's Classroom | https://www.youtube.com/watch?v=KA0_c1pwXhE |
 | 1 | Yummy Yummy Pizza | DAILY_LIFE | Caitie's Classroom | https://www.youtube.com/watch?v=VV1T43w1y-k |
 | 2 | Community Helpers | DAILY_LIFE | Caitie's Classroom | https://www.youtube.com/watch?v=BzzFRQsmb74 |
 | 2 | Magical Magnets | STORY | Caitie's Classroom | https://www.youtube.com/watch?v=N9NRFMZl0nY |
@@ -43,3 +42,7 @@
 | 2 | The Magnificent Night Sky | STORY | Caitie's Classroom | https://www.youtube.com/watch?v=yHbAxToeYME |
 | 2 | Underwater Animal Adventure | STORY | Caitie's Classroom | https://www.youtube.com/watch?v=cEOmEp3w0P0 |
 | 2 | Wonderful Wind | STORY | Caitie's Classroom | https://www.youtube.com/watch?v=vr4uFFalEXI |
+
+## 숨김 영상 (복구 대상 아님)
+
+- Welcome To Caitie's Classroom! — https://www.youtube.com/watch?v=KA0_c1pwXhE

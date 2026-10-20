@@ -1,7 +1,7 @@
 # Bluey
 
 - slug: `bluey`
-- 영상: 30편
+- 영상: 29편 (숨김 1편 별도)
 - 노출: 사용
 - 설명: 가족 놀이 · 자연스러운 대화
 
@@ -15,7 +15,6 @@
 | 5 | The Pool | FAMILY | Bluey | https://www.youtube.com/watch?v=YpI0jgqNJGc |
 | 5 | Dad Baby | FAMILY | Bluey | https://www.youtube.com/watch?v=e8ULi9CC6os |
 | 5 | Magic Asparagus | FAMILY | Bluey | https://www.youtube.com/watch?v=Q-K4TCO7Lp8 |
-| 5 | Bingo | DAILY_LIFE | Bluey | https://www.youtube.com/watch?v=wCc1XyprU8c |
 | 5 | Yoga Ball | FEELINGS | Bluey | https://www.youtube.com/watch?v=vAdXLDVkjVA |
 | 5 | Seesaw | STORY | Bluey | https://www.youtube.com/watch?v=ewekkT49lsM |
 | 5 | The Sleepover | FAMILY | Bluey | https://www.youtube.com/watch?v=V3r4UWtoN_o |
@@ -39,3 +38,7 @@
 | 5 | Grannies / Muffin Cone / The Show | FAMILY | Bluey | https://www.youtube.com/watch?v=IOtFxP2JJqI |
 | 5 | Keepy Uppy / Magic Xylophone / Shadowlands | STORY | Bluey | https://www.youtube.com/watch?v=EJkn-r-rJJY |
 | 5 | Bingo Fun with Food | DAILY_LIFE | Bluey | https://www.youtube.com/watch?v=LPG5jNNhwcM |
+
+## 숨김 영상 (복구 대상 아님)
+
+- Bingo — https://www.youtube.com/watch?v=wCc1XyprU8c

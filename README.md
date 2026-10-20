@@ -5,7 +5,7 @@
 **A self-hosted web app that lets parents curate English-language YouTube videos for their
 kids — and lets kids freely pick what to watch inside those boundaries.**
 
-- **Content Library** — 526 hand-picked videos across 23 channels, tagged by level (1–5) and category
+- **Content Library** — 532 hand-picked videos across 23 channels, tagged by level (1–5) and category
 - **Per-child collections** — parents set allowed levels and channels; kids browse only what's allowed
 - **Automatic progress** — resume position, watch time, and completion (90%) recorded per child
 - **Nothing in the cloud** — one SQLite file on your own machine. No email, no real names, no analytics
@@ -112,7 +112,7 @@ docker compose up -d --build
 → <http://localhost:3200>
 
 컨테이너는 기동할 때 DB migration 과 Content Library seed 를 자동 실행한다.
-따라서 **첫 실행만으로 23개 채널 · 526편이 채워진 상태**로 시작한다.
+따라서 **첫 실행만으로 23개 채널 · 532편이 채워진 상태**로 시작한다.
 
 첫 사용 순서:
 
@@ -211,7 +211,7 @@ npm run admin:passwd -- appa 새비밀번호8자   # 지정한 값으로 변경
 ```bash
 npm run db:migrate    # 개발: migration 생성 및 적용
 npm run db:deploy     # 운영: 기존 migration 적용만
-npm run db:seed       # Content Library(채널 23개 · 영상 526편) 등록
+npm run db:seed       # Content Library(채널 23개 · 영상 532편) 등록
 npm run db:reset      # 개발 DB 초기화 (데이터 삭제, 주의)
 ```
 

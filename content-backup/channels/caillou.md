@@ -1,7 +1,7 @@
 # Caillou
 
 - slug: `caillou`
-- 영상: 30편
+- 영상: 30편 (숨김 4편 별도)
 - 노출: 사용
 - 설명: 일상 대화 · 가족 · 학교
 
@@ -22,14 +22,14 @@
 | 3 | Caillou's Family Dinner | FAMILY | Caillou | https://www.youtube.com/watch?v=NgIXjFGTmgE |
 | 3 | Caillou's Friends | FEELINGS | Caillou | https://www.youtube.com/watch?v=0ay91KNezEY |
 | 3 | The School Talent Show | SCHOOL | Caillou | https://www.youtube.com/watch?v=0Zf9Hg_MhkU |
-| 3 | Caillou - WildBrain | FAMILY | Caillou | https://www.youtube.com/watch?v=kvnDaBeDJf8 |
-| 3 | Caillou Goes to the Beach | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=Q99qqAkrlGc |
 | 3 | Caillou's New Shoes | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=ZW7S_547ZZY |
 | 3 | Caillou's Sleepover | FAMILY | Caillou | https://www.youtube.com/watch?v=yewvBQlnew4 |
-| 3 | My First Big Adventure Alone | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=FGeBfFKHVZs |
+| 3 | Caillou Has a High Fever | FAMILY | Caillou | https://www.youtube.com/watch?v=Fg8bliAcS2k |
+| 3 | Caillou and the Loud Lunch | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=we8amlzi-jg |
+| 3 | Caillou and the Dirty Car | FAMILY | Caillou | https://www.youtube.com/watch?v=RjGoO__JthQ |
+| 3 | Caillou Fights with Rosie | FEELINGS | Caillou | https://www.youtube.com/watch?v=twqFuPMLGBE |
 | 4 | Caillou Learns How to Bike | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=dXXMvSsPYcg |
 | 4 | Caillou Takes a Swim | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=_CBZg-pePlU |
-| 4 | Caillou - WildBrain | STORY | Caillou | https://www.youtube.com/watch?v=a4Nc9BLNS6c |
 | 4 | Caillou Goes Back to School | SCHOOL | Caillou | https://www.youtube.com/watch?v=Fpf2qdeZG5Q |
 | 4 | Caillou Goes Fishing | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=kbPRPEblg5g |
 | 4 | Caillou Goes Ice Skating | DAILY_LIFE | Caillou | https://www.youtube.com/watch?v=i0q43AqwKvE |
@@ -39,3 +39,10 @@
 | 4 | Caillou on World Book Day | SCHOOL | Caillou | https://www.youtube.com/watch?v=3tNaXf-FRYQ |
 | 4 | Caillou's Alien Experience | STORY | Caillou | https://www.youtube.com/watch?v=vtnv-1Cgmvg |
 | 4 | Caillou's Secret Valentine Mission | FAMILY | Caillou | https://www.youtube.com/watch?v=4NwvBLNAkpM |
+
+## 숨김 영상 (복구 대상 아님)
+
+- Caillou - WildBrain — https://www.youtube.com/watch?v=kvnDaBeDJf8
+- Caillou Goes to the Beach — https://www.youtube.com/watch?v=Q99qqAkrlGc
+- My First Big Adventure Alone — https://www.youtube.com/watch?v=FGeBfFKHVZs
+- Caillou - WildBrain — https://www.youtube.com/watch?v=a4Nc9BLNS6c

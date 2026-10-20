@@ -23,8 +23,8 @@
 | 2 | Blippi and the Snowmobile | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=1zxznpbpx-g |
 | 2 | Learning with Blippi at an Indoor Playground! | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=qUCIXNpd--I |
 | 2 | Police Cars for Children with Blippi | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=MILhzvM0cRA |
-| 2 | Blippi - Educational Videos for Kids | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=j3-6Ov5Q_gI |
-| 2 | Blippi - Educational Videos for Kids | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=a7g3iyWQtBM |
+| 2 | Blippi at Amy's Playground | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=j3-6Ov5Q_gI |
+| 2 | Blippi Visits Soak City Water Park | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=a7g3iyWQtBM |
 | 2 | Learning Numbers and Making Lemonade | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=DHfeMg71apI |
 | 3 | Blippi Bulldozer | DAILY_LIFE | Blippi | https://www.youtube.com/watch?v=q5OOQsHi0zY |
 | 3 | Blippi Dinosaur Song and More | SONG | Blippi | https://www.youtube.com/watch?v=L83OcYpiwx0 |
